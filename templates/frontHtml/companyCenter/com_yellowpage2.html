@@ -1,0 +1,100 @@
+{% extends 'base/base1.html' %}
+{% load static %}
+{% block script %}
+    	<link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" />
+    	<link href="{% static 'css/myInfo.css' %}" rel="stylesheet" type="text/css" />
+    	<link href="{% static 'css/companyCenter/companyInfo.css' %}" rel="stylesheet" type="text/css" />
+    	<link href="{% static 'css/companyCenter/mySample.css' %}" rel="stylesheet" type="text/css" />
+    	<link href="{% static 'css/companyCenter/com_manage_account.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+	{% block body %}
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 companyInfo">
+				<div class="myInfo_left col-xs-2">
+					<div class="myInfo_left_title text-center col-xs-12">
+							<img src="../../../static/img/images/company/企业.png">
+						<spqn>企业中心</spqn>
+					</div>
+					
+				<div class="company_left_nav col-xs-12 text-center">
+						<li class="myInfo_left_nav1 col-xs-12"><a href="companyInfo.html">我的信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="essentialInfo.html">基本信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_introduce.html">企业介绍</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_manage_account.html">子账号管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="../jzzVip/index.html">管理VIP网站</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="mySample.html">我的样品</a></li>
+						<li class="myInfo_left_nav1 active col-xs-12"><a href="com_yellowpage.html">黄页管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_offerInfo.html">供货信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="epurchaseInfo.html">采购信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="cooperationInfo.html">合作信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_Collection.html">商家收藏</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_recruit.html">招聘管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_myMomment.html">我的评论</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_stationNotice.html">站内通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="securityCenter.html">安全中心</a></li>
+					</div>
+				
+				</div>
+				<div class="company_page_right col-xs-10">
+					<div class="company_page col-xs-12 col-md-12">
+						<div calss="company_page1 col-xs-12 col-md-12 text-center">
+								<a class="company_page_a col-xs-1 col-md-1">加入代号</a>
+								<a class="company_page_a active col-xs-1 col-md-1" href="/company_page2/">加入目录</a>
+						</div>
+						
+					</div>
+				</div>
+				<div class="recommend_right1 col-xs-10">			
+					<div class="company_page_conter col-xs-12">
+						<div class="company_page_btn col-xs-1 col-md-1 text-center">
+							   <label>
+								  <input type="checkbox">
+								</label>
+						</div>
+						<div class="page2 col-xs-11">
+							<div class="page2_title col-xs-12">
+								<a href="">开式深沟球轴承</a>
+							</div>
+							<div class="conpany_page_ext2 col-xs-12 text-center">
+								<div class="ext_btn col-md-offset-11">退出</div>
+							</div> 
+						</div>
+					</div>
+					
+					<div class="company_page_conter col-xs-12">
+						<div class="company_page_btn col-xs-1 col-md-1 text-center">
+							   <label>
+								  <input type="checkbox">
+								</label>
+						</div>
+						<div class="page2 col-xs-11">
+							<div class="page2_title col-xs-12">
+								<a href="">开式深沟球轴承</a>
+							</div>
+							<div class="conpany_page_ext2 col-xs-12 text-center">
+								<div class="ext_btn col-md-offset-11">退出</div>
+							</div> 
+						</div>
+					</div>
+					
+					<div class="page2_checkbox col-xs-12">
+						<label class="checkbox-inline col-xs-6 col-md-6">
+							<input type="checkbox" value="option1">全选
+						</label>
+						<div class="conpany_page_ext col-xs-12 text-center">
+								<div class="ext_btn col-md-offset-11">退出</div>
+						</div> 
+						
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>		
+{% endblock %}                 
+
+
+
+

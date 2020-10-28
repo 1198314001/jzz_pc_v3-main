@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>技术</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/purchase.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/querydel.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/supplier.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/supplyInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/recruit.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/technical.css" rel="stylesheet" type="text/css" />
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+
+<div class="recruit col-md-10 col-md-offset-1" style="background-color: #F2F2F2;">
+	<div class="recruit_right col-xs-offset-1 col-xs-7">
+		<div class="form-group interview_form">
+			<div class="expertList_t col-xs-12">
+				<label class="checkbox-inline col-xs-1">
+					<input type="checkbox"  value="option1">	
+				</label>
+				<div class="media expertList col-xs-11">
+					<div class="media-left">
+					  <img src="https://static.runoob.com/images/mix/img_avatar.png" class="media-object" style="width:60px">
+					</div>
+					<div class="media-body">
+					  <h4 class="media-heading">左对齐</h4>
+					  <p class="heading1 col-xs-8">这是一些示例文本。这是一些示例文本。这是一些示例文本。</p>
+						<span class="heading2 col-xs-2 text-right">回复数：1234</span>
+						<span class="heading2 col-xs-2 text-center">积分：1234</span>
+					</div>
+				  </div> 
+			</div>
+			<div>
+				<label class="checkbox-inline col-xs-2">
+					<input type="checkbox"  value="option1">全选	
+				</label>
+				<div class="expert_btnf col-xs-8"></div>
+				<div data-toggle="modal" data-target="#myModal">
+					<div class="col-xs-2 expert_btn">向专家提问</div>
+				</div>
+				
+			</div>
+			
+		</div>		
+	</div>
+	
+	<div class="exchange_right col-xs-2">
+		<div class="exchange_right_img col-xs-12 text-center">
+			<a href="/post_person/"><img src="../../static/img/images/exhibition/img/2.jpg"></a>
+		</div>
+		<div class="exchange_right_name col-xs-12 text-center">
+			张小姐
+		</div>
+		
+		<div class="exchange_right_info col-xs-12">
+			<div class="exchange_right_info1 col-xs-4">
+				<img src="../../static/img/images/exhibition/img/笔记.png">发表</div>
+			
+			<div class="exchange_right_info2 col-xs-4">
+				<img src="../../static/img/images/exhibition/img/笔记.png">我的回答</div>
+			
+			<div class="exchange_right_info3 col-xs-4">
+				<img src="../../static/img/images/exhibition/img/笔记.png">草稿箱</div>
+		</div>
+	</div>
+	
+	<div class="exchange_right1 col-xs-offset-0 col-xs-4">
+		<div class="exchange_right1_con col-xs-6 text-center">
+			<div class="exchange_right1_title col-xs-12 text-center">最新提问</div>
+			<div class="exchange_right1_con1 col-xs-4">排名</div>
+			<div class="exchange_right1_con1 col-xs-4">姓名</div>
+			<div class="exchange_right1_con1 col-xs-4">积分</div>
+			
+			<div class="exchange_right1_con2 col-xs-4">NO1</div>
+			<div class="exchange_right1_con2 col-xs-4">张先生</div>
+			<div class="exchange_right1_con2 col-xs-4">1666</div>
+		</div>
+	</div>
+	<div class="exchange_right1 col-xs-offset-0 col-xs-4">
+		<div class="exchange_right1_con col-xs-6 text-center">
+			<div class="exchange_right1_title col-xs-12 text-center">最新提问</div>
+			<div class="exchange_right1_con3 col-xs-12">[提问] 高价回收轴承高价回收轴承高价回收轴承</div>
+		</div>
+	</div>
+		<div class="exchange_right1 col-xs-offset-0 col-xs-4">
+		<div class="exchange_right1_con col-xs-6 text-center">
+			<div class="exchange_right1_title col-xs-12 text-center">热门回答</div>
+			<div class="exchange_right1_con3 col-xs-12">[提问] 高价回收轴承高价回收轴承高价回收轴承</div>
+		</div>
+	</div>
+	<!-- dddd-->
+	
+</div>
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">	
+					向专家提问	 
+			</div>
+			
+			
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">专家名称</span>
+				<span for="firstname" class=" col-xs-10 ex_l">专家名称</span>			
+			</div>
+			
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">问题分类</span>
+				<label class="checkbox-inline ex_l">
+						<input type="checkbox" id="inlineCheckbox1" value="option1">营销问题
+					</label>
+					<label class="checkbox-inline ex_l">
+						<input type="checkbox" id="inlineCheckbox2" value="option2">技术问题
+					</label>
+					<label class="checkbox-inline ex_l">
+						<input type="checkbox" id="inlineCheckbox3" value="option2">其他问题
+					</label>	
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">问题标题</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="loca" placeholder="请输入问题标题">
+				</div>					
+			</div>
+			
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">文章内容</span>
+				<div class="col-xs-10 col-md-10 myq_group3">
+					<textarea name="mytextarea" placeholder="文章内容" class="myq_textarea col-xs-12"></textarea>
+				</div>					
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default ex_button" data-dismiss="modal">取消
+				</button>
+				<button type="button" class="btn btn-primary ex_button1">
+					发布
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+{% endblock %}
+
+
+
+

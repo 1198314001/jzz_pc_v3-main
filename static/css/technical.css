@@ -1,0 +1,595 @@
+/* CSS Document */
+.exchange{
+	padding-top: 1rem;
+}
+.exchange1{
+	height: 17.5rem;
+	background-color: #F2F2F2;
+	border-radius: 3px;
+}
+.exchange_title{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1rem;
+	font-size: 1.4rem;
+}
+.exchange_title1{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exchange_title2{
+	font-size: 1rem;
+	color: #ADADAD;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exchange_img{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1rem;
+}
+.exchange_img img{
+	height: 12rem;
+	width: 20rem;
+}
+.exchange_text{
+	padding-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.exchange_text1{
+	white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    font-size: 1.2rem;
+}
+.exchange_info{
+	padding-top: 2rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exchange_info1{
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1.2rem;
+	color:#ADADAD;
+}
+.exchange_info1 img{
+	height: 1.5rem;
+	width: 1.5rem;
+	margin-right: 0.5rem;
+}
+.exchange_right{
+	margin-top: 1.5rem;
+	height: 15rem;
+	padding-left: 10px;
+	padding-right: 0px;
+	background-color: #FFFFFF;
+	border-left: 1rem #F2F2F2 solid;
+}
+
+.detail_right{
+	margin-top: 1.5rem;
+	height: 18rem;
+	background-color: #FFFFFF;
+	border-left: 1rem #F2F2F2 solid;
+}
+.exchange_right_img{
+	padding-top: 1rem;
+}
+.exchange_right_name{
+	padding-top: 1rem;
+	font-size: 1.4rem;
+}
+.exchange_right_info{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 1rem;
+}
+.exchange_right_info1{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 1rem;
+	border: 1px #F2F2F2 solid;
+	border-radius: 3px;
+	padding-left: 0.5rem;
+	font-size: 6px;
+	height: 1.8rem;
+	width: 4rem;
+	
+}
+.exchange_right_info1 img{
+	height: 1rem;
+	width: 1rem;
+}
+.exchange_right_info2{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 1rem;
+	border: 1px #F2F2F2 solid;
+	border-radius: 3px;
+	padding-left: 0.5rem;
+	font-size: 6px;
+	height: 1.8rem;
+	width: 6rem;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	
+}
+.exchange_right_info2 img{
+	height: 1rem;
+	width: 1rem;
+}
+.exchange_right_info3{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 1rem;
+	border: 1px #F2F2F2 solid;
+	border-radius: 3px;
+	padding-left: 0.5rem;
+	font-size:12px;
+	height: 1.8rem;
+	width: 6rem;
+	
+}
+.exchange_right_info3 img{
+	height: 1rem;
+	width: 1rem;
+}
+.exchange_right1{
+	
+	padding-left: 0px;
+	padding-right: 0px;
+	border-left: 1rem #F2F2F2 solid;
+	margin-top: 1rem;
+}
+.exchange_right1_con{
+	height: 28rem;
+	background-color: #FFFFFF;
+}
+.exchange_right1_con{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exchange_right1_title{
+	font-size: 1.4rem;
+	border-bottom: 1px #f2f2f2 solid;
+	padding-top: 1rem;
+	height: 4rem;
+}
+.exchange_right1_con1{
+	padding-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1.2rem;
+	
+}
+.exchange_right1_con2{
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1rem;
+	padding-top: 0.7rem;
+}
+.exchange_right1_con3{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1.2rem;
+	padding-top: 0.7rem;
+	    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*
+	交流详情
+*/
+
+.exchange_detail_portrait{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0.7rem;
+	font-size: 1.3rem;
+}
+
+.detail_portrait_img{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0.5rem;
+}
+
+.detail_portrait_name{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0.5rem;
+	font-size: 1.3rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.detail_portrait_name1{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0.5rem;
+	font-size: 1.2rem;
+	color: #ADADAD;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.detail_portrait_name img{
+	height: 1rem;
+	width: 1rem;
+	
+}
+.detail_portrait_name text{
+	font-size: 0.3rem;
+	padding-left: 0.4rem;
+	color: #FF6100;
+}
+.detail_portrait_num{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1rem;
+}
+.detail_portrait_num1{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0.3rem;
+}
+.detail_portrait_btn1{
+	margin-left: 0.5rem;
+	margin-top: 1.5rem;
+	height: 2rem;
+	width: 6rem;
+	padding-left: 5px;
+	padding-right: 0px;
+	border: 1px #F2F2F2 solid;
+	border-radius: 3px;
+	font-size: 1rem;
+	padding-top: 0.1rem;
+}
+.detail_portrait_btn1 text{
+	padding-left: 0.1rem;
+}
+.detail_portrait_btn1 img{
+	height: 1rem;
+	width: 1rem;
+	
+}
+.detail_portrait_btn2{
+	
+	margin-top: 1.5rem;
+	height: 2rem;
+	width: 5.7rem;
+	padding-left: 5px;
+	padding-right: 0px;
+	border: 1px #F2F2F2 solid;
+	border-radius: 3px;
+	font-size: 1rem;
+	padding-top: 0.1rem;
+	color: #FFFFFF;
+	background-color: #ff6100;
+}
+.detail_portrait_btn2 text{
+	padding-left: 0.1rem;
+}
+.detail_portrait_btn2 img{
+	height: 1rem;
+	width: 1rem;
+	
+}
+.exchange_del{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exchange_del_top{
+	height: 10rem;
+	border-bottom: 1px #F2F2F2 solid;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exchange_del_title{
+	font-size: 1.4rem;
+	padding-top: 1rem;
+}
+.exchange_del_title1{
+	padding-top: 5rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+/*
+	作者个人页面
+*/
+.Ppang_head{
+	margin-top: 1rem;
+	height: 24rem;
+	background-color: #FFFFFF;
+	background:url("../img/images/exhibition/img/矩形 768 拷贝 4.jpg") center;
+    background-size:contain;
+}
+.Ppang{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.Ppang_center{
+	height: 100rem;
+	margin-top: 1rem;
+	background-color: #FFFFFF;
+}
+.Ppang_head_img{
+	padding-top: 16rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.Ppang_head_img img{
+	border-radius: 4rem;	
+}
+.Ppang_head_info{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 16rem;
+}
+
+.Ppang_head_name{
+	font-size: 1.4rem;
+	color: #FFFFFF;
+}
+.Ppang_head_name1{
+	padding-left: 0.5rem;
+	font-size: 1rem;
+	color: #FF6100;
+}
+.Ppang_head_name1 img{
+	height: 1rem;
+	width: 1rem;
+}
+.Ppang_head_bq{
+	padding-top: 1rem;
+}
+.Ppang_head_bq1{
+	
+	
+	color: #FFFFFF;
+}
+.Ppang_head_conter{
+	color: #FFFFFF;
+	font-size: 1.4rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.Ppang_head_right{
+	color: #FFFFFF;
+	font-size: 1.4rem;
+
+}
+.Ppang_head_right1{
+	height: 2rem;
+	width: 6rem;
+	border: 1px #FFFFFF solid;
+	font-size: 1rem;
+	padding-left: 0.5rem;
+	border-radius: 3px;
+	padding-top: 0.2rem;
+	padding-right: 0px;
+}
+.Ppang_head_right1 img{
+	height: 1.3rem;
+	width: 1.3rem;
+}
+
+.Ppang_head_right2{
+	height: 2rem;
+	width: 6rem;
+	border: 1px #FF6100 solid;
+	background-color: #FF6100;
+	font-size: 1rem;
+	padding-left: 0.5rem;
+	border-radius: 3px;
+	padding-top: 0.2rem;
+	padding-right: 0px;
+	color: #FFFFFF;
+	margin-left: 1rem;
+}
+.Ppang_head_right2 img{
+	height: 1.3rem;
+	width: 1.3rem;
+}
+.Ppang_center_title{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1rem;
+}
+.Ppang_center_title1{
+	padding-left: 0px;
+	padding-right: 0px;
+	
+	
+	
+}
+.Ppang_center_title1.active a{
+	color: #FF6100;
+}
+.Ppang_center1{
+	height: 22rem;
+	margin-top: 1rem;
+	background-color: #F8F8F8;
+	border-radius: 5px;
+	padding-left: 0px;
+}
+.Ppang_center1_head{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1rem;
+	
+}
+.Ppang_center1_head img{
+	height: 45px;
+	width: 45px;
+	border-radius: 4rem;
+}
+.center1_head_img{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.center1_head_text{
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1.4rem;
+	padding-top: 0.8rem;
+}
+.center1_head_text1{
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1.4rem;
+	padding-top: 0rem;
+}
+.Ppang_center1_time{
+	color:#ADADAD;
+	padding-top: 2rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.Ppang_center1_info_title{
+	font-size: 1.4rem;
+	padding-top: 0.5rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.Ppang_center1_info_img{
+	padding-top: 0.5rem;
+}
+.Ppang_center1_info_img img{
+	height: 12rem;
+	
+}
+.Ppang_center1_info{
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1.2rem;
+	color:#adadad;
+	white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    font-size: 1.2rem;
+}
+.Ppang_center1_good{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.Ppang_center1_good1{
+	padding-top: 2rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.Ppang_center1_good2{
+	padding-top: 2rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.Ppang_center1_good1 img{
+	height: 1.5rem;
+	width: 1.5rem;
+}
+.Ppang_center1_good2 img{
+	height: 1.5rem;
+	width: 1.5rem;
+}
+.Ppang_center1_good1 span{
+	color: #ff6100;
+}
+
+/*
+	提问
+*/
+.questions{
+	height: 5.5rem;
+	background-color: #F8F8F8;
+	margin-top: 1rem;
+	border-radius: 5px;
+}
+.questions_title{
+	font-size: 1.4rem;
+	padding-top: 0.5rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.questions_conter{
+	font-size: 1.2rem;
+	color: #ADADAD;
+	padding-top: 0.5rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.questions_number{
+	font-size: 1.2rem;
+	color: #ADADAD;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0.5rem;
+}
+/*
+	专家及顾问列表
+*/
+.checkbox-inline{
+	padding-top: 3rem;
+	padding-right: 0px;
+	padding-left: 4rem;
+}
+.expertList{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 1rem;
+}
+.expertList_t{
+	padding-left: 0px;
+	padding-right: 0px;
+	border-bottom: 1px #F2F2F2 solid;
+		
+}
+.heading1{
+	padding-top: 1rem;
+}
+.heading2{
+	font-size: 1rem;
+	color: #ADADAD;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.expert_btn{
+	border: 1px #FF6100 solid;
+	width: 7.5rem;
+	padding-left: 6px;
+	padding-right: 5px;
+	margin-top: 3rem;
+	background-color: #FF6100;
+	color: #FFFFFF;
+	border-radius: 3px;
+	margin-left: 3rem;
+}
+.ex_l{
+	padding-top: 0.5rem;
+}
+.ex_button{
+	height: 2.5rem;
+	width: 6rem;
+}
+.ex_button1{
+	height: 2.5rem;
+	width: 6rem;
+	padding-top: 0.4rem;
+	font-size: 1.2rem;
+}

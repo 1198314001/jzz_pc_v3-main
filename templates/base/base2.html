@@ -1,0 +1,105 @@
+{% extends 'base/bottom.html' %}
+{% block script %}
+{% endblock %}
+    {% load static %}
+{% block style %}
+{% endblock %}
+
+{% block head %}
+	<div class="head" style="height:20rem;width: 100;background-color: #FFFFFF;padding-left: 10%;padding-right: 10%;">
+		<div class="hemlHead">
+		<div class="text-center col-xs-12 col-sm-12 col-md-12 text-center" style="padding-top: 1rem;">
+		  <div class="row">
+			<div class="container col-xs-1 col-sm-1 col-md-1 text-center" style="background-color:#FFFFFF;"> </div>
+			<div class="container col-xs-4 col-sm-4 col-md-4 text-left base2_title">
+			  <ul class="list-inline">
+				<li>中文</li>
+				<li>|</li>
+				<li>Englishi</li>
+				<li>|</li>
+				<li>繁体字</li>
+			  </ul>
+			</div>
+			<div class="container col-xs-6 col-sm-6 col-md-6 text-right base2_title2">
+			  <ul class="list-inline">
+				 {% if request.session.isLogin %}
+				<li><a target="_parent" href="/">欢迎你，{{ request.session.isLogin }}</a></li>
+				<li><a target="_parent" href="/quit/">退出登录</a></li>
+                  {% else %}
+                      <li><a target="_parent" href="/login/">你好，请登录</a></li>
+				    {% endif %}
+				<li><a target="_parent" href="/register/">免费注册</a></li>
+				<li><a target="_parent" href="/jzzbearing/templates/frontHtml/login/peRegister.html">客服在线</a></li>
+				<li><a target="_parent" href="/jzzbearing/templates/frontHtml/login/peRegister.html">广告服务</a></li>
+				<li><a target="_parent" href="/jzzbearing/templates/frontHtml/login/peRegister.html">联系我们</a></li>
+				<li><a target="_parent" href="/jzzbearing/templates/frontHtml/login/peRegister.html">帮助中心</a></li>
+			  </ul>
+			</div>
+			<div class="container col-xs-1 col-sm-1 col-md-1"> </div>
+		  </div>
+		  <div class="row" style="height: 12rem;padding-top: 1rem;">
+			<div class="container col-xs-1 col-sm-1 col-md-1"></div>
+			<div class="container col-xs-1 col-sm-1 col-md-1 text-left"> <a href="/"><img style="height:7rem;width: 7rem;" src="{% static 'img/images/index/logo.jpg' %}"></a> </div>
+			<div class="container col-xs-5 col-sm-5 col-md-5" style="padding-top:2rem">
+				
+			  <div class="input-group"><!--保持内联，消除边框，类似于form-inline-->
+				<div class="input-group-btn"><!--不换行，与相邻元素内联，包含dropdown-->
+				  <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="border-Radius:0px;height: 3.4rem;border: 1px #CCCCCC solid"> 请选择<span class="caret"></span> </button>
+				  <ul class="dropdown-menu">
+					<li><a href="javascript:void(0);">宝贝</a></li>
+					<li><a href="javascript:void(0);">店铺</a></li>
+				  </ul>
+				</div>
+				<input type="text" class="form-control" style="background-color: #FFFFFF;border: 1px #CCCCCC solid" placeholder="请输入关键词" />
+				<span class="input-group-btn"><!--不换行，与相邻元素内联-->
+				<button class="btn btn-primary" style="border-Radius:0px;">搜索</button>
+				</span> <span class="input-group-btn" style="padding-left: 2rem;"><!--不换行，与相邻元素内联-->
+				<button class="btn btn-primary" style="border-Radius:0px">发布信息</button>
+				</span> </div>
+			</div>
+			<div class="container col-xs-3 col-sm-3 col-md-3 text-right"> <img style="height: 8rem;width:20rem;" src="{% static 'img/images/index/shanghaijingujian.jpg'%}"> </div>
+			<div class="container col-xs-1 col-sm-1 col-md-1 text-right"> <img style="height: 8rem;width:8rem;" src="{% static 'img/images/index/bearing.jpg' %}"></div>
+			<div class="container col-xs-1 col-sm-1 col-md-1 text-center"></div>
+		  </div>
+		</div>
+		</div>
+<div class="nav_a">
+  <div class="row">
+  
+    <div  class="container col-md-12 text-center">
+      <ul class="nav nav-pills anav head3">
+    	<li class="navs" id="index"><a target="_parent" href="/">首页</a></li>
+        <li><a class="navs" id="supply" target="_parent" href="/indexdata_supply1/">供货信息</a></li>
+        <li><a class="navs" id="purchase" target="_parent" href="/purchase_index/">采购导航</a></li>
+        <li><a class="navs" id="bearing" target="_parent" href="/bearing_infosearchindex0/">型号查询</a></li>
+        <li><a class="navs" id="company" target="_parent" href="/indexdata_company1/">找供应商</a></li>
+        <li><a class="navs" id="require" target="_parent" href="/indexdata_require1/">采购信息</a></li>
+        <li><a class="navs" id="industry" target="_parent" href="/indexdata_industry1/">行业动态</a></li>
+        <li><a class="navs" id="exhibition" target="_parent" href="/indexdata_exhibition1/">展会信息</a></li>
+        <li><a class="navs" id="train" target="_parent" href="/indexdata_train1/">培训信息</a></li>
+        <li><a class="navs" id="post" target="_parent" href="/post_info/">技术交流</a></li>
+        <li><a class="navs" id="magazine" target="_parent" href="/indexdata_magazine1/">杂志期刊</a></li>
+        <li><a class="navs" id="invite" target="_parent" href="/indexdata_invite1/">招聘信息</a></li>
+        <li><a class="navs" id="companycredit" target="_parent" href="companycredit">企业信用查询</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+	</div>
+
+<script type="text/javascript">  
+$(document).ready(function(){  
+    $(".navs").each(function(){  
+        $this = $(this);  
+        if($this[0].href==String(window.location)){  
+            $this.addClass("hover");
+			
+        }  
+    });  
+});  
+</script>
+
+    {% block body %}
+        {% endblock %}
+
+{% endblock %}

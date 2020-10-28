@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>供货信息详情页</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/purchase.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplyInformation.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/querydel.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/buyingInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplyInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplier.css" rel="stylesheet" type="text/css" />
+
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+<div  class="col-md-10 col-md-offset-1" style="background-color: #F2f2f2;">
+	<div class="purchase1_query col-xs-10 col-sm-10 col-md-12 text-center">
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_left">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+		<div class="container col-xs-8 supplier">
+			<div class="supplier_del_top col-md-12">				
+				<div class="_top_title2 col-xs-2 text_left"><a href="supplyInfo.html">供货信息</a></div>
+				<div class="_top_title2 col-xs-2 text_left"><a href="sample.html">供货产品</a></div>
+				<div class="_top_title2 col-xs-2 text_left active"><a href="supplyProduct.html">图文产品</a></div>
+				<div class="_top_title2 col-xs-2 text_left"><a href="cooperate_info.html">合作信息</a></div>
+				<div class="_top_title2 col-xs-2 text_left"><a href="/indexdata_company1/">人气供货商</a></div>
+				<div class="_top_title2 col-xs-2 text_left"><a href="new_supplier.html">新加盟供货商</a></div>
+			</div>
+			
+			<div class="_su_detail_top col-xs-12">
+				<div class="_su_detail_img col-xs-4">
+					<img src="../../../static/img/images/integral/44.jpg">
+				</div>
+				<div class="_su_detail_title col-xs-8">
+					<div class="_su_detail_title1 col-xs-12 text-left">广州市哈瑞轴承有限公司</div>
+					<div class="_su_detail_conter col-xs-7 text-left">
+						<div class="_su_detail_title2 col-xs-12 text-left">联系人：张小姐</div>
+						<div class="_su_detail_title2 col-xs-12 text-left">传真：1154878877</div>
+						<div class="_su_detail_title2 col-xs-12 text-left">邮件：1154447778@qq.com</div>
+					</div>
+					
+					<div class="_su_detail_conter col-xs-5 text-left">
+						<div class="_su_detail_title2 col-xs-12">联系电话：18877789985</div>
+						<div class="_su_detail_title2 col-xs-12">地址：广州</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="_su_detail_box col-xs-12">
+				<div class="_detail_title col-xs-12">
+					<span class="col-xs-2 _detail_title_tex text-left">筛选条件:</span>
+					<div class="col-xs-6 _detail_title_tex1 text-left">产品系列
+						<div class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle" 
+									data-toggle="dropdown">
+								单缝外圈向内心关机轴承 <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">功能</a></li>
+								<li><a href="#">另一个功能</a></li>
+								<li><a href="#">其他</a></li>
+								<li class="divider"></li>
+								<li><a href="#">分离的链接</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-4 su_search text-right">
+						<from class="su_search1 col-xs-12">
+							 <input type="text" class="search_input1 col-xs-8" id="name" placeholder="请输入需要搜索的代号">
+							<div class="search2 col-xs-2 text-center">搜索</div>
+						</from>
+					</div>
+					
+				</div>
+				<div class="su_product_img col-xs-12">
+					<div class="product_img col-xs-12">
+						<img src="../../../static/img/images/integral/55.jpg">
+					</div>
+					
+					
+					<div class="product_detail_conter col-xs-12">
+						<div class="product_delCor_title col-xs-12 text-left">
+							<span class="product_delCor_title1">型号：UOM29</span>
+							<span class="product_delCor_title2">(原用代号：545UOM29)</span>
+						</div>
+						<div class="product_delCor_num col-xs-12 text-left">
+							<span class="product_delCor_num1">内径：15</span>
+							<span class="product_delCor_num1">外径：15</span>
+							<span class="product_delCor_num1">宽度：15</span>
+							<span class="product_delCor_num1">重量：15</span>
+						</div>
+						
+						<div class="product_delCor_xq1 col-xs-9">
+							<span class="delCor_xq1_title col-xs-1 text-left">品牌 :</span>
+							<span class="delCor_xq1_title1 col-xs-2">NTN</span>
+							<span class="delCor_xq1_title1 col-xs-2">TVC</span>
+							<span class="delCor_xq1_title1 col-xs-2">NSF</span>
+						</div>
+						
+						<div class="product_delCor_xq1 col-xs-9">
+							<span class="delCor_xq1_title col-xs-1 text-left">品牌 :</span>
+							<span class="delCor_xq1_title1 col-xs-2">NTN</span>
+							<span class="delCor_xq1_title1 col-xs-2">TVC</span>
+							<span class="delCor_xq1_title1 col-xs-2">NSF</span>
+						</div>
+					
+					</div>
+				</div>
+				
+				
+				
+			</div>
+			
+			
+			<!--mmmm-->
+		</div>
+
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_right">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+	</div>
+	
+</div>
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+
+

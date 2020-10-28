@@ -1,0 +1,81 @@
+/* CSS Document */
+.trainInfo{
+	height: 175rem;
+	background-color: #FFFFFF;
+	margin-top: 1rem;
+	
+}
+
+.trainInfo_contan{
+	margin-top: 1rem;
+	height: 16.5rem;
+	padding-top: 1rem;
+	border: 1px #ECECEC solid;
+	box-shadow: 5px 5px 5px #F4F4F4;/* 边框阴影 */  
+    -moz-box-shadow: 0px 0px 5px #F4F4F4; /* 老的 Firefox */
+}
+.trainInfo_contan_img{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.trainInfo_contan_img img{
+	
+	height: 14rem;
+	widows: 24rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.trainInfo_contan_list{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.trainInfo_contan_con{
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 4rem;
+	color: #939393;
+	border-bottom: 1px #ECECEC solid;
+}
+.trainInfo_contan_title{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.trainInfo_contan_name{
+	padding-top: 2rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.trainInfo_contan_time{
+	padding-top: 2rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.trainInfo_contan_title{
+	font-size: 1.4rem;
+}
+.trainInfo_btn.btn-default{
+	margin-top: 2rem;
+	height: 2.2rem;
+	width: 6rem;
+	padding-top: 0rem;
+	font-size: 1.3rem;
+	background-color: #BFBFBF;
+	color: #FFFFFF;
+	border: 1px  #BFBFBF solid;
+	
+}
+
+.trainInfo_btn.btn-default:hover{
+	margin-top: 2rem;
+	height: 2.2rem;
+	width: 6rem;
+	padding-top: 0rem;
+	font-size: 1.3rem;
+	color: #FFFFFF;
+	background-color: #FF6100;
+	border: 1px #FF6100 solid;
+}
+
+
+
+	

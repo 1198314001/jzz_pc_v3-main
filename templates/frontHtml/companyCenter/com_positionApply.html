@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>供货信息</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/myInfo.css" rel="stylesheet" type="text/css" />
+	
+<link href="../../../static/css/companyCenter/companyInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/com_manage_account.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/mySample.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/com_introduce.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/essentialInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/position.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/release.css" rel="stylesheet" type="text/css" />
+
+  
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 companyInfo">
+				<div class="myInfo_left col-xs-2">
+					<div class="myInfo_left_title text-center col-xs-12">
+						<img src="../../../static/img/images/company/企业.png">
+						<spqn>企业中心</spqn>
+					</div>
+					
+					<div class="company_left_nav col-xs-12 text-center">
+						<li class="myInfo_left_nav1 col-xs-12"><a href="companyInfo.html">我的信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="essentialInfo.html">基本信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_introduce.html">企业介绍</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_manage_account.html">子账号管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="../jzzVip/index.html">管理VIP网站</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="mySample.html">我的样品</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_yellowpage.html">黄页管理</a></li>
+						<li class="myInfo_left_nav1 active col-xs-12"><a href="com_offerInfo.html">供货信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="epurchaseInfo.html">采购信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="cooperationInfo.html">合作信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_Collection.html">商家收藏</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_recruit.html">招聘管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_myMomment.html">我的评论</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_stationNotice.html">站内通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="securityCenter.html">安全中心</a></li>
+					</div>
+				
+				</div>
+				<div class="company_page_right col-xs-10">
+					<div class="company_page col-xs-12 col-md-12">
+						<div calss="company_page1 col-xs-12 col-md-12 text-center">
+								<a class="company_page_a col-xs-1 col-md-1 text-center" href="/company_inviteinfo/">面试邀请</a>
+								<a class="company_page_a col-xs-1 col-md-1 text-center active" href="/company_positioninfo/">职位申请</a>
+								<a class="company_page_a col-xs-1 col-md-1 text-center" href="/company_position_collect/">简历收藏</a>
+								<a class="company_page_a col-xs-1 col-md-1 text-center" href="/company_position_manage/">职位管理</a>
+							
+							<a class="offerInfo_add col-md-offset-7 col-xs-2" href="/company_supply_post/">发布供货信息</a>
+						</div>
+						
+					</div>
+				</div>
+				<div class="position_apply col-xs-10">			
+					<form class="col-xs-12">
+						<div class="apply_conter">
+							<div class="checkbox col-xs-1 text-center" style="padding-top: 5rem;">
+								<label>
+									<input type="checkbox">
+								</label>
+							</div>
+						
+							<div class="apply_conter_title col-xs-11">
+								<span class="apply_conter_title1"><a>多工位螺旋冷镦师傅</a></span>
+								<span class="apply_conter_title2">立即沟通</span>
+								<span class="" style="padding-left: 70%; font-size: 1rem;">工作经验10年</span>
+							</div>
+
+							<div class="apply_conter_name col-xs-11">
+								<span>老张头 · 男 · 40岁 · 本科</span>
+							</div>
+
+							<div class="apply_conter_time col-xs-11">
+								<div class="col-xs-4 text-left apply_conter_time1">申请时间：2020/8/20</div>
+								<div class="text-left col-xs-4 apply_conter_time1">联系方式：15889856645</div>
+								<div class="text-left col-xs-3 col-xs-offset-1 apply_conter_time1">
+									<div class="apply_resume col-xs-4 col-md-4">简历详情</div>
+									<div class="apply_resume col-xs-4 col-md-4">邀请面试</div>
+									<div class="apply_resume1 col-xs-4 col-md-4">删除</div>
+								
+								</div>
+							</div>
+						</div>
+						
+						
+					<div class="checkbox  col-xs-12 col-md-12 text-center" style="padding-top: 5rem;">
+							<div class="col-xs-6 col-md-10 text-left">
+									<input type="checkbox">全选
+							</div>
+						
+						<div class="apply_resume2 col-xs-4 col-md-1">邀请面试</div>
+						<div class="apply_resume3 col-xs-4 col-md-1">删除</div>
+								
+								
+					</div>	
+					
+					</form>
+					
+					
+					
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>		
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+

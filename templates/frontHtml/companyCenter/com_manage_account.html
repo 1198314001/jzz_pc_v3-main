@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>子账号管理</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/myInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/companyInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/com_manage_account.css" rel="stylesheet" type="text/css" />
+
+  
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 companyInfo">
+				<div class="myInfo_left col-xs-2">
+					<div class="myInfo_left_title text-center col-xs-12">
+						<img src="../../../static/img/images/company/企业.png">
+						<spqn>企业中心</spqn>
+					</div>
+					
+					<div class="company_left_nav col-xs-12 text-center">
+						<li class="myInfo_left_nav1 col-xs-12"><a href="companyInfo.html">我的信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="essentialInfo.html">基本信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_introduce.html">企业介绍</a></li>
+						<li class="myInfo_left_nav1 active col-xs-12"><a href="com_manage_account.html">子账号管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="../jzzVip/index.html">管理VIP网站</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="mySample.html">我的样品</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_yellowpage.html">黄页管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_offerInfo.html">供货信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="purchaseInfo.html">采购信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="cooperationInfo.html">合作信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_Collection.html">商家收藏</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_recruit.html">招聘管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_myMomment.html">我的评论</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_stationNotice.html">站内通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="securityCenter.html">安全中心</a></li>
+					</div>
+				
+				</div>
+				<div class="recommend_right col-xs-10">
+					<div class="com_manage_account col-xs-12">
+						<div class="account_title col-xs-12">
+							<div class="account_title1 col-xs-10 col-md-11">子账号管理<span class="account_title2">(最多可以产生30个子账号)</span></div>
+							<div class="account_add col-xs-2 col-md-1 text-right">
+								<div class="account_add1 text-right"><img src="../../../static/img/images/company/jia.png">增加账号</div>
+							</div>
+						</div>
+						
+						<div class="account_title2 col-xs-12">
+							<table class="table text-center">
+							   <thead>
+								  <tr class="account_title3">
+									 <td>子账号名</td>
+									 <td>登录密码</td>
+									 <td>账号级别</td>
+									 <td>使用人</td>
+									 <td>联系电话</td>
+									 <td>名权限</td>
+									 <td>操作</td>
+								  </tr>
+							   </thead>
+							   <tbody>
+								  <tr>
+									 <td>admin</td>
+									 <td>123456</td>
+									 <td>高级管理员</td>
+									 <td>王大头</td>
+									 <td>100254879</td>
+									 <td>修改</td>
+									 <td>修改</td>
+								  </tr>
+								  <tr>
+									  <td>名称</td>
+									 <td>名称</td>
+									 <td>名称</td>
+									 <td>名称</td>
+									 <td>名称</td>
+									 <td>名称</td>
+									 <td>名称</td>
+								  </tr>
+							   </tbody>
+							</table>
+						
+						</div>
+					
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>		
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>               
+
+
+
+

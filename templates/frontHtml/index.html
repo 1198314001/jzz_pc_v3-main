@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>金蜘蛛承轴网</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="../../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../static/js/Vue.jsv2.6.11.js"></script>
+<script type="text/javascript" src="../../static/js/vue.min.js"></script>
+<script type="text/javascript" src="../../static/js/api.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/head.css" rel="stylesheet" type="text/css" />
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+	
+<div style="jumbotron width:90%;margin-left:4%;background-color: #F2F2F2;">
+<div class="row" style="height: 110px;padding-top: 0rem;">
+  <div class="container col-xs-0 col-sm-0 col-md-1"></div>
+  <div class="container col-xs-3 col-sm-3 col-md-2 text-left"> <img style="width: 100%; height:100px" src="{% static 'img/images/index/201761417723.jpg' %}"> </div>
+  <div  class="container col-xs-5 col-sm-5 col-md-5 text-center"> <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg' %}"> </div>
+  <div class="container col-xs-4 col-sm-4 col-md-3 text-right"> <img style="width: 100%;height:100px" src="{% static 'img/images/index/middlemh1rstrz.jpg' %}"> </div>
+  <div class="container col-xs-0 col-sm-0 col-md-1 text-center"></div>
+</div>
+	
+<div class="row" style="height: 23rem;padding-top: 1rem;">
+  <div class="container col-xs-0 col-sm-0 col-md-1"></div>
+  <div class="container col-xs-3 col-sm-3 col-md-2 text-left">
+	  <div class="xinhaocx">
+	    <div class="cxtitle text-center">轴承型号查询</div>
+		 <div class="xinhaoxq">
+		  <form role="form">
+			 <div class="container btns col-xs-12 col-sm-12 col-md-12 text-left" style="padding-top: 1rem;">
+				<label class="col-xs-4 col-sm-4 col-md-4 text-left form_t" for="name">型号:</label>
+    			<input class="col-xs-8 col-sm-8 col-md-8 text-left" type="text" id="xinghao" placeholder="请输入型号">
+			 </div>
+			  <div class="container btns col-xs-12 col-sm-12 col-md-12 text-left">
+				<label class="col-xs-4 col-sm-4 col-md-4 text-left" for="name">内径:</label>
+    			<input class="col-xs-8 col-sm-8 col-md-8 text-left" type="text" id="neijing" placeholder="请输入内径">
+			 </div>
+			  <div class="container btns col-xs-12 col-sm-12 col-md-12 text-left">
+				<label class="col-xs-4 col-sm-4 col-md-4 text-left" for="name">外径:</label>
+    			<input class="col-xs-8 col-sm-8 col-md-8 text-left" type="text" id="waijing" placeholder="请输入外径">
+			 </div>
+			  <div class="container btns col-xs-12 col-sm-12 col-md-12 text-left">
+				<label  class="col-xs-4 col-sm-4 col-md-4 text-left" for="name">宽度:</label>
+    			<input  class="col-xs-8 col-sm-8 col-md-8 text-left" type="text" id="kuandu" placeholder="请输入宽度">
+			 </div>
+			 <div class="container btns col-xs-12 col-sm-12 col-md-12 text-center">
+				 <button type="button" class="btncx">查询</button>
+			 </div>
+		  </form>
+		 </div>
+	  </div>
+	 
+ </div>
+  <div class="container col-xs-5 col-sm-5 col-md-5 text-center">
+	<div class="xinhaogg">
+	 	 <img style="width: 100%;height:100%;" src="{% static 'img/images/index/view1.jpg' %}">
+	 </div>
+  </div>
+	<!--采购信息-->
+  <div class="container col-xs-4 col-sm-4 col-md-3 text-right">
+	 <div class="caigouxx">
+	  <div class="caigouxx_t">
+        <label class="col-xs-6 col-sm-6 col-md-6 text-left">采购信息</label>
+        <label class="col-xs-6 col-sm-6 col-md-6 text-right"><a href="#">更多>></a></label>
+	  </div>
+	  <div class="caigouxx_x">
+		<ul class="list-unstyled text-left" id="list-unstyled"  style="padding-left:1rem;" >
+    		<a v-for="i in resp"><li>[[i.name]]</li></a>
+		</ul>
+	  </div>
+   </div>
+	  
+</div>
+  <div class="container col-xs-0 col-sm-0 col-md-1 text-center"></div>
+</div>
+
+<div class="row" style="height: 270rem;padding-top: 0.5rem;">
+  
+  <div class="container col-xs-2 col-sm-2 col-md-1 text-left index_left">
+	  <div class="gysgg">
+	  	<div class="gys text-center">优质轴承供应商</div>
+	  	<div>
+			<img class="gys_img" src="{% static 'img/images/index/view_l1.jpg' %}">
+		</div>
+	  	<div>
+			<img class="gys_img" src="{% static 'img/images/index/view_l1.jpg' %}">
+		</div>
+	  	<div>
+			<img class="gys_img" src="{% static 'img/images/index/view_l1.jpg' %}">
+		</div>
+	  </div> 
+  </div>
+	
+	
+  <div class="container col-xs-8 col-sm-8 col-md-8 index_center">
+	 <div  class="col-xs-6 col-sm-6 col-md-6 index_center_img"> 
+	  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg' %}">
+    </div>
+	<div  class="col-xs-6 col-sm-6 col-md-6 index_center_img2"> 
+	  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg' %}">
+    </div>
+	<!--供货信息  -->
+	<div  class="container col-xs-7 col-sm-7 col-md-7 gonghuol" > 
+	 	<div class="gonghuotitle">
+		  <label class="col-xs-6 col-sm-6 col-md-6 text-left gonghuotitle1">供货信息</label>
+          <label class="col-xs-6 col-sm-6 col-md-6 text-right gonghuotitle1"><a href="#">更多>></a></label>
+		</div>
+		
+		<div class="gonghuolist">
+			<div  class="container col-xs-12 text-left gonghuolistl" id="gonghuolistl">
+				<a class="col-xs-6 gonghuolistlA" v-for="i in resp"><li class="gonghuolistlA1" >[供货] [[i.name]]</li></a>
+			</div>
+			
+			
+		</div>
+    </div>
+	<!--人气供应商  人气采购商-->
+	<div class="container col-xs-5 col-sm-5 col-md-5 gonghuor"> 
+	    <div class="renqititle" id="myTab">
+		  <a class="col-xs-5 col-sm5 col-md-5 text-left" href="#renqi_cen1" data-toggle="tab">人气供应商</a>
+		  <a class="col-xs-4 col-sm-4 col-md-4 text-left" href="#hotPurchasers" data-toggle="tab">人气采购商</a>
+          <label class="col-xs-3 col-sm-3 col-md-3 text-right"><a href="#">更多>></a></label>
+		</div>
+		
+		<div class="tab-content">
+			<div class="renqi tab-pane fade in active" id="renqi_cen1">
+				<div class="renqi_cen" id="hotSupplier">
+				  <div  class="container col-xs-6 col-sm-6 col-md-6 text-left">
+					  <a v-for="i in resp"><li>[[i.name]]</li></a>
+					</div>
+					<div  class="container col-xs-6 col-sm-6 col-md-6 text-right">
+						<label class="col-xs-6 col-sm-6 col-md-6 text-right">人气值：</label>
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger" role="progressbar"
+								 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+								 style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="renqi tab-pane fade" id="hotPurchasers">
+				<div class="renqi_cen">
+				  <div  class="container col-xs-6 col-sm-6 col-md-6 text-left">
+					  <a v-for="i in resp"><li>[[i.name]]</li></a>
+					</div>
+					<div  class="container col-xs-6 col-sm-6 col-md-6 text-right">
+						<label class="col-xs-6 col-sm-6 col-md-6 text-right">人气值：</label>
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger" role="progressbar"
+								 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+								 style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+    </div>
+	  <!--dffd-->
+	<div class="col-xs-6 col-sm-6 col-md-6 index_center_img" style="padding-top: 1rem;"> 
+	  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg' %}">
+    </div>
+	<div  class="col-xs-6 col-sm-6 col-md-6 index_center_img2" style="padding-top: 1rem;"> 
+	  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg' %}">
+    </div>
+	<!--合作信息 -->
+	<div  class="container col-xs-7 col-sm-7 col-md-7 gonghuol" > 
+	 	<div class="gonghuotitle">
+		  <label class="col-xs-6 col-sm-6 col-md-6 text-left">合作信息</label>
+          <label class="col-xs-6 col-sm-6 col-md-6 text-right"><a href="#">更多>></a></label>
+		</div>
+		
+		<div class="gonghuolist">
+			<div  class="container col-xs-12 text-left gonghuolistl" id="hezuo">
+				 <a class="container col-xs-6" v-for="i in resp"><li>[合作] [[i.name]]</li></a>
+			</div>
+		</div>
+    </div>
+	  
+	<div class="container col-xs-5 col-sm-5 col-md-5 gonghuor"> 
+	    <div class="renqititle" id="myTab1">
+		  <a class="col-xs-5 col-sm5 col-md-5 text-left" href="#newsupplier" data-toggle="tab">新供应商</a>
+		  <a class="col-xs-4 col-sm-4 col-md-4 text-left" href="#newPurchasers" data-toggle="tab">新采购商</a>
+          <label class="col-xs-3 col-sm-3 col-md-3 text-right"><a href="#">更多>></a></label>
+		</div>
+		
+		<div class="tab-content">
+			<div class="renqi tab-pane fade in active" id="newsupplier">
+				<div class="renqi_cen">
+				  <div  class="container col-xs-6 col-sm-6 col-md-6 text-left">
+					  <a v-for="i in resp"><li>[[i.name]]</li></a>
+					</div>
+					<div  class="container col-xs-6 col-sm-6 col-md-6 text-right">
+						<label class="col-xs-6 col-sm-6 col-md-6 text-right">人气值：</label>
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger" role="progressbar"
+								 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+								 style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="renqi tab-pane fade" id="newPurchasers">
+				<div class="renqi_cen">
+				  <div  class="container col-xs-6 col-sm-6 col-md-6 text-left">
+					  <a v-for="i in resp"><li>[[i.name]]</li></a>
+					</div>
+					<div  class="container col-xs-6 col-sm-6 col-md-6 text-right">
+						<label class="col-xs-6 col-sm-6 col-md-6 text-right">人气值：</label>
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger" role="progressbar"
+								 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+								 style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+    </div>
+	  
+	  
+	<div class="col-xs-6 col-sm-6 col-md-6 index_center_img" style="padding-top: 1rem;"> 
+	  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg' %}">
+    </div>
+	<div class="index_center_img2 col-xs-6 col-sm-6 col-md-6" style="padding-top: 1rem;"> 
+	  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg' %}">
+    </div>
+	  
+	  
+	 <div  class="container col-xs-7 col-sm-7 col-md-7 gonghuol"> 
+		  <div class="gonghuotitle col-xs-7 col-sm-7 col-md-12 nav nav-tabs text-left">
+			  <a class="col-xs-2 gonghuotitle1" href="#trends" data-toggle="tab">业界信息</a>
+			  <a class="col-xs-2 gonghuotitle1" href="#com_info" data-toggle="tab">热门信息</a>
+			  <a class="col-xs-7 gonghuotitle1" href="#Statistics" data-toggle="tab">本站信息</a>
+			  <a class="col-xs-1 text-right gonghuotitle1"><a href="#">更多>></a></a>
+		 </div>
+		
+		 <div class="gonghuolist col-xs-12 text-left tab-content" id="myTabContent">
+			<div class="col-xs-12 gonghuolistl tab-pane fade in active" id="trends">
+					<div class="col-xs-6 trends text-left" v-for="i in resp">
+						<a>[[i.name]]</a>					
+					</div>
+			</div>
+			 <div class="col-xs-12 gonghuolistl tab-pane fade" id="com_info">
+					<div class="col-xs-6 trends text-left" v-for="i in resp">
+						<a>[[i.name]]</a>					
+					</div>
+			</div>
+			 <div class="col-xs-12 gonghuolistl tab-pane fade" id="Statistics">
+					<div class="col-xs-6 trends text-left" v-for="i in resp">
+						<a>[[i.name]]</a>					
+					</div>
+			</div>
+		
+		 </div>
+		  
+    </div>
+	  
+	  
+	  
+	<div  class="container col-xs-5 col-sm-5 col-md-5 gonghuor"> 
+	     <div class="renqititle">
+		  <label class="col-xs-9 col-sm-9 col-md-9 text-left">技术交流</label>
+          <label class="col-xs-3 col-sm-3 col-md-3 text-right"><a href="#">更多>></a></label>
+		</div>
+		<div class="renqi">
+			<div class="renqi_cen">
+			  <div  class="container col-xs-6 col-sm-6 col-md-6 text-left">1.深圳亿星便准键有限公司</div>
+				<div  class="container col-xs-6 col-sm-6 col-md-6 text-right">
+					<label class="col-xs-6 col-sm-6 col-md-6 text-right">人气值：</label>
+					<div class="progress" style="height: 1.5rem;">
+						<div class="progress-bar progress-bar-danger" role="progressbar"
+							 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+							 style="width: 10%;">
+							<span class="sr-only">10% 完成（危险）</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="renqi_cen">
+			  <div  class="container col-xs-6 col-sm-6 col-md-6 text-left">1.深圳亿星便准键有限公司</div>
+				<div  class="container col-xs-6 col-sm-6 col-md-6 text-right">
+					<label class="col-xs-6 col-sm-6 col-md-6 text-right">人气值：</label>
+					<div class="progress" style="height: 1.5rem;">
+						<div class="progress-bar progress-bar-danger" role="progressbar"
+							 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+							 style="width: 10%;">
+							<span class="sr-only">10% 完成（危险）</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	   <div class="index_center_img col-xs-6 col-sm-6 col-md-6" style="padding-top: 1rem;"> 
+	  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg' %}">
+    </div>
+	<div class="index_center_img2 col-xs-6 col-sm-6 col-md-6" style="padding-top: 1rem;"> 
+	  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg' %}">
+    </div>
+	  
+	 <!--设备供货，摸具供货，表面处理，原材料-->
+	  <div class="container col-xs-12 col-sm-12 col-md-12 gonghgs">
+		  
+	  	<div class="container col-xs-12 col-sm-12 col-md-12" style="padding-top: 1rem">
+		  <div class="container1 col-xs-3 col-sm-3 col-md-3 text-center"><img src="{% static 'img/images/index/gongh1.jpg' %}"></div>
+		  <div class="container1 col-xs-3 col-sm-3 col-md-3 text-center"><img src="{% static 'img/images/index/gongh2.jpg' %}"></div>
+		  <div class="container1 col-xs-3 col-sm-3 col-md-3 text-center"><img src="{% static 'img/images/index/gongh3.jpg' %}"></div>
+		  <div class="container1 col-xs-3 col-sm-3 col-md-3 text-center"><img src="{% static 'img/images/index/gongh4.jpg' %}"></div>
+		</div> 
+		 <div class="container col-xs-12 col-sm-12 col-md-12" style="padding-top: 1rem">
+		  <div class="container1 col-xs-3 col-sm-3 col-md-3 text-center">
+			<div class="renqi">
+				<div class="renqi_cen renqi_centext">
+				  <div  class="container col-xs-8 col-sm-8 col-md-8 text-left">深圳亿星便准键有限公司</div>
+					<div  class="container col-xs-4 col-sm-4 col-md-4 text-right">
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger text-right" role="progressbar" style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="renqi_cen renqi_centext">
+				  <div  class="container col-xs-8 col-sm-8 col-md-8 text-left">深圳亿星便准键有限公司</div>
+					<div  class="container col-xs-4 col-sm-4 col-md-4 text-right">
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger text-right" role="progressbar" style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+		     </div>
+		  </div>
+		  <div class="container1 col-xs-3 col-sm-3 col-md-3 text-center">
+					<div class="renqi">
+				<div class="renqi_cen renqi_centext">
+				  <div  class="container col-xs-8 col-sm-8 col-md-8 text-left">深圳亿星便准键有限公司</div>
+					<div  class="container col-xs-4 col-sm-4 col-md-4 text-right">
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger text-right" role="progressbar" style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="renqi_cen renqi_centext">
+				  <div  class="container col-xs-8 col-sm-8 col-md-8 text-left">深圳亿星便准键有限公司</div>
+					<div  class="container col-xs-4 col-sm-4 col-md-4 text-right">
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger text-right" role="progressbar" style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+		     </div> 
+		  </div>
+		  <div class="container1 col-xs-3 col-sm-3 col-md-3 text-center">
+			 	<div class="renqi">
+				<div class="renqi_cen renqi_centext">
+				  <div  class="container col-xs-8 col-sm-8 col-md-8 text-left">深圳亿星便准键有限公司</div>
+					<div  class="container col-xs-4 col-sm-4 col-md-4 text-right">
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger text-right" role="progressbar" style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="renqi_cen renqi_centext">
+				  <div  class="container col-xs-8 col-sm-8 col-md-8 text-left">深圳亿星便准键有限公司</div>
+					<div  class="container col-xs-4 col-sm-4 col-md-4 text-right">
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger text-right" role="progressbar" style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+		     </div>
+		  </div>
+		  <div class="container1 col-xs-3 col-sm-3 col-md-3 text-center">
+					<div class="renqi">
+				<div class="renqi_cen renqi_centext">
+				  <div  class="container col-xs-8 col-sm-8 col-md-8 text-left">深圳亿星便准键有限公司</div>
+					<div  class="container col-xs-4 col-sm-4 col-md-4 text-right">
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger text-right" role="progressbar" style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="renqi_cen renqi_centext">
+				  <div  class="container col-xs-8 col-sm-8 col-md-8 text-left">深圳亿星便准键有限公司</div>
+					<div  class="container col-xs-4 col-sm-4 col-md-4 text-right">
+						<div class="progress" style="height: 1.5rem;">
+							<div class="progress-bar progress-bar-danger text-right" role="progressbar" style="width: 10%;">
+								<span class="sr-only">10% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+		     </div>
+			 
+			 </div>
+		</div>  
+	  </div>
+	  
+		<div class="col-xs-6 col-sm-6 col-md-6 index_center_img" style="padding-top: 1rem;"> 
+		  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg' %}">
+		</div>
+		<div  class="col-xs-6 col-sm-6 col-md-6 index_center_img2" style="padding-top: 1rem;"> 
+		  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg' %}">
+		</div>
+	  
+	 <div class="col-xs-12 col-sm-12 col-md-12 exhibition">
+	  	<div class="exhibitionleft col-xs-3 col-sm-3 col-md-4 text-left">
+			 <div class="gonghuotitle">
+				  <label class="col-xs-6 col-sm-6 col-md-6 text-left">展会信息</label>
+				  <label class="col-xs-6 col-sm-6 col-md-6 text-right"><a href="#">更多>></a></label>
+			</div>
+			<div class="container col-xs-12 col-sm-12 col-md-12" style="padding-top: 1rem;">
+				<img style="width: 100%;height:100px" src="{% static 'img/images/index/u297.jpg'%}">
+			</div>
+			<div class="container col-xs-12 col-sm-12 col-md-12">
+				<div class="gonghuolist" id="exhibition">
+					<div v-for="i in resp">
+						<a class="container col-xs-8 text-left gonghuolistr">[[i.name]]</a>
+						<span class="container col-xs-4 text-right gonghuolistr">[[i.uptime]]</span>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="exhibitioncenter col-xs-6 col-sm-6 col-md-4 text-center">
+		  <div class="renqititle col-xs-6 col-sm-6 col-md-12 nav nav-tabs">
+			  <a class="col-xs-5 col-sm5 col-md-5 text-left" href="#recruit" data-toggle="tab">招聘信息</a>
+			  <a class="col-xs-4 col-sm-4 col-md-4 text-left" href="#wanted" data-toggle="tab">求职信息</a>
+			  <label class="col-xs-3 col-sm-3 col-md-3 text-right renqititle_gd"><a href="#">更多>></a></label>
+		  </div> 
+		  <div class="container col-xs-12 col-sm-12 col-md-12">
+				<div class="gonghuolist tab-content" id="recruit">
+					<a class="tab-pane fade in active" v-for="i in resp">
+						<span class="container col-xs-6 text-left gonghuolistl">[[i.name]]</span>
+						<span class="container col-xs-3 text-center gonghuolistr">[[i.city]]</span>
+						<span class="container col-xs-3 text-right gonghuolistr">[[i.id]]</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		 
+		<div class="exhibitionright col-xs-3 col-sm-3 col-md-4 text-right">
+			<div class="gonghuotitle">
+				  <label class="col-xs-6 col-sm-6 col-md-6 text-left">培训信息</label>
+				  <label class="col-xs-6 col-sm-6 col-md-6 text-right"><a href="#">更多>></a></label>
+			</div> 
+			<div class="container col-xs-12 col-sm-12 col-md-12" style="padding-top: 1rem;">
+				<img style="width: 100%;height:100px" src="{% static 'img/images/index/u297.jpg'%}">
+			</div>
+			<div class="container col-xs-12 col-sm-12 col-md-12" style="padding-top: 1rem;border-bottom: 1px #F2F2F2 solid;">
+				  <label class="col-xs-12 col-sm-12 col-md-12 text-center">金蜘蛛培训课程预告</label>				  
+			</div>
+			<div class="container col-xs-12 col-sm-12 col-md-12 traindel">
+				<span class="container col-xs-12 col-sm-12 col-md-12 text-left peix">金属线材冷墩技术应用</span>
+				<span class="container col-xs-12 col-sm-12 col-md-12 text-left peix">地点：广州</span>
+				<span class="container col-xs-12 col-sm-12 col-md-12 text-left peix">主讲人：龚茂城</span>
+				<span class="container col-xs-12 col-sm-12 col-md-12 text-left peix">授课时间：2020-08-01至2020-08-05</span>
+			</div>
+			<div class="container col-xs-12 col-sm-12 col-md-12 traindel" >
+				<span class="container col-xs-12 col-sm-12 col-md-12 text-left peix">金属线材冷墩技术应用</span>
+				<span class="container col-xs-12 col-sm-12 col-md-12 text-left peix">地点：广州</span>
+				<span class="container col-xs-12 col-sm-12 col-md-12 text-left peix">主讲人：龚茂城</span>
+				<span class="container col-xs-12 col-sm-12 col-md-12 text-left peix">授课时间：2020-08-01至2020-08-05</span>
+			</div>
+		</div>
+	 </div>
+	  <div class="col-xs-6 col-sm-6 col-md-6 index_center_img" style="padding-top: 1rem;"> 
+		  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg'%}">
+		</div>
+		<div  class="col-xs-6 col-sm-6 col-md-6 index_center_img2" style="padding-top: 1rem;"> 
+		  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg'%}">
+		</div>
+	  <div class="container col-xs-12 col-sm-12 col-md-12 zazhi">
+		  <div class="container col-xs-12 col-sm-12 col-md-12 zazhtitle">
+	  		<label class="col-xs-3 col-sm-3 col-md-3 text-left">杂志期刊</label>
+	  		<label class="col-xs-6 col-sm-6 col-md-6 text-left">紧固件展会信息网</label>
+			<label class="col-xs-3 col-sm-3 col-md-3 text-right"><a href="#">更多>></a></label>
+		  </div>
+		  <div class="container col-xs-12 col-sm-12 col-md-12" style="padding-top: 2rem;">
+	  		<div class="container col-xs-2 col-sm-2 col-md-2 text-center">
+				<img src="{% static 'img/images/index/book1.jpg'%}">
+				<div style="padding-top: 1rem;">第一期</div>
+			</div>
+			  <div class="container col-xs-2 col-sm-2 col-md-2 text-center">
+				<img src="{% static 'img/images/index/book2.jpg'%}">
+				<div style="padding-top: 1rem;">第二期</div>
+			</div>
+			  <div class="container col-xs-2 col-sm-2 col-md-2 text-center">
+				<img src="{% static 'img/images/index/book3.jpg'%}">
+				<div style="padding-top: 1rem;">第三期</div>
+			</div>
+			  <div class="container col-xs-2 col-sm-2 col-md-2 text-center">
+				<img src="{% static 'img/images/index/book4.jpg'%}">
+				<div style="padding-top: 1rem;">第四期</div>
+			</div>
+			  <div class="container col-xs-2 col-sm-2 col-md-2 text-center">
+				<img src="{% static 'img/images/index/book5.jpg'%}">
+				<div style="padding-top: 1rem;">第五期</div>
+			</div>
+			  <div class="container col-xs-2 col-sm-2 col-md-2 text-center">
+				<img src="{% static 'img/images/index/book1.jpg'%}">
+				<div style="padding-top: 1rem;">第六期</div>
+			</div>
+		  </div>
+		  
+	  </div>
+	   <div class="col-xs-6 col-sm-6 col-md-6 index_center_img" style="padding-top: 1rem;"> 
+		  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg'%}">
+		</div>
+		<div  class="col-xs-6 col-sm-6 col-md-6 index_center_img2" style="padding-top: 1rem;"> 
+		  <img style="width: 100%;height:100px" src="{% static 'img/images/index/u=2268907206.jpg'%}">
+		</div>
+	  <!--dffd-->
+	  	<div class="container col-xs-12 col-sm-12 col-md-12 link">
+	  	  <div class="container col-xs-12 col-sm-12 col-md-12 zazhtitle">
+	  		<label class="col-xs-12 col-sm-12 col-md-12 text-left">友情链接</label>
+		  </div>
+		  <div class="container col-xs-12 col-sm-12 col-md-12">
+				<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			  <div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			  <div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			 	<div class="linklist text-center col-xs-2 col-sm-2 col-md-2"><a href="#">浙江紧固件行业协会</a></div>
+			  
+			 	
+			</div>
+	  </div>
+  </div>
+
+  <div class="container col-xs-2 col-sm-2 col-md-1 text-right index_right">
+	  <div class="gysgg">
+	  	<div class="gys text-center">优质轴承供应商</div>
+	  	<div>
+			<img class="gys_img2" src="{% static 'img/images/index/view_l1.jpg' %}">
+		</div>
+	  	<div>
+			<img class="gys_img2" src="{% static 'img/images/index/view_l1.jpg' %}">
+		</div>
+	  	<div>
+			<img class="gys_img2" src="{% static 'img/images/index/view_l1.jpg' %}">
+		</div>
+	  </div> 
+  </div>
+	
+	
+  <div class="container col-xs-0 col-sm-0 col-md-1 text-center" ></div>
+</div>
+</div>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+	
+	<div id="renqi_cen1">
+	
+	</div>
+<script>
+	var url1 = geturl();
+	console.log(url1)
+	
+		new Vue({
+        el: '#renqi_cen1',
+		url1:url1,
+        data: {
+            resp: "",
+
+        },
+        mounted(){
+                var _this=this;
+                axios
+					.get(url1+'api/v1/bearingtype/1/?platform=PC&access_token=jzz061582e228ba4b1c8f96a780674a555d')
+                    .then(function (response) {
+                       console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+        }
+    })
+</script>
+
+
+</body>
+</html>
+

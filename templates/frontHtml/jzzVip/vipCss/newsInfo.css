@@ -1,0 +1,110 @@
+/* CSS Document */
+.news_left{
+	height: 180rem;
+	background-color: #FFFFFF;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-right: 2rem #f2f2f2 solid;
+	margin-top: 1rem;
+	border-bottom: 2rem #F2F2F2 solid;
+}
+.news_right{
+	margin-top: 1rem;
+	height: 50rem;
+	background-color: #FFFFFF;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.news_left_title{
+	height: 6rem;
+	border-bottom: 1px #F2F2F2 solid;
+}
+.news_left_title1{
+	font-size: 18px;
+	font-weight: 700;
+	padding-top: 2rem;
+}
+.hotName{
+	padding-top: 2.5rem;
+	height: 100%;
+}
+.total{
+	height: 30rem;
+	
+}
+.newsDel{
+	height: 16rem;
+	border-bottom: 1px #F2F2F2 solid;
+	padding-top: 3rem;
+}
+.newsDel_img{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.newsDel_img img{
+	
+	height: 100px;
+	width: 180px;
+}
+.newsDel_text a{
+	color: #000000;
+}
+a:hover{
+	color: #FF6100;
+	text-decoration: none;
+}
+.newsDel_text_title{
+	font-size:18px;
+	font-weight: 600;
+}
+
+.newsDel_text_title1{
+	padding-top: 0.5rem;
+	white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+	color: #ADADAD;
+}
+
+.newsDel_text_time{
+	padding-top: 1.5rem;
+}
+.news_right_title{
+	height: 4rem;
+	font-size: 18px;
+	font-weight: 600;
+	border-bottom: 1px #F2F2F2 solid;
+	margin-top: 2rem;
+}
+.news_right1{
+	height: 6rem;	
+}
+.news_right_text{
+	height: 6rem;
+	white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+	color: #ADADAD;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-bottom: 1px #F2F2F2 solid;	
+	display: flex;
+   
+    align-items:Center;
+	
+}
+
+
+
+
+

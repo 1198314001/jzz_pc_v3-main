@@ -1,0 +1,79 @@
+iframe{
+	border:medium none;
+}
+.login-body{
+	height: 60rem;
+	background-color: #F8F8F8;
+}
+
+.login{
+	width: 30%;
+	height: 55rem;
+	background-color: #FFFFFF;
+	padding-top: 1.5rem;
+	padding-right: 1px;
+}
+.login-dl{
+	padding-top: 2rem;
+	height: 5rem;
+	
+	
+}
+.login-dl:after{
+	 content: '';
+        position: absolute;
+        left: 2.5rem;
+        top: auto;
+        bottom: 0;
+        right: auto;
+        height: 1px;
+        width: 2rem;
+        background-color: #FF6100;
+}
+.inputLogin{
+	background-color: #FFFFFF;
+	height: 4rem;
+}
+.glyphicon{
+	
+	padding-bottom: 2px;
+}
+.input-group-addon{
+	background-color: #FFFFFF;
+	
+}
+.password{
+	padding-top: 3rem;
+}
+.loginbutton{
+	margin-top: 5rem;
+	background-color: #FF6100;
+	color: #FFFFFF;
+}
+.xian{
+	width: 100%;
+}
+.hlogin{
+	padding-top: 6rem;
+	color: #ABA3A3;
+	font-size: 1.3rem;
+}
+.wxlogin{}
+.wxlogin:after{
+		content: '';
+        position: absolute;
+        left: 18rem;
+        top: auto;
+        bottom: 0;
+        right: auto;
+        height: 1px;
+        width: 7.5rem;
+        background-color: #FF6100;
+}
+.checkbox label, .radio label {
+    min-height: 15px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}

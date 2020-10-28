@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的信息</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/myInfo.css" rel="stylesheet" type="text/css" />
+
+  
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 myInfo">
+				<div class="myInfo_left col-xs-2">
+					<div class="myInfo_left_title text-center col-xs-12">
+						<img src="../../../static/img/images/my/mycenter.png">
+						<spqn>个人中心</spqn>
+					</div>
+					
+					<div class="myInfo_left_nav col-xs-12 text-center">
+						<li class="myInfo_left_nav1 active col-xs-12"><a href="myInfo.html">我的信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myResume.html">个人简历</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myRecord.html">应聘记录</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="interview.html">面试通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myCollection.html">我的收藏</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myQuestions.html">我要提问</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="questionsList.html">提问列表</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="answerList.html">回答列表</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="friendsList.html">好友列表</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="pushArticles.html">发布文章</a></li>		
+						<li class="myInfo_left_nav1 col-xs-12"><a href="notice.html">站内通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="securityCenter.html">安全中心</a></li>
+					</div>
+				
+				</div>
+				<div class="myInfo_right col-xs-10">
+					<div class="myInfo_right_top col-xs-12">
+						<div class="myInfo_right_myimg text-left col-xs-2 col-md-1">
+							<img src="../../../static/img/logo/my/{{user_id}}.jpg">
+						</div>
+						<div class="myInfo_name col-xs-10 col-md-11">
+							<span>用户名：{{user.name}}</span>
+							<img src="../../../static/img/images/my/修改.png">
+							<div class="myInfo_name_sc col-xs-12">
+								<div class="myInfo_name_sc1 col-xs-2">上传头像</div>
+								<div class="myInfo_name_sc_txt col-xs-10">建议上传图片大小为80x80px,图片格式为jpg</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xs-12 myInfo_name_nav text-center">
+						<div class="col-xs-1-5 myInfo_nav_title active">
+							<div class="col-xs-12">面试通知</div>
+							<div class="col-xs-12 myInfo_nav_title_num">1</div>
+						</div>
+						<div class="col-xs-1-5 myInfo_nav_title">
+							<div class="col-xs-12">谁看过我</div>
+							<div class="col-xs-12 myInfo_nav_title_num">2</div>
+						</div>
+						<div class="col-xs-1-5 myInfo_nav_title">
+							<div class="col-xs-12">站内通知</div>
+							<div class="col-xs-12 myInfo_nav_title_num">3</div>
+						</div>
+						<div class="col-xs-1-5 myInfo_nav_title">
+							<div class="col-xs-12">申请记录</div>
+							<div class="col-xs-12 myInfo_nav_title_num">4</div>
+						</div>
+						<div class="col-xs-1-5 myInfo_nav_title">
+							<div class="col-xs-12">我的收藏</div>
+							<div class="col-xs-12 myInfo_nav_title_num">5</div>
+						</div>
+					</div>
+					<div class="col-xs-12 myInfo_list">
+						<div class="col-xs-12 myInfo_list_title">
+							<div class="col-xs-2 myInfo_list_title1 text-left">
+								<span class="col-xs-12">职位推荐</span>
+								<span class="col-xs-6 text-center"><img src="../../../static/img/images/public/hong.png"></span>
+							</div>
+							<span class="col-xs-10 myInfo_list_title1 text-right">更多>></span>
+						</div>
+					</div>
+					
+					<div class="col-xs-12 myInfo_list1">
+						<div class="myInfo_list1_det col-xs-12">
+							<div class="myInfo_det1 col-xs-12">
+								<div class="myInfo_det1_title col-xs-6">多工位螺旋冷镦师傅
+									<img class="goutong" src="../../../static/img/images/public/goutong.png">
+								</div>
+								<div class="myInfo_det1_title col-xs-6 text-right">
+									<span class="myInfo_det1_span">国企</span>
+									<span class="myInfo_det1_span">|</span>
+									<span class="myInfo_det1_span">50-100</span>
+									<span class="myInfo_det1_span2">广州银蜘蛛五金有限公司</span>
+								</div>
+								<div class="myInfo_det1_title2 col-xs-12">
+									<span class="col-xs-1">6-8k</span>
+									<span class="col-xs-1">本科</span>
+									<span class="col-xs-1">广州</span>
+									<span class="col-xs-1">一年</span>
+								</div>
+								
+								<div class="myInfo_det1_title3 col-xs-12">
+									<span class="col-xs-1">五险一金</span>
+									<span class="col-xs-1">绩效奖金</span>
+									<span class="col-xs-1">定期体检</span>
+									<span class="col-xs-1">加班补助</span>
+									<span class="col-xs-1">周末双休</span>
+									<span class="col-xs-1">定期团建</span>
+									<span class="col-xs-6 text-right">3分钟前</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+						<div class="col-xs-12 myInfo_list1">
+						<div class="myInfo_list1_det col-xs-12">
+							<div class="myInfo_det1 col-xs-12">
+								<div class="myInfo_det1_title col-xs-6">多工位螺旋冷镦师傅
+									<img class="goutong" src="../../../static/img/images/public/goutong.png">
+								</div>
+								<div class="myInfo_det1_title col-xs-6 text-right">
+									<span class="myInfo_det1_span">国企</span>
+									<span class="myInfo_det1_span">|</span>
+									<span class="myInfo_det1_span">50-100</span>
+									<span class="myInfo_det1_span2">广州银蜘蛛五金有限公司</span>
+								</div>
+								<div class="myInfo_det1_title2 col-xs-12">
+									<span class="col-xs-1">6-8k</span>
+									<span class="col-xs-1">本科</span>
+									<span class="col-xs-1">广州</span>
+									<span class="col-xs-1">一年</span>
+								</div>
+								
+								<div class="myInfo_det1_title3 col-xs-12">
+									<span class="col-xs-1">五险一金</span>
+									<span class="col-xs-1">绩效奖金</span>
+									<span class="col-xs-1">定期体检</span>
+									<span class="col-xs-1">加班补助</span>
+									<span class="col-xs-1">周末双休</span>
+									<span class="col-xs-1">定期团建</span>
+									<span class="col-xs-6 text-right">3分钟前</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+						<div class="col-xs-12 myInfo_list1">
+						<div class="myInfo_list1_det col-xs-12">
+							<div class="myInfo_det1 col-xs-12">
+								<div class="myInfo_det1_title col-xs-6">多工位螺旋冷镦师傅
+									<img class="goutong" src="../../../static/img/images/public/goutong.png">
+								</div>
+								<div class="myInfo_det1_title col-xs-6 text-right">
+									<span class="myInfo_det1_span">国企</span>
+									<span class="myInfo_det1_span">|</span>
+									<span class="myInfo_det1_span">50-100</span>
+									<span class="myInfo_det1_span2">广州银蜘蛛五金有限公司</span>
+								</div>
+								<div class="myInfo_det1_title2 col-xs-12">
+									<span class="col-xs-1">6-8k</span>
+									<span class="col-xs-1">本科</span>
+									<span class="col-xs-1">广州</span>
+									<span class="col-xs-1">一年</span>
+								</div>
+								
+								<div class="myInfo_det1_title3 col-xs-12">
+									<span class="col-xs-1">五险一金</span>
+									<span class="col-xs-1">绩效奖金</span>
+									<span class="col-xs-1">定期体检</span>
+									<span class="col-xs-1">加班补助</span>
+									<span class="col-xs-1">周末双休</span>
+									<span class="col-xs-1">定期团建</span>
+									<span class="col-xs-6 text-right">3分钟前</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 myInfo_list1">
+						<div class="myInfo_list1_det col-xs-12">
+							<div class="myInfo_det1 col-xs-12">
+								<div class="myInfo_det1_title col-xs-6">多工位螺旋冷镦师傅
+									<img class="goutong" src="../../../static/img/images/public/goutong.png">
+								</div>
+								<div class="myInfo_det1_title col-xs-6 text-right">
+									<span class="myInfo_det1_span">国企</span>
+									<span class="myInfo_det1_span">|</span>
+									<span class="myInfo_det1_span">50-100</span>
+									<span class="myInfo_det1_span2">广州银蜘蛛五金有限公司</span>
+								</div>
+								<div class="myInfo_det1_title2 col-xs-12">
+									<span class="col-xs-1">6-8k</span>
+									<span class="col-xs-1">本科</span>
+									<span class="col-xs-1">广州</span>
+									<span class="col-xs-1">一年</span>
+								</div>
+								
+								<div class="myInfo_det1_title3 col-xs-12">
+									<span class="col-xs-1">五险一金</span>
+									<span class="col-xs-1">绩效奖金</span>
+									<span class="col-xs-1">定期体检</span>
+									<span class="col-xs-1">加班补助</span>
+									<span class="col-xs-1">周末双休</span>
+									<span class="col-xs-1">定期团建</span>
+									<span class="col-xs-6 text-right">3分钟前</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 myInfo_list1">
+						<div class="myInfo_list1_det col-xs-12">
+							<div class="myInfo_det1 col-xs-12">
+								<div class="myInfo_det1_title col-xs-6">多工位螺旋冷镦师傅
+									<img class="goutong" src="../../../static/img/images/public/goutong.png">
+								</div>
+								<div class="myInfo_det1_title col-xs-6 text-right">
+									<span class="myInfo_det1_span">国企</span>
+									<span class="myInfo_det1_span">|</span>
+									<span class="myInfo_det1_span">50-100</span>
+									<span class="myInfo_det1_span2">广州银蜘蛛五金有限公司</span>
+								</div>
+								<div class="myInfo_det1_title2 col-xs-12">
+									<span class="col-xs-1">6-8k</span>
+									<span class="col-xs-1">本科</span>
+									<span class="col-xs-1">广州</span>
+									<span class="col-xs-1">一年</span>
+								</div>
+								
+								<div class="myInfo_det1_title3 col-xs-12">
+									<span class="col-xs-1">五险一金</span>
+									<span class="col-xs-1">绩效奖金</span>
+									<span class="col-xs-1">定期体检</span>
+									<span class="col-xs-1">加班补助</span>
+									<span class="col-xs-1">周末双休</span>
+									<span class="col-xs-1">定期团建</span>
+									<span class="col-xs-6 text-right">3分钟前</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>		
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+
+

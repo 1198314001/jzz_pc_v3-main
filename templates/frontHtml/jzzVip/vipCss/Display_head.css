@@ -1,0 +1,218 @@
+/* CSS Document */
+.Display_head{
+	height: 8rem;
+	background-color: #FFFFFF;
+}
+.Display_head_title{
+	padding-top: 2rem;
+}
+.hotImg{
+	height: 1.5rem;
+	margin-left: 0.5rem;
+}
+.renqi{
+	margin-right: 2rem;
+}
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+	position: relative;
+	min-height: 1px;
+	margin-right: 5px;
+	margin-left: 5px;
+ 
+}
+ 
+.col-xs-1-5 {
+	width: 19%;
+	float: left;
+}
+ 
+@media (min-width: 768px) {
+	.col-sm-1-5 {
+		width: 19%;
+		float: left;
+	}
+}
+ 
+@media (min-width: 992px) {
+	.col-md-1-5 {
+		width: 19%;
+		float: left;
+	}
+}
+ 
+@media (min-width: 1200px) {
+	.col-lg-1-5 {
+		width: 19%;
+		float: left;
+	}
+}
+
+.Display_center{
+	height: 180rem;
+	background-color: #F2F2F2;
+	
+}
+.Display_centerDel1{
+	height: 34rem;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: #FFFFFF;
+	
+	margin-top: 1rem;
+}
+.Display_centerDel1 img{
+	width: 100%;
+}
+.display_text{
+	height: 6rem;
+	padding-top: 1rem;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.display_text_title{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0.5rem;
+	color: #ADADAD;
+	font-size: 13px;
+}
+.display_text_title1{
+	padding-right: 5px;
+	padding-left: 0px;
+	margin-top: 0.5rem;
+	border: 1px #FF6100 solid;
+	color: #FF6100;
+	border-radius: 5px;
+	height: 2rem;
+	width: 6rem;
+	font-size: 12px;
+	
+}
+
+.Display_centerDel a{
+	color: #000000;
+	text-decoration: none;
+}
+a:hover{
+	color: #FF6100;
+}
+/*
+	详情页
+	
+*/
+
+.displayDel{
+	background-color: #F2F2F2;
+}
+.displayDel_titel{
+	margin-top: 2rem;
+	height: 4rem;
+	
+}
+
+
+.displayDel_left{
+	height: 35rem;
+	background-color: #FFFFFF;
+	padding-top: 2rem;
+}
+.dDel_img{
+	
+	border: 1px #ADADAD solid;
+}
+.dDel_img img{
+	
+	width: 21.1rem;
+	height: 32rem;
+}
+.del_name{
+	padding-left: 3rem;
+}
+
+
+
+.del_title1{
+	font-size: 2rem;
+	font-weight: 700;
+	margin-top: 1rem;
+}
+.del_tel{
+	margin-left: 1rem;
+	margin-top: 2rem;
+	background-color: #F2F2F2;
+	height: 12rem;
+}
+.del_tel p{
+	margin-top: 1.5rem;
+}
+.del.btn{
+	
+}
+.del_info{
+	height: 26.5rem;
+}
+.display_btn{
+	padding-left: 10px;
+}
+
+.dis_btn{
+	border: 1px #FF6100 solid;
+	color: #FF6100;	
+}
+.delbody{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.brief{
+	height: 54rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	background-color: #FFFFFF;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.brief_title{
+	height: 6rem;
+	font-size: 20px;
+	font-weight: 600;
+	border-bottom: 1px #F2F2F2 solid;
+	padding-top: 1.8rem;
+	
+}
+.Del_right_tel{
+	height: 35rem;
+	background-color: #FFFFFF;
+}
+.Del_right_tel2{
+	height: 35rem;
+	background-color: #FFFFFF;
+}
+.Del_right_tel{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.del_title{
+	padding-top: 1.8rem;
+	height: 6rem;
+	font-size: 18px;
+	font-weight: 600;
+	border-bottom: 1px #F2F2F2 solid;
+}
+.del_title1{
+	font-size: 15px;
+	
+	font-weight: 400;
+}
+.displayDel_right1{
+	margin-top: 2rem;
+}
+.del_title2{
+	padding-left: 0px;
+	padding-right: 0px;
+	border-bottom: 1px #F2F2F2 solid;
+	height: 3rem;
+	padding-top: 0.5rem;
+}

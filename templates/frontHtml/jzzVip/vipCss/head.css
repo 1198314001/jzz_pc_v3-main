@@ -1,0 +1,142 @@
+/* CSS Document */
+.head1{
+	margin-bottom:0;
+	height: 30px;
+	background-color: #000000;
+	color: #FFFFFF;
+	padding-top: 6px;
+	font-size: 12px;
+}
+.head1 a{
+	color: #FFFFFF;
+	font-size: 12px;
+	text-decoration: none;
+}
+.viplogo img{
+	height: 80px;
+	width: 80px;
+}
+.indexTitle{
+	height: 120px;
+	background-color: #FFFFFF;
+	padding-top: 15px;
+}
+.vipname{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.vipname_c{
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 2.3rem;
+	font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
+    font-weight: 700;
+    font-style: normal;
+}
+.vipname_e{
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 12px;
+	font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
+    font-style: normal;
+}
+.vipProduct{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 10px;
+	
+}
+.vipProductdel{
+	height: auto;
+	
+	width:auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 1.2rem;
+	background-color: #FF6100;
+	color:#FFFFFF;
+}
+.hotImg{
+	height: 80px;
+	width: 80px;
+}
+.hotsupply{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.hotsupply1{
+	font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+	height: 24px;
+}
+.hotsupply2{
+	font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: #FF6600;
+    text-align: center;
+}
+.hotsupply3 a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.hotsupply3{
+	width: 9rem;
+	height: auto;
+	font-size: 12px;
+	margin-left: 1.5rem;
+	padding-top: 1px;
+	padding-bottom: 3px;
+	padding-left: 8px;
+	padding-right: 5px;
+	
+	background-color: #ADADAD;
+	color: #FFFFFF;
+}
+.vipNav{
+	height: 4.1rem;
+	background-color: #000000;
+	color: #FFFFFF;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.vipNav1 li a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.hover {
+	background-color: #0066FF;
+	border-radius: 0px;
+	
+}
+.navs{
+	color: #FFFFFF;
+}
+.nav-pills>li>a {
+    border-radius: 0px;
+}
+.VIPindexS{
+	padding-top: 5px;
+	
+}
+.VIPindexS1{
+	height: 2rem;
+}
+.input-group.VIPindexS1{
+	border-radius: 15px;
+}
+a:hover{
+	color: #FF6100;
+}
+

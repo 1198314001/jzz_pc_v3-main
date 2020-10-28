@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>300常用轴承型号</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/purchase.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplyInformation.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/querydel.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplier.css" rel="stylesheet" type="text/css" />
+
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+<div class="col-md-10 col-md-offset-1" style="background-color: #F2f2f2;">
+	<div class="purchase1_query col-xs-10 col-sm-10 col-md-12 text-center">
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_left">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+		<div class="container col-xs-8 col-sm-8 col-md-8 supplier" style="background-color: #FFFFFF">
+			<div class="supplierTitle col-xs-12 col-sm-12 col-md-12" style="display: none;">
+				 <ul class="nav supplier_li col-xs-12 col-sm-12 col-md-12"> 
+					<li class="su_title col-md-2">筛选条件：</li>
+					 
+					<div class="supplier_li_a">
+						<li class="supplier_dropdown"> 
+							<a href="#" class="dropdown-toggle supplier_toggle" data-toggle="dropdown"> 
+								国内信息 <b class=""><img class="supplier_img" src="../images/supplier/xia.png"></b> 
+							</a>
+
+							<ul class="dropdown-menu"> 
+								<li><a href="#">jmeter</a></li> 
+								<li><a href="#">EJB</a></li> 
+							</ul> 
+						</li>
+					 </div>
+					 
+					 <div class="supplier_li_a">
+						<li class="supplier_dropdown"> 
+							<a href="#" class="dropdown-toggle supplier_toggle" data-toggle="dropdown"> 
+								所在地区 <b class=""><img class="supplier_img" src="../images/supplier/xia.png"></b> 
+							</a>
+
+							<ul class="dropdown-menu"> 
+								<li><a href="#">jmeter</a></li> 
+								<li><a href="#">EJB</a></li> 
+							</ul> 
+						</li>
+					 </div>
+ 					<div class="supplier_li_a">
+						<li class="supplier_dropdown"> 
+							<a href="#" class="dropdown-toggle supplier_toggle" data-toggle="dropdown"> 
+								公司分类 <b class=""><img class="supplier_img" src="../images/supplier/xia.png"></b> 
+							</a>
+
+							<ul class="dropdown-menu"> 
+								<li><a href="#">jmeter</a></li> 
+								<li><a href="#">EJB</a></li> 
+							</ul> 
+						</li>
+					 </div>
+					 <div class="supplier_li_a">
+						<li class="supplier_dropdown"> 
+							<a href="#" class="dropdown-toggle supplier_toggle" data-toggle="dropdown"> 
+								人气排行 <b class=""><img class="supplier_img2" src="../images/supplier/shang.png"></b> 
+							</a>
+
+							<ul class="dropdown-menu"> 
+								<li><a href="#">jmeter</a></li> 
+								<li><a href="#">EJB</a></li> 
+							</ul> 
+						</li>
+					 </div>
+					 <div class="supplier_li_a">
+						<li class="supplier_dropdown"> 
+							<a href="#" class="dropdown-toggle supplier_toggle" data-toggle="dropdown"> 
+								采购种类 <b class=""><img class="supplier_img2" src="../images/supplier/shang.png"></b> 
+							</a>
+
+							<ul class="dropdown-menu"> 
+								<li><a href="#">jmeter</a></li> 
+								<li><a href="#">EJB</a></li> 
+							</ul> 
+						</li>
+					 </div>
+					 <div class="supplier_li_a">
+						<li class="supplier_dropdown"> 
+							<a href="#" class="dropdown-toggle supplier_toggle" data-toggle="dropdown"> 
+								采购总量 <b class=""><img class="supplier_img2" src="../images/supplier/shang.png"></b> 
+							</a>
+
+							<ul class="dropdown-menu"> 
+								<li><a href="#">jmeter</a></li> 
+								<li><a href="#">EJB</a></li> 
+							</ul> 
+						</li>
+					 </div>
+					 
+				</ul> 
+			</div>
+			
+			
+			<div class="supplierTitle2 col-xs-12 col-sm-12 col-md-12">
+				 <ul class="nav supplier_li2 col-xs-12 col-sm-12 col-md-12"> 
+					<li class="su_title2 col-xs-6">公司名称</li>
+				
+					<li class="su_title2 col-xs-2">联系人</li>
+					<li class="su_title2 col-xs-2">联系电话</li>
+					<li class="su_title2 col-xs-2">人气值</li>
+				</ul>
+			</div>
+			{% for item in data %}
+			<div class="supplierTitle3 col-xs-12 col-sm-12 col-md-12">				
+				<ul class="nav supplierN col-xs-12 col-sm-12 col-md-12" id="company">
+					<a class="navs supplier_li3" target="_parent" href="supplier_del.html">
+						<li class="su_title2 col-xs-6">{{item.name}}</li>
+						
+						<li class="su_title2 col-xs-2">{{item.linkman}}</li>
+						<li class="su_title2 col-xs-2">{{item.tel}}</li>
+						<li class="su_title3 col-xs-2">
+							<div class="progress supplierBar" style="height: 1rem;width: 7rem;">
+								<div class="progress-bar progress-bar-danger" role="progressbar"
+									 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+									 style="width: 20%;">
+									<span class="sr-only">20% 完成（危险）</span>
+								</div>
+							</div>
+						</li>
+					</a>
+				</ul>	
+			</div>		
+			{% endfor %}
+			<!--mmmm-->
+		</div>
+		
+		
+		
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_right">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+	</div>
+	
+</div>
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+
+

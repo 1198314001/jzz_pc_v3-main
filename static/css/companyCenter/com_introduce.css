@@ -1,0 +1,75 @@
+/* CSS Document */
+.introduce{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.introduce_title{
+	height: 4rem;
+	font-size: 1.5rem;
+	border-bottom: 1px #f2f2f2 solid;
+	padding-top: 1rem;
+}
+.introduce_title2{
+	color: #FF6100;
+}
+.introduce2{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.introduce_img{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1rem;
+}
+.introduce_img1 img{
+	height: 10rem;
+	width: 16rem;
+}
+.introduce_img2{
+	padding-top: 1rem;
+}
+.introduce_img2 img{
+	height: 2rem;
+	width: 2rem;
+	margin-right: 1rem;
+}
+.introduce_feng{
+	padding-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.introduce_img3{
+	padding-left: 10px;
+	padding-right: 0px;
+	padding-top: 2px;
+	height: 2.3rem;
+	width: 7rem;
+	border: 1px #f2f2f2 solid;
+	border-radius: 5px;
+}
+.kong1{
+	height: 1.5rem;
+	background-color: #F8F8F8;
+	margin-top: 1rem;
+}
+.introduce_info_title{
+	font-size: 1.5rem;
+	padding-top: 1.5rem;
+	
+}
+.introduce_info_title1{
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
+.introduce_info_conter{
+	padding-top:0.7rem;
+	font-size: 1.3rem;
+	height: 15rem;
+	border: 1px #E1E1E1 solid;
+	border-radius: 5px;
+	white-space: pre-wrap;
+    overflow: hidden;
+    color: #ADADAD;
+	
+}

@@ -1,0 +1,80 @@
+/* CSS Document */
+.release_offerInfo_title{
+	height: 3.5rem;
+	font-size: 1.4rem;
+	border-bottom: 1px #F2F2F2 solid;
+	padding-left: 15px;
+	padding-right: 0px;
+	padding-top: 0.8rem;
+	font-weight: 550;
+}
+
+.release_offerInfo {
+    height: 166rem;
+    background-color: #FFFFFF;
+    border-left: 1.5rem #F2F2F2 solid;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.release_offerInfo_add{
+	padding-top: 4rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.offerInfo_info_class{
+	font-size: 1.4rem;
+	color: #ADADAD;
+	padding-right: 0px;
+	padding-left: 10px;
+
+}
+.offerInfo_input{
+	padding-top: 3rem;
+	font-size: 1.4rem;
+	color: #ADADAD;
+	font-weight: 500;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+
+    font-weight: 500;
+}
+.form-control{
+	background-color: #FFFFFF;
+}
+.offerInfo_img img{
+	height: 12rem;
+}
+.offerInfo_imgtxt1{
+	border: 1px #FF6100 solid;
+	width: 5rem;
+	border-radius: 5px;
+	margin-top: 9rem;
+	padding-left: 9px;
+}
+
+.my_momtx img{
+	height: 5rem;
+	width: 5rem;
+	border-radius: 5rem;
+}
+.myMom_title{
+	font-size: 1.5rem;
+	padding-top: 1rem;
+}
+.myMom_text{
+	padding-top: 1rem;
+	height: 8rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

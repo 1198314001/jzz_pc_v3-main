@@ -1,0 +1,204 @@
+/* CSS Document */
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	background-color: #E5E5E5;
+	color: #FE6000;
+	
+}
+.purchase1{
+	height: 147rem;
+	background-color: #F8F8F8;
+}
+.navs.active{
+	background-color: #E5E5E5;
+}
+a{
+	color: #010101;
+}
+.su_nav{
+	background-color: #FFFFFF;
+}
+.su_query{
+	height:15rem;
+	margin-top: 0.5rem;
+	background-color: #FFFFFF;
+}
+.su_query_h5{
+	height: 10rem;
+	padding-top: 5rem;
+}
+.su_query_title{
+	color:#787878;
+}
+.nav-tabs {
+     border-bottom: 0px solid #ddd; 
+}
+.su_query_title.actives{
+	height: 3rem;
+	
+	font-size: 1.3rem;
+	color: #000000;
+}
+.su_query_input{
+	margin-top: 0.3rem;
+	height: 15rem;
+	background-color: #FFFFFF;
+}
+.form-control{
+	border: 1px solid #F19702;
+	background-color: #FFFFFF;
+}
+.su_dropdown{
+	height: 4rem;
+	background-color: #FFFFFF;
+	margin-top: 1rem;
+}
+.su_dropdown_tj{
+	padding-top: 1.5rem;
+}
+.dropdown, .dropup {
+	width: 10rem;
+}
+.dropdown-toggle{
+	height: 40px;		
+}
+.bearingList{
+	height: 100rem;
+	margin-top: 1.5rem;
+	background-color: #FFFFFF;
+}
+.bearingList_ext{
+	height: 18rem;
+	margin-top: 1rem;
+	background-color: #F8F8F8;
+}
+.bearingList_ext {
+	padding-left: 1rem;
+}
+.bearingList_img{
+	padding-left: 0px;
+}
+.bearingList_img img{
+	margin-top: 1.5rem;
+	height:14rem;
+	width: 12rem;
+}
+.bearingList_details{
+	padding-top: 1.5rem;
+}
+.details_text{
+	color: #000000;
+	font-size: 1.4rem;
+	margin-left: 1rem;
+}
+.details_text2{
+	color: #A5A5A5;
+	font-size: 0.8rem;
+}
+.detail_del{
+	color: #A5A5A5;
+	font-size: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1rem;
+}
+.detail_del1{
+	color: #A5A5A5;
+	font-size: 1rem;
+	padding-left: 2.5rem;
+	padding-right: 0px;
+	padding-top: 1rem;
+}
+.bearingList_details_del{
+	height: 4rem;
+}
+.bearingList_details_del2{
+	height: 4rem;
+	padding-top: 2rem;
+	font-size: 1rem;
+	margin-left: 1rem;
+	border-bottom: 1px #A5A5A5 solid;
+}
+.del_fu{
+	padding-left: 10px;
+}
+.detail_del2{
+	padding-left: 5px;
+	padding-right: 0px;
+}
+.detail_del3{
+	padding-left: 0px;
+	padding-right: 0px;
+	color:  #A5A5A5;
+}
+.bearingList_btn{
+	height: 18rem;
+	padding-top: 14rem;
+}
+.btn-danger{
+	background-color: #FF5F00;
+	border-color:#FF5F00;
+}
+
+.btn1{
+	display: inline-block;
+    padding: 2px;
+    margin-bottom: 0;
+    font-size: 14px;
+
+}
+.input-group .form-control:last-child{
+	height: 3rem;
+	width: 80%;
+	border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+.btn-dangercx{
+	width: 9rem;
+	height: 3rem;
+	background-color: #FF5F00;
+	color: #FFFFFF;
+}
+.select1{
+	height:3rem;
+	width: 8rem;
+	border-radius: 4px;
+	padding-left: 0.4rem;
+   
+}
+select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #000;
+
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url("../images/model/bottom.png") no-repeat scroll right center transparent !important;
+
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 14px;
+}
+.input-group.suQueryb[class*=col-] {
+    float:left;
+    padding-right: 0;
+    padding-left: 0;
+}
+.purchase1_suQuery{
+	height: 175rem;
+	background-color: #F2F2F2;
+}
+.purchase_center_su{
+	margin-top: 1rem;
+}
+.gonghuolist1{
+	    height: 14.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+}

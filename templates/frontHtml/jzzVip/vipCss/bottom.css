@@ -1,0 +1,85 @@
+/* CSS Document */
+.footer{
+	height: 600px;
+	background-color: #313133;
+	padding-top: 2rem;
+}
+
+.footer_title{
+	color: #FFFFFF;
+}
+.footer_message{
+	color: #FFFFFF;
+	margin-top: 2rem;
+}
+.footer_title1{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.footer_title1del{
+	font-size: 18px;
+	
+}
+.footer_title1del1{
+	font-size: 12px;
+	padding-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.bottom_tel{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.footer_message{
+	margin-top: 5rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.input_message{
+	height: 13rem;
+	background-color:#1F2024;
+	margin-top: 1rem;
+	
+}
+
+.inputM1.form-control{
+	border-radius: 5px;
+	border: 1px #ADADAD solid;
+	margin-top: 2rem;
+	height: 3rem;
+}
+.inputM2.form-control{
+	border-radius: 5px;
+	border: 1px #ADADAD solid;
+	margin-top: 2rem;
+	height: 8rem;
+}
+.mess_btn{
+	margin-top: 5rem;
+	height: 2rem;
+	padding-top: 1px;
+	font-size: 1.2rem;
+	width: 6rem;
+	color: #FFFFFF;
+	background-color: #ADADAD;
+}
+.Micom{
+	margin-top: 2rem;
+	
+}
+.bottom_info{
+	margin-top: 3rem;
+	border-top: 1px #adadad solid;
+	color: #ADADAD;
+	padding-top: 2rem;
+}
+.bottom_infodel{
+	margin-top: 1rem;
+}
+.bottom_infodel a{
+	color: #ADADAD;
+	text-decoration: none;
+}
+a:hover{
+	color: #FF6100;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>基本信息</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/myInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/companyInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/essentialInfo.css" rel="stylesheet" type="text/css" />
+
+  
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 companyInfo">
+				<div class="myInfo_left col-xs-2">
+					<div class="myInfo_left_title text-center col-xs-12">
+							<img src="../../../static/img/images/company/企业.png">
+						<spqn>企业中心</spqn>
+					</div>
+					
+					<div class="company_left_nav col-xs-12 text-center">
+						<li class="myInfo_left_nav1 col-xs-12"><a href="companyInfo.html">我的信息</a></li>
+						<li class="myInfo_left_nav1 active col-xs-12"><a href="essentialInfo.html">基本信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_introduce.html">企业介绍</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_manage_account.html">子账号管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="/user_collection/">管理VIP网站</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="mySample.html">我的样品</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_yellowpage.html">黄页管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_offerInfo.html">供货信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="purchaseInfo.html">采购信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="cooperationInfo.html">合作信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_Collection.html">商家收藏</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_recruit.html">招聘管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_myMomment.html">我的评论</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_stationNotice.html">站内通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="securityCenter.html">安全中心</a></li>
+					</div>
+				
+				
+				</div>
+				<div class="recommend_right col-xs-10">
+					<div class="essentialInfo_top col-xs-12">
+						<div class="company_right_myimg text-left col-xs-3 col-md-2">
+							<img src="../../../static/img/images/company/1.png">
+						</div>
+						
+						<div class="essentialInfo_logo text-left col-xs-9 col-md-10">
+							<span class="essentialInfo_logo1 col-xs-12">公司中文LOGO</span>
+							<div class="essentialInfo_logo2 col-xs-12">
+								<div class="essentialInfo_logo_txt col-xs-2">上传LOGO</div>
+								<div class="essentialInfo_logo_txt1 col-xs-10">该logo显示在vip网顶部，建议图片高度为80px，宽度为80至200px之间</div>
+							</div>
+						</div>
+						
+						<div class="essentialInfo_form col-xs-12 text-left">
+							<form class="form-horizontal" role="form">
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group1 col-xs-2 col-md-1 control-label">公司中文全称</label>
+									<div class="col-xs-10 col-md-6">
+										<input type="text" class="essentialInfo_control form-control" id="comName" 
+											   placeholder="请输入名字">
+									</div>
+								</div>
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group1 col-xs-2 col-md-1 control-label">联系人中文名</label>
+									<div class="col-xs-6 col-md-4">
+										<input type="text" class="essentialInfo_control form-control" id="name" 
+											   placeholder="请输入名字">
+									</div>
+									<div class="col-md-4">
+										<label class="radio-inline">
+											<input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>男
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 女
+										</label>
+									</div>
+								</div>
+								
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group1 col-xs-2 col-md-1 control-label">公司中文全称</label>
+									<div class="col-xs-10 col-md-4">
+										<select class="form-control col-md-10">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									</div>
+								</div>
+								
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">公司邮编</label>
+									<div class="col-xs-10 col-md-4">
+										<input type="text" class="essentialInfo_control form-control" id="mail" 
+											   placeholder="请输入公司邮编">
+									</div>
+								</div>
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">公司网址</label>
+									<div class="col-xs-10 col-md-4">
+										<input type="text" class="essentialInfo_control form-control" id="website" 
+											   placeholder="请输入公司网址">
+									</div>
+								</div>
+								
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">公司传真</label>
+									<div class="col-xs-10 col-md-4">
+										<input type="text" class="essentialInfo_control form-control" id="Fax" 
+											   placeholder="请输入公司传真">
+									</div>
+								</div>
+								
+									
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">联系电话</label>
+									<div class="col-xs-10 col-md-4">
+										<input type="text" class="essentialInfo_control form-control" id="tel" 
+											   placeholder="请输入公司联系电话">
+									</div>
+								</div>
+								
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group3 col-xs-2 col-md-1 control-label">微信</label>
+									<div class="col-xs-10 col-md-4">
+										<input type="text" class="essentialInfo_control form-control" id="weixin" 
+											   placeholder="请输入微信号">
+									</div>
+								</div>
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group3 col-xs-2 col-md-1 control-label">QQ</label>
+									<div class="col-xs-10 col-md-4">
+										<input type="text" class="essentialInfo_control form-control" id="qq" 
+											   placeholder="请输入qq号">
+									</div>
+								</div>
+								
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">企业类型</label>
+									<div class="col-xs-10 col-md-4">
+										<select class="form-control col-md-10">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									</div>
+								</div>
+								
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">企业性质</label>
+									<div class="col-xs-10 col-md-4">
+										<select class="form-control col-md-10">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									</div>
+								</div>
+								
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">企业规模</label>
+									<div class="col-xs-10 col-md-4">
+										<select class="form-control col-md-10">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									</div>
+								</div>
+								
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">厂房面职</label>
+									<div class="col-xs-10 col-md-4">
+										<select class="form-control col-md-10">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									</div>
+								</div>
+								
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">所在地区</label>
+									<div class="col-xs-10 col-md-4">
+										<select class="form-control col-md-10">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									</div>
+								</div>
+								
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">供货类型</label>
+									<label class="checkbox-inline essentialInfo_box">
+										<input type="checkbox" id="inlineCheckbox1" value="option1">轴承
+									</label>
+									<label class="checkbox-inline essentialInfo_box">
+										<input type="checkbox" id="inlineCheckbox2" value="option2">设备
+									</label>
+									<label class="checkbox-inline essentialInfo_box">
+										<input type="checkbox" id="inlineCheckbox3" value="option3">仪器
+									</label>
+										<label class="checkbox-inline essentialInfo_box">
+										<input type="checkbox" id="inlineCheckbox4" value="option3">配件
+									</label>
+									<label class="checkbox-inline essentialInfo_box">
+										<input type="checkbox" id="inlineCheckbox5" value="option3">材料
+									</label>
+								</div>
+								
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">主营产品</label>
+								<div class="biaoqian col-xs-2">滚子轴承<span class="biaoqian_Img"><img src="../../../static/img/images/company/error.png"></span></div>
+									<img class="biaoqian_Img2" src="../../../static/img/images/company/jia.png">
+								</div>
+
+								<div class="form-group essentialInfo_group col-xs-12">
+									<label for="firstname" class="essentialInfo_group2 col-xs-2 col-md-1 control-label">详细地址</label>
+									<div class="col-xs-10 col-md-10">
+										<textarea class="form-control" rows="3"  placeholder="请输入公司详细地址"></textarea>
+									</div>
+								</div>
+								
+								
+								<div class="form-group">
+									<div class="col-sm-offset-3 col-sm-10 ess_btn">
+										<button type="button" class="btn btn-default group_btn">保存并同步到vip网</button>
+										<button type="button" class="btn btn-default group_btn2 col-sm-offset-1">取消修改</button>
+									</div>
+								</div>
+							</form>
+						
+						</div>
+						
+						
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>		
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+

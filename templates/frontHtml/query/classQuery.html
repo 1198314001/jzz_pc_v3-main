@@ -1,0 +1,100 @@
+{% extends 'base/base2.html' %}
+{% load static %}
+{% block script %}
+    	<link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/purchase.css' %}" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/supplyInformation.css' %}" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/classQuery.css' %}" rel="stylesheet" type="text/css" />
+
+{% endblock %}
+	{% block body %}
+
+<div style="width:88%;margin-left:9.5%;background-color: #F8F8F8;">
+	<div class="left-p col-xs-1 col-sm-1 col-md-1"></div>
+	<div class="purchase col-xs-10 col-sm-10 col-md-10 text-center">
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_left">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+		<div class="container col-xs-8 col-sm-8 col-md-8 container_purchase_center purchase_center_class">
+			<div class="su_nav">
+				<ul class="nav nav-pills">
+					<li class="navs active"><a href="/bearing_infosearch/">轴承型号查询</a></li>
+					<li class="navs"><a href="/bearing_typesearch/">轴承分类查询</a></li>
+					<li class="navs"><a href="/bearing_brandpage/">品牌黄页</a></li>
+					<li class="navs"><a href="/bearing_usepage/">用途黄页</a></li>
+					<li class="navs"><a href="/bearing_360type/">300常用型号</a></li>
+				 </ul>
+			</div>
+			
+			
+			
+			<div class="classQuery col-xs-12 col-sm-12 col-md-12">
+				<div class="classQuery_title col-xs-12 col-sm-12 col-md-12 shadow-sm p-3 mb-5 bg-white rounded">
+					<div class="class_title active col-xs-2 col-sm-2 col-md-2">类型</div>
+					<div class="class_title col-xs-2 col-sm-2 col-md-2">分类</div>
+				</div>
+				<div class="classQuery_left col-xs-3 col-sm-3 col-md-2">
+					<div class="classQuery_left1 col-xs-12 col-sm-12 col-md-12 text-center active">深沟球轴承</div>
+					<div class="classQuery_left1 col-xs-12 col-sm-12 col-md-12 text-center">调心球轴承</div>
+					<div class="classQuery_left1 col-xs-12 col-sm-12 col-md-12 text-center">圆柱滚子轴承</div>
+					<div class="classQuery_left1 col-xs-12 col-sm-12 col-md-12 text-center">调心滚子轴承</div>
+					<div class="classQuery_left1 col-xs-12 col-sm-12 col-md-12 text-center">滚针轴承(长圆柱滚子轴承)</div>
+				</div>
+				<div class="classQuery_right col-xs-9 col-sm-9 col-md-10"> 
+					<div class="classQuery_right1 col-xs-12 col-sm-12 col-md-12">
+						<div class="classQuery_right_title active col-xs-12 col-sm-12 col-md-12 text-left">开式深沟球轴承</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 classQuery_btn text-right">
+							<button type="button" class="btn btn-sm classQuery_btn1 active">查看供货商</button>
+							<button type="button" class="btn btn-sm classQuery_btn1">查看型号</button>
+							<button type="button" class="btn btn-sm classQuery_btn1">成为供货商</button>
+						</div>
+					</div>
+					
+				</div>
+				
+					<div class="classQuery_right col-xs-9 col-sm-9 col-md-10"> 
+					<div class="classQuery_right1 col-xs-12 col-sm-12 col-md-12">
+						<div class="classQuery_right_title col-xs-12 col-sm-12 col-md-12 text-left">开式深沟球轴承</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 classQuery_btn text-right">
+							<button type="button" class="btn btn-sm classQuery_btn1 active">查看供货商</button>
+							<button type="button" class="btn btn-sm classQuery_btn1">查看型号</button>
+							<button type="button" class="btn btn-sm classQuery_btn1">成为供货商</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		
+			
+			<!--mmmm-->
+		</div>
+		
+		
+		
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_right">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+	</div>
+	<div class="right-p col-xs-1 col-sm-1 col-md-1"></div>
+	
+</div>
+{% endblock %}
+
+
+
+

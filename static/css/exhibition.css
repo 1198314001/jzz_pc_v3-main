@@ -1,0 +1,222 @@
+.exhibitionInfo_title{
+	height: 4rem;
+	background-color: #FFFFFF;
+	padding-top: 1rem;
+	padding-left: 0px;
+	font-size: 1.4rem;
+	border-bottom: 1px #DADADA solid;
+}
+.exhibitionInfo_title2{
+	padding-left: 0px;
+}
+.exhibitionInfo_top{
+	height: 19rem;
+	background-color: #FFFFFF;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-right: 0px;
+}
+.exhibitionInfo_top_img{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exhibitionInfo_top_img img{
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 9rem;
+	width: 16rem;
+	padding-top: 1rem;
+}
+.exhibitionInfo_center{
+	height: 4rem;
+	background-color: #FFFFFF;
+	margin-top: 1.5rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exhibitionInfo_center_title{
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1.4rem;
+	font-weight: 540;
+	padding-top: 1rem;
+}
+.exhibitionInfo_condition1{
+	color: #757575;
+	padding-top: 0.3rem;
+	font-size: 1.2rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exhibitionInfo_condition1 img{
+	
+	padding-left: 0.5rem;
+	height: 0.6rem;
+	width: 1.4rem;
+}
+.exhibitionInfo_condition2{
+	color: #757575;
+	padding-top: 0.3rem;
+	font-size: 1.2rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exhibitionInfo_condition2 img{
+	
+	padding-left: 0.5rem;
+	height: 1.4rem;
+	width: 1.4rem;
+}
+.exhibitionInfo_bottom{
+	height: 180rem;
+	background-color: #FFFFFF;
+	margin-top: 1.5rem;
+	
+}
+.exhibitionInfo_del{
+	margin-top: 1rem;
+	height: 16.5rem;
+	padding-top: 1rem;
+	border: 1px #ECECEC solid;
+	box-shadow: 5px 5px 5px #F4F4F4;/* 边框阴影 */  
+    -moz-box-shadow: 0px 0px 5px #F4F4F4; /* 老的 Firefox */
+}
+.exhibitionInfo_del_img{
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
+.exhibitionInfo_del_img img{
+	height: 14rem;
+	width: 24rem;
+}
+.exhibitionInfo_del_list{
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1.4rem;
+	height: 6rem;
+	white-space:pre-wrap;
+	overflow:hidden;	
+}
+.exhibitionInfo_del_list2{
+	height:2rem;
+	color:#757575;
+}
+.exhibitionInfo_btn{
+	font-size: 1.2rem;
+	padding-top: 1px;
+	padding-left: 5px;
+	height: 2rem;
+	width: 6rem;
+	background-color: #FE6100;
+	color: #FFFFFF;
+	border: 1px #FE6100 solid;
+	margin-top: 2rem;
+	border-radius: 0px;
+}
+
+
+a:hover { color:#FE6100; }
+
+/*
+	exhibition_detail  # 展会信息-展会信息详情
+*/
+.exhibitiondel_top{
+	height: 85rem;
+	background-color: #FFFFFF;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exhibitiondel_title2{
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 6rem;
+	background-color: #FFFFFF;
+	border-bottom: 1px #ECECEC solid;
+	font-size: 1.5rem;
+	padding-top: 2rem;
+	font-weight: 500;
+}
+.exhibitiondel_content {
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
+.exhibitiondel_content_img{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.exhibitiondel_content_img img{
+	margin-top: 1rem;
+	height: 19rem;
+	
+}
+.exhdel_conter_title{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 1rem;
+	font-size: 1.3rem;
+	font-weight: 550;
+}
+.exhdel_conter_title img{
+	height: 2px;
+	width: 6rem;
+	margin-left: 1rem;
+	margin-top: 0.5rem;
+}
+.exhdel_conter{
+	margin-top: 1rem;
+}
+.exhdel_conter_til1{
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1.2rem;
+	font-weight: 550;
+}
+.exhdel_conter_conter{
+	white-space:pre-wrap;
+	overflow:hidden;
+	font-size: 1.2rem;
+}
+.exhdel_conter_conter1{
+	padding-top: 0.7rem;
+}
+.exhdel_bottom{
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 15rem;
+	margin-top: 1.5rem;
+	background-color: #FFFFFF;
+}
+.exhdel_bottom_img{
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 17rem;
+}
+.exhdel_bottom_img1{
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.exhdel_bottom_img1 img{
+	height: 8rem;
+	width: 15rem;
+}
+.exhdel_bottom_txt{
+	overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.exhdel_conter_title2{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 1rem;
+	font-size: 1.3rem;
+	font-weight: 550;
+}
+.exhdel_conter_title2 img{
+	height: 2px;
+	width: 6rem;
+	margin-left: 2rem;
+	margin-top: 0.5rem;
+}

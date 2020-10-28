@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>技术交流-详情</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/purchase.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/querydel.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/supplier.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/supplyInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/recruit.css" rel="stylesheet" type="text/css" />
+<link href="../../static/css/technical.css" rel="stylesheet" type="text/css" />
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+	<div class="recruit col-md-10 col-md-offset-1">
+
+		<div class="recruit_right  col-md-9">
+		<div class="recruit_right_title col-xs-12">
+			<div class="recruit_right_title1 active col-xs-1 text-center"><a>技术问题</a></div>
+			<div class="recruit_right_title1 col-xs-1 text-center"><a href="">营销问题</a></div>
+			<div class="recruit_right_title1 col-xs-1 text-center"><a href="">其它问题</a></div>
+		</div>
+		
+		<div class="col-xs-12 exchange_del">
+			<div class="col-xs-12 exchange_del_top">
+				<div class="col-xs-12 exchange_del_title text-center">
+					详情标题
+				</div>
+				<div class="col-xs-12 exchange_del_title1">
+					<div class="col-xs-2 ">发布时间：6小时</div>
+					<div class="col-xs-2">发布人：张先生</div>
+					
+					<div class="col-xs-offset-2 col-xs-2 text-right">评论人：999</div>
+					<div class="col-xs-2 text-right">点赞数：999</div>
+					<div class="col-xs-2 text-right">阅读量：999</div>
+				</div>
+			</div>
+		</div>	
+		
+		
+	</div>
+	
+	<div class="exchange_right detail_right col-xs-2">
+		<div class="exchange_detail_portrait col-xs-12">关于作者</div>
+		<div class="detail_portrait_img col-xs-4"><a href="technical_Personal_page.html"><img src="../../static/img/images/exhibition/img/4.jpg"></a></div>
+		<div class="detail_portrait_name col-xs-8 text-left">张先生
+			<img src="../../static/img/images/exhibition/img/会员.png"><text>普通会员</text></div>
+		<div class="detail_portrait_name1 col-xs-8 text-left">走过千山万水</div>	
+		<div class=" col-xs-12" style="padding-left: 0px; padding-right: 0px; padding-top: 1rem;">
+			<div class="detail_portrait_num col-xs-4 text-left">提问</div>
+			<div class="detail_portrait_num col-xs-4 text-center">回答</div>
+			<div class="detail_portrait_num col-xs-4 text-right">积分</div>
+		</div>
+		<div class=" col-xs-12" style="padding-left: 0px; padding-right: 0px; padding-top: 0rem;">
+			<div class="detail_portrait_num1 col-xs-4 text-left">123</div>
+			<div class="detail_portrait_num1 col-xs-4 text-center">456</div>
+			<div class="detail_portrait_num1 col-xs-4 text-right">789</div>
+		</div>
+		<div class="detail_portrait_btn1 col-xs-6"><img src="../../static/img/images/exhibition/img/info.png">
+			<text>发信息</text>
+		</div>
+		
+		<div class="detail_portrait_btn2 col-xs-6 col-md-offset-3"><img src="../../static/img/images/exhibition/img/添加好友.png">
+			<text>加好友</text>
+		</div>
+		
+	</div>
+	
+	<div class="exchange_right1 col-xs-offset-0 col-xs-2">
+		<div class="exchange_right1_con col-xs-12 text-center">
+			<div class="exchange_right1_title col-xs-12 text-center">最新提问</div>
+			<div class="exchange_right1_con1 col-xs-4">排名</div>
+			<div class="exchange_right1_con1 col-xs-4">姓名</div>
+			<div class="exchange_right1_con1 col-xs-4">积分</div>
+			
+			<div class="exchange_right1_con2 col-xs-4">NO1</div>
+			<div class="exchange_right1_con2 col-xs-4">张先生</div>
+			<div class="exchange_right1_con2 col-xs-4">1666</div>
+		</div>
+	</div>
+	<div class="exchange_right1 col-xs-offset-0 col-xs-2">
+		<div class="exchange_right1_con col-xs-12 text-center">
+			<div class="exchange_right1_title col-xs-12 text-center">最新提问</div>
+			<div class="exchange_right1_con3 col-xs-12">[提问] 高价回收轴承高价回收轴承高价回收轴承</div>
+		</div>
+	</div>
+	<div class="exchange_right1 col-xs-offset-0 col-xs-2">
+		<div class="exchange_right1_con col-xs-12 text-center">
+			<div class="exchange_right1_title col-xs-12 text-center">热门回答</div>
+			<div class="exchange_right1_con3 col-xs-12">[提问] 高价回收轴承高价回收轴承高价回收轴承</div>
+		</div>
+	</div>
+	<!-- dddd-->
+	
+</div>
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+

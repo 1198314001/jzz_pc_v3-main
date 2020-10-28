@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>品牌黄页</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/purchase.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplyInformation.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/brandYellowPages.css" rel="stylesheet" type="text/css" />
+
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+<div class="col-md-10 col-md-offset-1" style="background-color: #F2f2f2;">
+	
+	<div class="purchase1_userPage col-xs-10 col-sm-10 col-md-12 text-center">
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_left">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		<div class="container col-xs-8 col-sm-8 col-md-8 comm">
+			<div class="su_nav sidebar">
+				<ul class="nav nav-pills">
+					<li class="navs"><a href="suQuery.html">轴承型号查询</a></li>
+					<li class="navs active"><a href="commonModels.html">品牌黄页</a></li>
+					<li class="navs"><a href="userPage.html">用途黄页</a></li>
+					<li class="navs"><a href="brandYellowPages.html">300常用型号</a></li>
+				 </ul>
+			</div>
+			
+			
+			<div class="brandyellow2 col-xs-12 col-sm-12 col-md-12 text-left">
+				<div class="brandquery2 col-xs-2 col-sm-2 col-md-3 text-left">
+					<div class="userPageTile text-center">
+						热门轴承品牌型号查询
+					</div>
+				</div>
+				<div class="brandquery2 col-xs-10 col-sm-10 col-md-9 text-left sidebar">
+
+				</div>
+				<div class="brandyellowimg1 col-xs-3 col-sm-3 col-md-3 text-center sidebar">
+						<a class="brandyellowA" href="#">
+							<div class="brandyellowL col-xs-12 col-sm-12 col-md-12">
+								<span class="brandyellowT col-xs-12 col-sm-12 col-md-12">FAG轴承</span>
+							</div>
+						</a>
+				</div>
+				<div class="brandyellowimg1 col-xs-3 col-sm-3 col-md-3 text-center sidebar">
+						<a class="brandyellowA" href="#">
+							<div class="brandyellowL col-xs-12 col-sm-12 col-md-12">
+								<span class="brandyellowT col-xs-12 col-sm-12 col-md-12">FAG轴承</span>
+							</div>
+						</a>
+				</div>
+				<div class="brandyellowimg1 col-xs-3 col-sm-3 col-md-3 text-center sidebar">
+						<a class="brandyellowA" href="#">
+							<div class="brandyellowL col-xs-12 col-sm-12 col-md-12">
+								<span class="brandyellowT col-xs-12 col-sm-12 col-md-12">FAG轴承</span>
+							</div>
+						</a>
+				</div>
+				<div class="brandyellowimg1 col-xs-3 col-sm-3 col-md-3 text-center sidebar">
+						<a class="brandyellowA" href="#">
+							<div class="brandyellowL col-xs-12 col-sm-12 col-md-12">
+								<span class="brandyellowT col-xs-12 col-sm-12 col-md-12">FAG轴承</span>
+							</div>
+						</a>
+				</div>
+				<div class="brandyellowimg1 col-xs-3 col-sm-3 col-md-3 text-center sidebar">
+						<a class="brandyellowA" href="#">
+							<div class="brandyellowL col-xs-12 col-sm-12 col-md-12">
+								<span class="brandyellowT col-xs-12 col-sm-12 col-md-12">FAG轴承</span>
+							</div>
+						</a>
+				</div>
+
+				
+			</div>
+			<div class="brandyellow3 col-xs-12 col-sm-12 col-md-12 text-left">
+				<div class="brandquery2 col-xs-2 col-sm-2 col-md-3 text-left">
+					<div class="userPageTile text-center">
+						轴承品牌黄页
+					</div>
+				</div>
+				<div class="brandquery2 col-xs-10 col-sm-10 col-md-9 text-left sidebar">
+
+				</div>
+				<div class="brandyellowimg1 col-xs-3 col-sm-3 col-md-3 text-center sidebar">
+						<a class="brandyellowA" href="#">
+							<div class="brandyellowL col-xs-12 col-sm-12 col-md-12">
+								<span class="brandyellowT col-xs-12 col-sm-12 col-md-12">FAG轴承</span>
+							</div>
+						</a>
+				</div>
+				<div class="brandyellowimg1 col-xs-3 col-sm-3 col-md-3 text-center sidebar">
+						<a class="brandyellowA" href="#">
+							<div class="brandyellowL col-xs-12 col-sm-12 col-md-12">
+								<span class="brandyellowT col-xs-12 col-sm-12 col-md-12">FAG轴承</span>
+							</div>
+						</a>
+				</div>
+				<div class="brandyellowimg1 col-xs-3 col-sm-3 col-md-3 text-center sidebar">
+						<a class="brandyellowA" href="#">
+							<div class="brandyellowL col-xs-12 col-sm-12 col-md-12">
+								<span class="brandyellowT col-xs-12 col-sm-12 col-md-12">FAG轴承</span>
+							</div>
+						</a>
+				</div>
+				<div class="brandyellowimg1 col-xs-3 col-sm-3 col-md-3 text-center sidebar">
+						<a class="brandyellowA" href="#">
+							<div class="brandyellowL col-xs-12 col-sm-12 col-md-12">
+								<span class="brandyellowT col-xs-12 col-sm-12 col-md-12">FAG轴承</span>
+							</div>
+						</a>
+				</div>
+				<div class="brandyellowimg1 col-xs-3 col-sm-3 col-md-3 text-center sidebar">
+						<a class="brandyellowA" href="#">
+							<div class="brandyellowL col-xs-12 col-sm-12 col-md-12">
+								<span class="brandyellowT col-xs-12 col-sm-12 col-md-12">FAG轴承</span>
+							</div>
+						</a>
+				</div>
+
+				
+			</div>
+				<iframe  class="iframe_page" style="width: 100%;height:6rem;background-color: #FFFFFF;" src="../public/paging.html">
+		</iframe>
+			<!--mmmm-->
+		</div>
+		
+		
+		
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_right">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+	</div>
+	
+	
+</div>
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+

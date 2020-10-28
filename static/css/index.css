@@ -1,0 +1,315 @@
+.index_left{
+	width: 10%;
+	margin-left: 8.5%;
+}
+.index_center{
+	width:63%;
+}
+.index_right{
+	width: 10%;
+}
+
+.fakeimg {
+    height: 14.28;
+    background: #aaa;
+}
+.nav_a {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+.hemlHead div{
+	background-color: #fff;
+}
+.btn-primary{
+	background-color:#FF5F00;
+	border:1px #FF5F00 solid;
+}
+.navs {
+    color: #010101;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	
+	
+}
+.index_center_img{
+	padding-left: 0px;
+	padding-right: 5px;
+}
+.index_center_img2{
+	padding-left: 5px;
+	padding-right: 0px;
+}
+
+.index_title{
+	padding-left: 12%;
+}
+.active {
+    color: active;
+}
+.container{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.xinhaocx{
+	height:21rem;
+	background-color: #fff;
+	
+}
+.cxtitle{
+	width: 100%;
+	height: 4rem;
+	font-size: 1rem;
+	border-bottom: 1px #F2F2F2 solid;
+	padding-top: 1rem;
+	
+}
+.btns{
+	padding-top: 1rem;
+	font-size: 0.7rem;
+}
+
+.xinhaogg{
+	height:21rem;
+	background-color: #fff;
+}
+.caigouxx{
+	height:21rem;
+	background-color: #fff;
+	
+	
+}
+.gysgg{
+	width: 100%;
+	height: 30rem;
+	background-color: #fff;
+}
+.gys{
+	width: 100%;
+	height: 3rem;
+	font-size: 1rem;
+	border-bottom: 1px #F2F2F2 solid;
+	background-color: #fff;
+	padding-top: 1rem;
+}
+.caigouxx_t{
+	font-size: 1rem;
+	height: 3rem;
+	padding-top: 1rem;
+	border-bottom: 1px #F2F2F2 solid;
+}
+.list-unstyled{
+	height:17rem;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+.list-unstyled li{
+	padding-top: 0.4rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	
+}
+.list-unstyled a{
+	color: #000000;
+}
+a:hover{
+	color: #FF6100;
+}
+li:hover{
+	color: #FF6100;
+}
+.youzhi{
+	background-color: #fff;
+	width: 118px;
+	height: 35px;
+	border-bottom: 2px  #F2F2F2 solid;
+	padding-top: 8px;
+}
+.gonghuol{
+	height: 25rem;
+	background-color: #fff;
+	margin-top: 1rem;
+	width: 59%;
+	padding-left: 15px;
+	padding-right: 0px;
+}
+.gonghuotitle1{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.gonghuor{
+	height: 25rem;
+	background-color: #fff;
+	margin-top: 1rem;
+	width: 40%;
+	float:right;
+}
+.gonghuolistlA{
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
+.gonghuolistlA1{
+	padding-right: 10px;
+	color: #000000;
+	white-space: nowrap;
+	overflow:hidden;
+    text-overflow: ellipsis;
+}
+.gonghuotitle{
+	height: 3rem;
+	border-bottom: 1px #F2F2F2 solid;
+	padding-top: 0.6rem;
+	padding-left: 0px;
+	padding-right: 0px;
+
+}
+.gonghuolist{
+	height: 20.5rem;
+    white-space: nowrap;/*文本不换行*/
+	overflow:hidden;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.gonghuolistl{
+	list-style:none;
+    overflow: hidden;
+	padding-top: 0.8rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.gonghuolistr{
+	padding-left: 0px;
+	padding-right: 0px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	padding-top: 0.8rem;
+}
+.renqititle{
+	height: 3rem;
+	padding-top: 0.7rem;
+	border-bottom:1px #f2f2f2 solid;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.renqi{
+	height: 21rem;
+	padding-top: 1rem;
+	white-space: nowrap;/*文本不换行*/
+	overflow:hidden;
+	font-size: 12px;
+}
+.gonghgs{
+	margin-top: 1rem;
+	height:33rem;
+	background-color: #fff;
+	
+}
+.container1{
+	height: 9rem;
+	
+}
+.gonghgsxx{
+	height: 20rem;
+	
+}
+
+.renqi_centext{
+	font-size: 6px;
+}
+li{
+	list-style: none;
+}
+a{
+	color: #000000;
+}
+.exhibition{
+	height: 35rem;
+	margin-top: 1rem;
+	display: flex;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.exhibitionleft{
+	background-color: #fff;
+	width: 30%;
+	
+}
+.exhibitioncenter{
+	background-color:#fff;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	width: 40%;
+}
+.exhibitionright{
+	background-color: #fff;
+	width: 30%;
+}
+
+.exhibitionlist{
+	font-size: 0.5rem;
+	white-space:nowrap;
+  	overflow: hidden;
+  	text-overflow: clip;
+}
+.peix{
+	font-family: "微软雅黑";
+	color: #010101;
+	padding-top: 0.5rem;
+}
+.zazhi{
+	margin-top: 1rem;
+	background-color: #fff;
+	height: 26rem;
+}
+.zazhtitle{
+	height: 3rem;
+	padding-top: 0.8rem;
+	border-bottom: 1px #f2f2f2 solid;
+}
+.link{
+	margin-top: 1rem;
+	height: 15rem;
+	background-color: #fff;
+}
+.linklist{
+	padding-top: 1.5rem;
+	 overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+.gys_img{
+	width: 90%;
+	height: 3.28rem;
+	padding-left: 5%;
+	padding-top:0.5rem;
+}
+.gys_img2{
+	width: 90%;
+	height: 3.28rem;
+	padding-right: 5%;
+	padding-top:0.5rem;
+}
+iframe{
+	border:medium none;
+}
+.renqititle_gd{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.traindel{
+	height: 9rem;
+	padding-top: 0.5rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px #F2F2F2 solid;
+	font-size: 1rem;
+}
+.trends{
+	padding-left: 0px;
+	padding-right: 5px;
+	 overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
