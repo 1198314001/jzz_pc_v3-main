@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>展会信息详情</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/purchase.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/buyingInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplyInformation.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/querydel.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplier.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/industry.css" rel="stylesheet" type="text/css" />
+	
+
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+<div class="col-md-10 col-md-offset-1" style="background-color: #F2f2f2;">
+	<div class="purchase1_query col-xs-10 col-sm-10 col-md-12 text-center">
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_left">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+		<div class="container col-xs-8 col-sm-8 col-md-8">
+<!--
+			<div class="supplier_del_top col-md-12">
+				<div class="_top_title col-md-2 text_center">
+					筛选条件：
+				</div>
+				<div class="_top_title2 col-md-2 text_left">
+					发布日期
+				</div>
+				<div class="_top_title2 col-md-2 text_left">采购数量</div>
+				<div class="_top_title2 col-md-2 text_left">采购期限</div>
+				<div class="_top_title2 col-md-2 text_left">产品分类</div>
+			
+			</div>
+-->
+			<div class="supplier_del_bottom col-md-12">
+				<div class="supplier_del_left_in col-md-8">
+					<div class="supplier_del_left_title col-md-12">
+						<div class="supplier2_title1 col-md-12">诺森艾恩工业技术（北京）有限公司采购清单</div>
+						<div class="supplier2_title2 col-md-12">
+							<span class="buyinginfo_del col-md-2">采购期限：长期</span>
+							<span class="buyinginfo_del col-md-3">采购数量：3000</span>
+							<span class="buyinginfo_del col-md-7">采购商：诺森艾恩工业技术（北京）有限公司采购清单</span>
+						</div>
+					</div>
+					
+					<div class="companyNews col-md-12">
+						<div class="company_title col-md-12 text-left">
+							<div class="company_title1 col-md-12">内容摘要:</div>
+							<div class="company_title_nr col-md-12">诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单</div>
+							<div class="company_title_nr_img  col-md-12"><img src="../../../static/img/images/train/4.jpg"></div>
+							<div class="company_title_nr1 col-md-12">诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单诺森艾恩工业技术（北京）有限公司采购清单</div>
+						</div>
+						<div class="col-md-12 zhan"><img src="../../../static/img/images/train/good1.png">123</div>
+						<div class="col-md-12 ht">
+							<span class="col-md-2">本期话题</span>
+							<span class="col-md-1">经济</span>
+							<span class="col-md-1">汽车</span>
+							<span class="col-md-1">布加迪</span>
+						</div>
+					</div>
+					<div class="company_topic col-md-12">
+						<div class="company_topic_title col-md-12 text-left">相关话题信息</div>
+						<div class="company_topic_del col-md-12">
+							<spqn class="topic_del_txt col-md-8 text-left">话题王话题王话题王话题王话题王话题王话题王话题王话题王</spqn>
+							<spqn class="topic_del_txt col-md-4 text-right">2020-8-10</spqn>
+						</div>
+						
+						<div class="company_topic_del col-md-12">
+							<spqn class="topic_del_txt col-md-8 text-left">话题王话题王话题王话题王话题王话题王话题王话题王话题王</spqn>
+							<spqn class="topic_del_txt col-md-4 text-right">2020-8-10</spqn>
+						</div>
+						
+						<div class="company_topic_del col-md-12">
+							<spqn class="topic_del_txt col-md-8 text-left">话题王话题王话题王话题王话题王话题王话题王话题王话题王</spqn>
+							<spqn class="topic_del_txt col-md-4 text-right">2020-8-10</spqn>
+						</div>
+						
+						<div class="company_topic_del col-md-12">
+							<spqn class="topic_del_txt col-md-8 text-left">话题王话题王话题王话题王话题王话题王话题王话题王话题王</spqn>
+							<spqn class="topic_del_txt col-md-4 text-right">2020-8-10</spqn>
+						</div>
+					</div>
+					
+					<div class="col-md-12 traininfo_edit">
+						<div class="traininfo_edit_title text-left col-md-12">编辑推荐</div>
+						<div class="traininfo_edit_img col-md-12">
+							<div class="edit_img col-md-3"><img src="../../../static/img/images/train/5-1.jpg">
+							<span class="col-md-12 edit_img_txt">编辑推荐推荐编辑推荐编辑编辑推荐编辑推荐</span></div>
+							<div class="edit_img col-md-3"><img src="../../../static/img/images/train/5-1.jpg">
+							<span class="col-md-12 edit_img_txt">编辑推荐推荐编辑推荐编辑编辑推荐编辑推荐</span></div>
+							<div class="edit_img col-md-3"><img src="../../../static/img/images/train/5-1.jpg">
+							<span class="col-md-12 edit_img_txt">编辑推荐推荐编辑推荐编辑编辑推荐编辑推荐</span></div>
+							<div class="edit_img col-md-3">
+								<img src="../../../static/img/images/train/5-1.jpg">
+								<span class="col-md-12 edit_img_txt">编辑推荐推荐编辑推荐编辑编辑推荐编辑推荐</span>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="traininfo_shangxia col-md-12 text-left">
+						<a class="traininfo_shang col-md-12">上一篇：上一篇编辑推荐上一篇推荐编辑上一篇推荐编辑编辑推荐编辑推荐</a>
+						<a class="traininfo_shang col-md-12">下一篇：上一篇编辑推荐上一篇推荐编辑上一篇推荐编辑编辑推荐编辑推荐</a>
+					</div>
+					<div class="col-md-12" style="height: 1.5rem;padding-left: 0px;padding-right: 0px;background-color: #F2F2F2;margin-top: 1rem;"></div>
+					<div class="traininfo_comment">
+						<div class="traininfo_comment_txt col-md-12 text-left">评论</div>
+						<div class="traininfo_comment_input col-md-12">
+							<textarea class="form-control" name="comtent" placeholder="输入内容" rows="3"></textarea>
+						</div>
+						<div class="traininfo_comment_btn col-md-12">
+							<span class="col-md-6 text-left traininfo_comment_btn1">还能输入1000字</span>
+							<div class="traininfo_comment_btn2 col-md-6 text-right"><button type="button">发表评论</button></div>
+							<div></div>
+						</div>
+					</div>
+					
+					
+				</div>
+				<div class="supplier_del_right col-md-4">
+					<div class="supplier_tel col-md-12">
+						联系方式
+					</div>
+					
+					<div class="contact_del col-md-12">
+						<div class="contact_title col-md-12">
+							广州金蜘蛛轴承有限公司
+						</div>
+						<div class="contact_list col-md-12">联系人：张小姐</div>
+						<div class="contact_list col-md-12">联系手机：15989687887</div>
+						<div class="contact_list col-md-12">联系电话：020-8987457</div>
+						<div class="contact_list col-md-12">传真电话：020-8987457</div>
+						<div class="contact_list col-md-12">电子邮箱：7889787@qq.com</div>
+						<div class="contact_list col-md-12">所在地：广州</div>
+						<div class="contact_list col-md-12">详细地址：</div>
+						<div class="contact_list col-md-12">广州市越秀区流花广场园景中心1310</div>
+					</div>
+				</div>
+				
+				
+		<div class="supplier_del_right2 col-md-4">
+					<div class="supplier_tel col-md-12">
+						热门咨询推荐
+					</div>
+					
+					<div class="contact_del col-md-12">
+						<div class="in_info_title col-md-12">
+							广州企业热门咨询推荐广州企业热门咨询推荐广州企业热门咨询推荐广州企业热门咨询推荐
+						</div>
+						<div class="in_info_title col-md-12">
+							广州企业热门咨询推荐
+						</div>
+						<div class="in_info_title col-md-12">
+							广州企业热门咨询推荐
+						</div>
+						<div class="in_info_title col-md-12">
+							广州企业热门咨询推荐
+						</div>
+						<div class="in_info_title col-md-12">
+							广州企业热门咨询推荐
+						</div>
+						<div class="in_info_title col-md-12">
+							广州企业热门咨询推荐
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--mmmm-->
+		</div>
+		
+		
+		
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_right">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+	</div>
+</div>
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+
+

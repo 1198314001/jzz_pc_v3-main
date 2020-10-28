@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>头部</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="vipCss/head.css" rel="stylesheet" type="text/css" />
+	
+</head>
+<body>
+<div class="col-xs-12 head1">
+	<div class="col-xs-9 col-md-offset-1"> <a>金蜘蛛紧固件</a> | <a>金蜘蛛展</a> | <a>金蜘蛛官方微博</a></div>
+	<div class="col-xs-2"> 中文 | Engilsh </div>
+</div>
+
+
+<div class="container col-xs-12">
+  <div class="row">
+    <div class="col-xs-12 indexTitle">
+	  	<div class="col-xs-1 col-md-offset-1 viplogo text-left">
+			<img src="vipImg/u23.png">
+		</div>
+		<div class="vipname col-xs-5 col-md-6">
+			<div class="col-xs-12 vipname_c">广东金蜘蛛电脑网络有限公司</div>
+			<div class="col-xs-12 vipname_e">Guangdong Golden Spider computer network Co., Ltd</div>
+			<div class="col-xs-12 vipProduct">
+				<span class="vipProduct_title">主营产品：</span>
+				<span class="vipProductdel">电脑主板</span>
+				<span class="vipProductdel">电脑主板</span>
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-4 text-right">	
+			<div class="col-xs-3 col-md-3 hotsupply text-right"><img class="hotImg" src="vipImg/u28.jpg"></div>
+			<div class="col-xs-3 col-md-3 hotsupply">
+				<div class="hotsupply1">人气供应商</div>
+				<div class="hotsupply2">第13年</div>
+				<div class="hotsupply3"><a href="https://aiqicha.baidu.com/">企业信用查询</a></div>
+			</div>
+			<div class="col-xs-3 col-md-3" style="padding-left: 0px;padding-right: 0px;">
+				<img src="vipImg/u30.png">
+				<img class="hotImg" src="vipImg/u34.png" style="margin-right:20px;">
+			</div>
+		</div>
+	</div>
+	   
+  </div>
+	
+</div>
+<div class="vipNav col-xs-12">
+		<nav  class="navbar col-md-offset-1" role="navigation">
+			<div class="col-xs-8">
+				<ul class="nav nav-pills anav head3">
+					<li><a class="navs" id="index" target="_parent" href="index.html">首页</a></li>
+					<li><a class="navs" id="supply" target="_parent" href="enterprise.html">企业介绍</a></li>
+					<li><a class="navs" id="purchase" target="_parent" href="productDisplay.html">产品展示</a></li>
+					<li><a class="navs" id="bearing" target="_parent" href="newsInfo.html">新闻动态</a></li>
+					<li><a class="navs" id="company" target="_parent" href="vipQuery.html">标准查询</a></li>
+					<li><a class="navs" id="require" target="_parent" href="VipRecruit.html">招聘信息</a></li>
+					<li><a class="navs" id="industry" target="_parent" href="1">荣誉认证</a></li>
+					<li><a class="navs" id="exhibition" target="_parent" href="1">联系我们</a></li>
+
+				 </ul>
+    		</div>
+			<div class="col-xs-3">
+				<div class="col-lg-11 VIPindexS">
+					<div class="input-group VIPindexS1 input-group-sm">
+						<div class="input-group-btn ">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								产品 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">功能</a></li>
+								<li><a href="#">另一个功能</a></li>
+								<li><a href="#">其他</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<input type="text" class="form-control" placeholder="请输入关键词">
+						<div class="input-group-btn">
+							<button type="button" class="btn vipsearch" data-toggle="dropdown">
+								<img src="vipImg/u42.png">
+							</button>
+							
+						</div>
+					</div><!-- /input-group -->
+				</div>
+			</div>
+		</nav>
+
+	</div>
+
+</body>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script> 
+<script type="text/javascript">  
+$(document).ready(function(){  
+    $(".navs").each(function(){  
+        $this = $(this);  
+        if($this[0].href==String(window.location)){  
+            $this.addClass("hover");
+			
+        }  
+    });  
+});  
+</script>
+</html>

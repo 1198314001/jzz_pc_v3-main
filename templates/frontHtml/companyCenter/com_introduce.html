@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>企业介绍</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/myInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/companyInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/essentialInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/com_introduce.css" rel="stylesheet" type="text/css" />
+
+  
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 companyInfo">
+				<div class="myInfo_left col-xs-2">
+					<div class="myInfo_left_title text-center col-xs-12">
+						<img src="../../../static/img/images/company/企业.png">
+						<spqn>企业中心</spqn>
+					</div>
+					
+					<div class="company_left_nav col-xs-12 text-center">
+						<li class="myInfo_left_nav1 col-xs-12"><a href="companyInfo.html">我的信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="essentialInfo.html">基本信息</a></li>
+						<li class="myInfo_left_nav1 active col-xs-12"><a href="com_introduce.html">企业介绍</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_manage_account.html">子账号管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="/user_collection/">管理VIP网站</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="mySample.html">我的样品</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_yellowpage.html">黄页管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_offerInfo.html">供货信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="purchaseInfo.html">采购信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="cooperationInfo.html">合作信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_Collection.html">商家收藏</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_recruit.html">招聘管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_myMomment.html">我的评论</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_stationNotice.html">站内通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="securityCenter.html">安全中心</a></li>
+					</div>
+				
+				</div>
+				<div class="recommend_right col-xs-10">
+					<div class="introduce col-xs-12">
+						<div class="introduce2">
+						<div class="introduce_title col-xs-12">
+							企业介绍图片<span class="introduce_title2">(升级VIP能上传10张图片)</span>
+						</div>
+						
+						<div class="introduce_img col-xs-1-5">
+							<div class="col-xs-12 introduce_img1"><img src="../../../static/img/images/company/guanggao.jpg"></div>
+							<div class="introduce_img2 col-xs-6">
+								
+							</div>
+							<div class="introduce_feng col-xs-6">
+								<div class="introduce_img3 col-xs-12">
+									设为封面
+								</div>
+							</div>
+						</div>
+						
+						<div class="introduce_img col-xs-1-5">
+							<div class="col-xs-12 introduce_img1"><img src="../../../static/img/images/company/guanggao.jpg"></div>
+							<div class="introduce_img2 col-xs-6">
+								
+							</div>
+							<div class="introduce_feng col-xs-6">
+								<div class="introduce_img3 col-xs-12">
+									设为封面
+								</div>
+							</div>
+						</div>
+						
+						<div class="introduce_img col-xs-1-5">
+							<div class="col-xs-12 introduce_img1"><img src="../../../static/img/images/company/guanggao.jpg"></div>
+							<div class="introduce_img2 col-xs-6">
+								
+							</div>
+							<div class="introduce_feng col-xs-6">
+								<div class="introduce_img3 col-xs-12">
+									设为封面
+								</div>
+							</div>
+						</div>
+						
+						<div class="introduce_img col-xs-1-5">
+							<div class="col-xs-12 introduce_img1"><img src="../../../static/img/images/company/guanggao.jpg"></div>
+							<div class="introduce_img2 col-xs-6">
+								
+							</div>
+							<div class="introduce_feng col-xs-6">
+								<div class="introduce_img3 col-xs-12">
+									设为封面
+								</div>
+							</div>
+						</div>
+						
+						<div class="introduce_img col-xs-1-5">
+							<div class="col-xs-12 introduce_img1"><img src="../../../static/img/images/company/guanggao.jpg"></div>
+							<div class="introduce_img2 col-xs-6">
+								
+							</div>
+							<div class="introduce_feng col-xs-6">
+								<div class="introduce_img3 col-xs-12">
+									设为封面
+								</div>
+							</div>
+						</div>
+						
+						<div class="introduce_img col-xs-1-5">
+							<div class="col-xs-12 introduce_img1"><img src="../../../static/img/images/company/guanggao.jpg"></div>
+							<div class="introduce_img2 col-xs-6">
+								
+							</div>
+							<div class="introduce_feng col-xs-6">
+								<div class="introduce_img3 col-xs-12">
+									设为封面
+								</div>
+							</div>
+						</div>
+						
+						<div class="introduce_img col-xs-1-5">
+							<div class="col-xs-12 introduce_img1"><img src="../../../static/img/images/company/guanggao.jpg"></div>
+							<div class="introduce_img2 col-xs-6">
+								
+							</div>
+							<div class="introduce_feng col-xs-6">
+								<div class="introduce_img3 col-xs-12">
+									设为封面
+								</div>
+							</div>
+						</div>
+					</div>
+					 
+						<div class="col-xs-12 kong1"></div>
+						<div class="introduce_info col-xs-12">
+							<div class="introduce_info_title col-xs-12">企业介绍</div>
+							<div class="introduce_info_title1 col-xs-2 col-md-1 text-center"><img src="../../../static/img/images/login/xiaxian.png">
+							</div>
+							
+							<div class="introduce_info_conter col-xs-12"><span>洛阳龙马轴承有限公司设计和生产内径Φ200mm以上的各类大型、特大型、回转支撑和非标准轴承，我厂技术力量雄厚，加工设备精良，检测手段齐全，产品质量上乘，并已通过ISO9001-2000质量体系认证，产品广泛应用于港口、工程、冶金、矿山、食品、煤炭、水泥、军事工程机械及高科研设备等不同领域，欢迎你访问我厂的网站http://www.cnbearing.netlmc.com.cn/或发E-mail:lmc@lmc.com.cn查询你所需要的轴承，我厂对客户的承诺：对质量负责到底、为客户服务到底。</span>
+							</div>
+						</div>
+						<div class="introduce_info col-xs-12">
+							<div class="introduce_info_title col-xs-12">主营产品介绍</div>
+							<div class="introduce_info_title1 col-xs-1 col-md-1 text-right"><img src="../../../static/img/images/login/xiaxian.png">
+							</div>
+							
+							<div class="introduce_info_conter col-xs-12"><span>洛阳龙马轴承有限公司设计和生产内径Φ200mm以上的各类大型、特大型、回转支撑和非标准轴承，我厂技术力量雄厚，加工设备精良，检测手段齐全，产品质量上乘，并已通过ISO9001-2000质量体系认证，产品广泛应用于港口、工程、冶金、矿山、食品、煤炭、水泥、军事工程机械及高科研设备等不同领域，欢迎你访问我厂的网站http://www.cnbearing.netlmc.com.cn/或发E-mail:lmc@lmc.com.cn查询你所需要的轴承，我厂对客户的承诺：对质量负责到底、为客户服务到底。</span>
+							</div>
+						</div>
+						
+						<div class="introduce_info col-xs-12">
+							<div class="introduce_info_title col-xs-12">产品优势介绍</div>
+							<div class="introduce_info_title1 col-xs-1 col-md-1 text-right"><img src="../../../static/img/images/login/xiaxian.png">
+							</div>
+							
+							<div class="introduce_info_conter col-xs-12"><span>洛阳龙马轴承有限公司设计和生产内径Φ200mm以上的各类大型、特大型、回转支撑和非标准轴承，我厂技术力量雄厚，加工设备精良，检测手段齐全，产品质量上乘，并已通过ISO9001-2000质量体系认证，产品广泛应用于港口、工程、冶金、矿山、食品、煤炭、水泥、军事工程机械及高科研设备等不同领域，欢迎你访问我厂的网站http://www.cnbearing.netlmc.com.cn/或发E-mail:lmc@lmc.com.cn查询你所需要的轴承，我厂对客户的承诺：对质量负责到底、为客户服务到底。</span>
+							</div>
+						</div>
+						
+						<div class="form-group">
+									<div class="col-sm-offset-3 col-sm-10 ess_btn">
+										<button type="button" class="btn btn-default group_btn">保存并同步到vip网</button>
+										<button type="button" class="btn btn-default group_btn2 col-sm-offset-1">取消修改</button>
+									</div>
+								</div>
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>		
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+             
+
+
+
+

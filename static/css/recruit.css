@@ -1,0 +1,299 @@
+/* CSS Document */
+.recruit{
+	
+}
+.recruit_left{
+	height: 200rem;
+	
+	border-right: 1rem #F2F2F2 solid;
+	
+}
+
+.recruit_right{
+	height: 200rem;
+	margin-top: 1.5rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #FFFFFF;
+}
+.recruit_left1{
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #FFFFFF;
+	height: 37rem;
+	margin-top: 1.5rem;
+}
+.recruit_left1_title{
+	font-size: 1.4rem;
+	font-weight: 550;
+	padding-top: 1rem;
+	border-bottom: 1px #f2f2f2 solid;
+	height: 3.5rem;
+	
+}
+.recruit_left1_conter{
+	color: #ADADAD;
+	border-bottom: 1px #f2f2f2 solid;
+	height: 3rem;
+	padding-top: 0.7rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.recruit_left1_conter1{
+	padding-top: 1rem;
+	font-size: 1.3rem;
+	font-weight: 500;
+	
+}
+.recruit_right_title{
+	height: 4.5rem;
+
+	font-size: 1.3rem;
+	background-color: #FFFFFF;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-bottom: 1rem #F2F2F2 solid;
+}
+.recruit_right_title1{
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 3.5rem;
+	padding-top: 1rem;
+	
+}
+.recruit_right_title1.active{
+	
+	background-color: #ADADAD;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.recruit_right_search{
+	padding-top: 0.7rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #FFFFFF;
+	height: 3.5rem;
+	
+}
+.recruit_right_search1{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0.8rem;
+	font-size: 1.3rem;
+	font-weight: 550;
+}
+.recruit_search_input1{
+	padding-left: 5px;
+	height: 2.5rem;
+	border-radius: 0.5rem;
+	border: 1px #ADADAD solid;
+	margin-top: 0.5rem;
+}
+.recruit_btn{
+	height: 2.5rem;
+	background-color: #FFFFFF;
+	border: 1px #ADADAD solid;
+	border-radius: 1rem;
+}
+.job_search{
+	border-bottom: 1rem #F2F2F2 solid;
+	height: 6rem;
+}
+.search_img img{
+	height: 0.8rem;
+	width: 1.5rem;
+}
+
+.recruit_search_btn{
+	padding-top: 1rem;
+}
+.recruit_search_btn1{
+	padding-left: 6px;
+	padding-right: 0px;
+	margin-top: 0.5rem;
+	height: 2.5rem;
+	width: 6rem;
+	border: 1px #FF6100 solid;
+	background-color: #F61000;
+	color: #FFFFFF;	
+	border-radius: 5px;
+	padding-top: 0.35rem;
+}
+.seekjob_corter{
+	margin-top: 1rem;
+	height: 110rem;
+	background-color: #FFFFFF;
+}
+.seekjob_body{
+	height: 10rem;
+	border-radius: 5px;
+	background-color: #F2F2F2;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 1rem;
+}
+.seekjob_body_title{
+	font-size: 1.4rem;
+	padding-top: 1rem;
+}
+.seekjob_body_title_btn{
+	border: 1px #ff6100 solid;
+	font-size: 1rem;
+	border-radius: 3px;
+	color: #FF6100;
+}
+.seekjob_body_title_btn a{
+	color: #ff6100;
+}
+a{ text-decoration:none} 
+.seekjob_body_corter{
+	padding-top: 1rem;
+	font-size: 1rem;
+	color: #ADADAD;
+}
+.seekjob_body_corter1{
+	padding-top: 0.5rem;
+	font-size: 1.4rem;
+}
+.seekjob_body_corter2{
+	
+	padding-top: 1rem;
+	
+}
+
+.seekjob_money{
+	
+	color: #ff6100;
+	font-size: 1.3rem;
+}
+.seekjob_money{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.seekjob_money2{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.seekjob_money1{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.seekjob_body_time{
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #ADADAD;
+}
+/*
+	找工作详情
+*/
+
+.job_detail_head{
+	padding-left: 0px;
+	padding-right: 0px;
+	height:15rem;
+	background-color: #FFFFFF;
+	margin-top: 1rem;
+	border-bottom: 1px #F2F2F2 solid;
+}
+.job_detail_head1{
+	margin-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
+
+.job_detail_head1_title{
+	font-size: 1.4rem;
+}
+.job_detail_head1_title1{
+	font-size: 1.4rem;
+}
+.job_detail_head1_money{
+	font-size: 1.4rem;
+	color: #FF6100;
+	
+}
+.job_detail_head1_sc{
+	height: 2.7rem;
+	width: 7rem;
+	border: 1px #ff6100 solid;
+	border-radius: 3px;
+	padding-left: 1rem;
+	padding-right: 0px;
+	padding-top: 0.4rem;
+	margin-right: 2rem;
+	
+}
+.job_detail_head1_sc1{
+	height: 2.7rem;
+	width: 7rem;
+	border: 1px #ff6100 solid;
+	border-radius: 3px;
+	padding-left: 1rem;
+	padding-right: 0px;
+	padding-top: 0.4rem;
+	margin-right: 2rem;
+	background-color: #FF6100;
+	color: #FFFFFF;
+}
+.job_detail_head1_sc img{
+	height: 1.5rem;
+	width: 1.5rem;
+}
+.job_detail_head1_sc text{
+	padding-top: 1rem;
+}
+.job_detail_head2{
+	height: 10rem;
+	border-bottom: 1px #F2F2F2 solid;
+}
+.detail_head2_tel{
+	font-size: 1.4rem;
+	padding-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.detail_head2_tel1{
+	padding-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #ADADAD;
+}
+.detail_jobinfo{
+	
+	border-bottom: 1px #F2F2F2 solid;
+}
+.detail_jobinfo_title{
+	font-size: 1.4rem;
+	padding-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.detail_jobinfo_conter{
+	padding-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #ADADAD;
+}
+/*
+	找企业
+*/
+.seekjob_body_img{
+	padding-left: 10px;
+	padding-right: 0px;
+	padding-top: 1rem;
+}
+.seekjob_body_img img{
+	height: 8rem;
+	width: 13rem;
+}
+.enter_body_corter1{
+	padding-top: 1rem;
+	font-size: 1.4rem;
+	color: #FF6100;
+}
+.enter_money1{
+	color:#ADADAD;
+	padding-left: 0px;
+	padding-right: 0px;
+}

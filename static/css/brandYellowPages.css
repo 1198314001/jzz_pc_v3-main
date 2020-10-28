@@ -1,0 +1,112 @@
+/* CSS Document */
+.purchase_center_brand{
+	height: 135rem;
+}
+.brandyellow{
+	background-color: #FFFFFF;
+	height: 52rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 0.5rem;
+	
+}
+.container_common{
+	margin-top: 1rem;
+}
+.brandquery{
+	padding-top: 1rem;
+	font-size: 1.5rem;
+	height: 4rem;
+	border-bottom: 1px #ECECEC solid;
+}
+
+.brandyellowimg{
+	height: 14rem;
+}
+.userPageTile{
+	height: 100%;
+	width: 100%;
+	padding-left: 0px;
+	border-bottom: 1px #000000 solid;
+	font-size: 1.3rem;
+}
+.userPageTile1{
+	height: 100%;
+	width: 25%;
+	padding-left: 0px;
+	border-bottom: 1px #000000 solid;
+	font-size: 1.3rem;
+}
+
+
+.brandyellowimg1{
+	height: 4rem;
+	margin-top: 1.5rem;
+	width: 24%;
+	border: 1px #ECECEC solid;
+	margin-right: 0.5%;
+	margin-left: 0.5%;
+	padding-top: 0.5rem;
+	box-shadow: 5px 5px 5px #F4F4F4;/* 边框阴影 */  
+    -moz-box-shadow: 0px 0px 5px #F4F4F4; /* 老的 Firefox */
+}
+.brandyellowT{
+	padding-top: 0.5rem;
+	font-size: 1.3rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.brandyellowtxt{
+	height: 5rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.brandyellowA.active{
+	color: #FF5F00;
+}
+.brandyellowL{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.sidebar>a :hover{
+		background: #FFFFFF;
+		color:  #FF5F00;
+	
+}
+.brandyellow2{
+	margin-top: 0.5rem;
+	height: 25rem;
+	background-color: #FFFFFF;
+}
+.brandyellow3{
+	margin-top: 0.5rem;
+	height: 100rem;
+	background-color: #FFFFFF;
+}
+.brandquery2{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1rem;
+	font-size: 1.5rem;
+	height: 4rem;
+	border-bottom: 1px #ECECEC solid;
+	font-size: 1.4rem;
+}
+
+
+
+.comm{
+	margin-top: 1rem;
+}
+
+
+
+
+
+
+

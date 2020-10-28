@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>金蜘蛛承轴网</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="../../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../static/js/Vue.jsv2.6.11.js"></script>
+<script type="text/javascript" src="../../static/js/vue.min.js"></script>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../static/css/head.css" rel="stylesheet" type="text/css" />
+	
+	
+	
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div class="col-md-12" style="height:24rem;background-color: #FFFFFF;">
+		<div class="col-md-10 text-right col-md-offset-1" style="background-color: #ffffff;">
+			<div class="container col-xs-12 col-sm-12 col-md-12 text-center" style="padding-top: 2rem;">
+		  <div class="row">
+			<div class="col-xs-4 col-md-4 text-left">
+			  <ul class="list-inline" style="color:#BEBEBE;">
+				<li>中文</li>
+				<li>|</li>
+				<li>Englishi</li>
+				<li>|</li>
+				<li>繁体字</li>
+			  </ul>
+			</div>
+			<div class="container col-xs-8 col-md-8 text-right base1_title2">
+			  <ul class="list-inline base1_title2">
+                  
+				<li><a target="_parent" href="/">欢迎你，</a></li>
+				<li><a target="_parent" href="/quit/">退出登录</a></li>
+                 
+                      <li><a target="_parent" href="/login/">你好，请登录</a></li>
+				   
+				<li><a target="_parent" href="/register/">免费注册</a></li>
+				<li><a target="_parent" href="/jzzbearing/templates/frontHtml/login/peRegister.html">客服在线</a></li>
+				<li><a target="_parent" href="/jzzbearing/templates/frontHtml/login/peRegister.html">广告服务</a></li>
+				<li><a target="_parent" href="../frontHtml/my/myInfo.html">联系我们</a></li>
+				<li><a target="_parent" href="../frontHtml/companyCenter/companyInfo.html">帮助中心</a></li>
+			  </ul>
+			</div>
+			
+		  </div>
+		  <div class="row" style="height: 12rem;padding-top: 2rem;">
+			
+			<div class="container col-xs-1 col-sm-1 col-md-1 text-left">
+				<a href="/"> 
+					<img style="height:7rem;width: 7rem;" src="../../static/img/images/index/logo.jpg"></a>
+			  
+			</div>
+			<div class="container col-xs-5 col-sm-7 col-md-6" style="padding-top:2rem">
+			  <div class="input-group"><!--保持内联，消除边框，类似于form-inline-->
+				<div class="input-group-btn"><!--不换行，与相邻元素内联，包含dropdown-->
+				  <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="border-Radius:0px"> 请选择<span class="caret"></span> </button>
+				  <ul class="dropdown-menu">
+					<li><a href="javascript:void(0);">宝贝</a></li>
+					<li><a href="javascript:void(0);">店铺</a></li>
+				  </ul>
+				</div>
+			<input type="text" class="form-control" style="background-color: #FFFFFF" placeholder="请输入关键词" />
+				<span class="input-group-btn"><!--不换行，与相邻元素内联-->
+					
+				<button class="btn btn-primary" style="border-Radius:0px;">搜索</button>
+				</span> <span class="input-group-btn" style="padding-left: 2rem;"><!--不换行，与相邻元素内联-->
+				<button class="btn btn-primary" style="border-Radius:0px">发布信息</button>
+				</span> </div>
+			</div>
+			<div class="container col-xs-3 col-sm-3 col-md-4 text-right"> 
+				<img style="height: 8rem;width:20rem;" src="../../static/img/images/index/shanghaijigujian.jpg"> </div>
+			<div class="container col-xs-1 col-sm-1 col-md-1 text-right"> <img style="height: 8rem;width:8rem;" src="../../static/img/images/index/bearing.jpg"></div>
+			
+		  </div>
+		</div>
+		
+			<div class="nav_a navbar text-right col-md-12">
+			  <div class="row nav_b col-md-12">
+				  <ul class="nav nav-pills index_title sidebar">
+				  
+				   <li><a  class="navs navs1 hover" id="index" target="_parent" href="../frontHtml/index.html">首页</a></li>
+					<li><a class="navs" target="_parent" href="../frontHtml/supply/supplyInfo.html">供货信息</a></li>
+					<li><a class="navs" target="_parent" href="../frontHtml/purchase.html">采购导航</a></li>
+					<li><a class="navs" target="_parent" href="../frontHtml/query/suQuery.html">型号查询</a></li>
+					<li><a class="navs" target="_parent" href="../frontHtml/supplier/supplier.html">找供应商</a></li>
+					<li><a class="navs" target="_parent" href="../frontHtml/buyingInformation/buyingInformation.html">采购信息</a></li>
+					<li><a class="navs" target="_parent" href="../frontHtml/industry/industry_News.html">行业动态</a></li>
+					<li><a class="navs" target="_parent" href="../frontHtml/exhibition/exhibitionInfo.html">展会信息</a></li>
+					<li><a class="navs" target="_parent" href="../frontHtml/train/trainInfo.html">培训信息</a></li>
+					<li><a class="navs" target="_parent" href="../technicalExchange/technicalExchange.html">技术交流</a></li>
+					<li><a class="navs" target="_parent" href="../frontHtml/integral/integral.html">杂志期刊</a></li>
+					<li><a class="navs" target="_parent" href="../frontHtml/recruit/seekJob.html">招聘信息</a></li>
+					<li><a class="navs" target="_parent" href="https://www.qcc.com/?utm_source=baidu1&utm_medium=cpc&utm_term=pzsy">企业信用查询</a></li>
+				  </ul>
+				</div>
+			  
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>采购商详情</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/purchase.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplyInformation.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/querydel.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplier.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/buyingInfo.css" rel="stylesheet" type="text/css" />
+
+	
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+<div class="col-md-10 col-md-offset-1" style="background-color: #F2f2f2;">
+	<div class="buying_query col-xs-10 col-sm-10 col-md-12 text-center">
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_left">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+		<div class="container col-xs-8 col-sm-8 col-md-8 buying">
+			<div class="supplier_del_bottom col-md-12">
+				<div class="supplier_del_left col-md-8">
+					<div class="supplier_del_left_title col-md-12">
+						<div class="supplier2_title1 col-md-12">诺森艾恩工业技术（北京）有限公司采购清单</div>
+						<div class="supplier2_title2 col-md-12">
+							<span class="buyinginfo_del col-md-2">采购期限：长期</span>
+							<span class="buyinginfo_del col-md-3">采购数量：3000</span>
+							<span class="buyinginfo_del col-md-7">采购商：诺森艾恩工业技术（北京）有限公司采购清单</span>
+						</div>
+					</div>
+					
+				<div class="buyinfo_left col-md-12">
+					<div class="buyinfo_left_img">
+						<img src="../../../static/img/images/supplier/timg.jpg">
+					</div>
+						<div class="buyinfo_left_del col-md-12">菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，的不仅是术，更是梦想！！！菜鸟教程，学的不仅是技术！！！
+				</div>
+				</div>
+			
+					
+				
+					
+
+				</div>
+				<div class="supplier_del_right col-md-4">
+					<div class="supplier_tel col-md-12">
+						联系方式
+					</div>
+					
+					<div class="contact_del col-md-12">
+						<div class="contact_title col-md-12">
+							广州金蜘蛛轴承有限公司
+						</div>
+						<div class="contact_list col-md-12">联系人：张小姐</div>
+						<div class="contact_list col-md-12">联系手机：15989687887</div>
+						<div class="contact_list col-md-12">联系电话：020-8987457</div>
+						<div class="contact_list col-md-12">传真电话：020-8987457</div>
+						<div class="contact_list col-md-12">电子邮箱：7889787@qq.com</div>
+						<div class="contact_list col-md-12">所在地：广州</div>
+						<div class="contact_list col-md-12">详细地址：</div>
+						<div class="contact_list col-md-12">广州市越秀区流花广场园景中心1310</div>
+					</div>
+				</div>
+				
+				
+				<div class="supplier_del_right2 col-md-4">
+					<div class="supplier_tel col-md-12">
+						给我留言
+					</div>
+					
+					<div>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<div class="col-sm-12 supplier_form text_center">
+									<input type="text" class="form-control supplier_input" id="name" 
+										   placeholder="名字">
+									
+									<input type="text" class="form-control supplier_input" id="tel" 
+										   placeholder="联系方式">
+									
+									<input type="text" class="form-control supplier_input3" id="message" 
+										   placeholder="留言板">
+								</div>
+							</div>
+							
+							
+						
+							<div class="form-group col-sm-12 supplier_form_btn">
+								<div class="col-sm-12 supplier_form_btn2">
+									<button type="submit" class="btn control_btn">发送留言</button>
+								</div>
+							</div>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+			<!--mmmm-->
+		</div>
+		
+		
+		
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_right">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+	</div>
+	<div class="right-p col-xs-1 col-sm-1 col-md-1"></div>
+	
+</div>
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+
+

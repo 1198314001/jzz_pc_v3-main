@@ -1,0 +1,131 @@
+/* CSS Document */
+.col-xs-12 .col-sm-12 .col-md-12{
+	padding-left: 0px;
+	padding-right: 0PX;
+}
+.querydel{
+	height: 35rem;
+	margin-top: 0.5rem;
+	background-color: #fff;
+	
+}
+.querydel_top{
+	padding-left: 0px;
+	padding-right: 0PX;
+	
+}
+.querydel_img{
+	padding-left: 0px;
+	padding-top: 1rem;
+}
+.querydel_center1{
+	padding-left: 0px;
+	padding-top: 1rem;
+	font-size:1.5rem;
+}
+.querydel_center1_txt{
+	padding-top: 0.5rem;
+	font-size: 0.5rem;
+	color: #A5A5A5;
+}
+.querydel_center1_txt2{
+	padding-top: 1rem;
+	padding-left: 0px;
+	color: #A5A5A5;
+}
+.btn-dangergong{
+	height: 2rem;
+	width: 9rem;
+}
+.querydel_btn{
+	padding-top: 3rem;
+}
+.querydel_bottom{
+	padding-top: 1rem;
+	padding-left: 0PX;
+}
+.querydel_bottom1{
+	padding-top: 1rem;
+	border-bottom: 1.5px #F8F8F8 solid;
+	height: 3.5rem;
+}
+.querydel_bottom2{
+	padding-top: 1rem;
+	
+	height: 3.5rem;
+}
+.querydel_bottom1_title{
+	padding-left: 0PX;
+	
+	height: 3.5rem;
+}
+.su_dropdown1{
+	height: 4rem;
+	margin-top: 1rem;
+	background-color: #FFFFFF;
+	font-size: 1.5rem;
+	padding-top: 1rem;
+}
+.su_dropdown2{
+	height: 4rem;
+	margin-top: 0.1rem;
+	background-color: #FFFFFF;
+}
+.querydel_bottom1_txt{
+	color: #A5A5A5;
+}
+.brand{
+	height: 90%;
+	
+	margin-top: 1.5%;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: red;
+}
+.bearingList1_img{
+	height: 100%;
+	width: 100%;
+	
+}
+.branddel{
+	padding-top: 1rem;
+}
+.brandtitle{
+	font-size: 1.5rem;
+}
+.brandtitle.active{
+	color: #FE5F01;
+}
+.branddel_txt{
+	height: 4rem;
+}
+.branddel_del{
+	height: 5rem;
+	overflow:hidden;
+	color: #A5A5A5;
+}
+.branddelIn{
+	padding-top: 1rem;
+	padding-left: 0px;
+}
+.branddelIn1{
+	color: #A5A5A5;
+	padding-left: 0px;
+	font-size: 1rem;
+}
+.branddel_btn{
+	padding-top: 3.5rem;
+	
+}
+.purchase_center_title{
+	
+}
+.purchase1_query{
+	height: 152rem;
+}
+.branddel_btn1{
+	padding-top: 3.5rem;
+}
+.buyingInfo_title_del{
+	
+}

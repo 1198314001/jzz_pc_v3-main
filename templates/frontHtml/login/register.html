@@ -1,0 +1,108 @@
+{% extends 'base/base2.html' %}
+{% load static %}
+
+{% block script %}
+    <link href="{% static 'css/login.css' %}" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/register.css' %}" rel="stylesheet" type="text/css" />
+
+{% endblock %}
+
+{% block style %}
+    <style>
+    body{
+        background-color: #F8F8F8;
+    }
+    </style>
+{% endblock %}
+{% block body %}
+	
+	<div class="col-xs-6 col-sm-6 col-md-6 register">
+		<div class="col-xs-2 col-sm-2 col-md-2 text-left" style="padding-top: 2rem;">
+			<img style="height: 6rem;width: 6rem;" src="{% static 'img/images/index/logo.jpg' %}"></div>
+		<div class="col-xs-8 col-sm-8 col-md-8 text-center"> 
+			<div class="col-xs-12 col-sm-12 col-md-12 register_head">注册</div>
+			<div class="col-xs-12 col-sm-12 col-md-12"><img src="{% static 'img/images/login/xiaxian.png' %}"></div>
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-3"> </div>
+		
+		<div class="col-xs-12 col-sm-12 col-md-12 text-center register_re">
+			<div class="col-xs-6 col-sm-6 col-md-6 text-center">
+					<span class="register_zc col-xs-6 col-sm-6 col-md-6 text-center">
+						<div>
+							企业注册
+							<img src="{% static 'img/images/login/xiaxian.png' %}">
+						</div>
+						
+					</span>
+					<span class="col-xs-6 col-sm-6 col-md-6 text-left">
+						<div><a style="color: #ABA3A3" href="/jzzbearing/templates/frontHtml/login/peRegister.html">个人注册</a></div>
+						
+					</span>
+					
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 text-center">
+					<span class="register_zc">已有账号？</span>
+					<span class="register_zc"><a href="/login/">快速登录>></a></span>
+				</div>
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2"> </div>
+		
+		<div class="col-xs-8 col-sm-8 col-md-8 text-center">	
+					<form class="form-horizontal" role="form">
+						<div class="form-group form_qy">
+							<div class="col-sm-12 text-center">
+								<input type="text" class="form-control" id="lastname" 
+									   placeholder="请设置用户名">
+							</div>
+						</div>
+						<div class="input-group form_qy">
+							<span class="input-group-addon">+86</span>
+							<input type="text" class="form-control" placeholder="请输入您的手机号">
+						</div>
+						<div class="input-group form_qy">
+							
+							<input type="text" class="form-control" placeholder="请输入验证码">
+							<span class="input-group-addon">获取验证码</span>
+						</div>
+						
+						
+						<div class="form-group form_qy">
+							<div class="col-sm-12 text-center">
+								<input type="text" class="form-control" id="lastname" 
+									   placeholder="请设置你的密码">
+							</div>
+						</div>
+						
+						
+						<div class="form-group form_qy">
+							<div class="col-sm-12 text-center">
+								<input type="text" class="form-control" id="lastname" 
+									   placeholder="请再次输入你的密码">
+							</div>
+						</div>
+						
+						 <button type="button" class="btn loginbutton col-xs-12 col-sm-12 col-md-12 text-center">
+						下一步</button>
+						
+						<div class="form-group form_qy">
+							<div class="col-sm-12 text-center register_tk">
+								<label>
+									<input type="checkbox">已阅读并同意
+								</label>
+								<label><a href="#">《金蜘蛛承轴网服务条款》</a></label>
+								<label><a href="#">《金蜘蛛承轴网服务条款》</a></label>
+							</div>
+						</div>
+						
+					</form>
+				</div>
+		
+	</div>
+	<script>
+   
+		
+		
+</script>
+	
+
+{% endblock %}

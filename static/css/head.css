@@ -1,0 +1,81 @@
+.anav{
+	font-size: 1.2rem;
+}
+
+.head3.nav>li>a {
+	position: relative;
+    display: block;
+   padding-left: 10px;
+   padding-right: 10px;
+	font-size: 1.38rem;
+}
+.head3{
+	padding-left: 9%;
+}
+
+.headf{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.base1_title2 li a{
+	color: #BEBEBE;
+}
+.index_title li a{
+	  position: relative;
+    display: block;
+    padding: 10px 13px;
+	font-size: 1.5rem;
+}
+
+.sidebar>a :hover{
+		background: #FFFFFF;
+		color:  #FF5F00;
+}
+.base2_title ul li{
+	color: #BEBEBE;
+}
+.base2_title2 ul li a{
+	color: #BEBEBE;
+}
+/*
+	
+
+*/
+.base1_title{
+	padding-top: 1rem;
+	color: #ADADAD;
+}
+.base1_title_right1{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.base1_title_search{
+	padding-top: 1rem;
+}
+
+
+
+.hover {
+	background-color: #FF6100;
+	
+}
+.hover.navs {
+	color: #FFFFFF;
+}
+.navs{
+	padding-left: 20px;
+}
+
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+a{
+	color: #000000;
+}
+
+

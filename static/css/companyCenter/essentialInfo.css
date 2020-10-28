@@ -1,0 +1,107 @@
+/* CSS Document */
+a:hover { color:#FF6100; }
+.essentialInfo_logo{
+	
+}
+.essentialInfo_logo1{
+	padding-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1.5rem;
+}
+.essentialInfo_logo2{
+
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1rem;
+	
+	
+}
+.essentialInfo_logo_txt{
+	margin-top: 3rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #ADADAD;
+	border: 1px #f2f2f2 solid;
+	width: 7rem;
+	border-radius: 5px;
+	padding-left: 0.8rem;
+}
+.essentialInfo_logo_txt1{
+	margin-top: 3rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #ADADAD;
+}
+.essentialInfo_group{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.essentialInfo_group1{
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #ADADAD;
+}
+.essentialInfo_group2{
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #ADADAD;
+	letter-spacing: 0.5rem;
+}
+.essentialInfo_group3{
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #ADADAD;
+	letter-spacing: 2rem;
+}
+.essentialInfo_control{
+	background-color: #FFFFFF;
+	
+}
+
+.form-control {
+    background-color: #FFFFFF;
+}
+.essentialInfo_box{
+	margin-left: 2rem;
+}
+.biaoqian{
+	margin-left: 1rem;
+	padding-top: 0.5rem;
+	
+	height: 3rem;
+	width: 10rem;
+	border: 1px #f2f2f2 solid;
+	color: #ADADAD;
+	border-radius: 5px;
+}
+.biaoqian_Img{
+	padding-left: 1rem;
+}
+.biaoqian_Img img{
+	height: 1rem;
+	width: 1rem;
+	
+}
+.biaoqian_Img2{
+	margin-top: 0.7rem;
+	margin-left: 1rem;
+	height: 1.5rem;
+	width: 1.5rem;
+}
+.group_btn{
+	background-color: #FF6100;
+	color: #FFFFFF;
+	font-size: 1.2rem;
+}
+.group_btn2{
+	font-size: 1.2rem;
+}
+.ess_btn{
+	padding-top: 2rem;
+}
+.essentialInfo_form{
+	padding-top: 2rem;
+}
+
+.

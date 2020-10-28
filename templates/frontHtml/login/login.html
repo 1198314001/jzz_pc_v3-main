@@ -1,0 +1,80 @@
+{% extends 'base/base2.html' %}
+{% load static %}
+
+{% block script %}
+	<link href="{% static 'css/login.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+
+{% block body %}
+		<div class="col-xs-12 col-sm-12 col-md-12 login-body">
+			<div class="col-xs-4 col-sm-4 col-md-4"></div>
+			<div class="col-xs-4 col-sm-4 col-md-4 text-center login" style="margin-top: 1.5rem;">
+				<div class="col-xs-5 col-sm-5 col-md-2 text-left">
+					<div class="login-dl text-center">
+						<text>登录</text>
+					</div>
+					
+				</div>
+				<div class="col-xs-7 col-sm-7 col-md-10 text-right login-dl1">
+					<img src="{% static 'img/images/login/320d8.png'%}">
+				</div>
+				
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<form class="bs-example bs-example-form col-xs-11 col-sm-11 col-md-11" action="/login_check/" style="padding-top: 2rem;" role="form" method="post">
+                        {% csrf_token %}
+						<div class="input-group">
+							<span class="input-group-addon">
+							<img src="{% static 'img/images/login/xinfeng.png'%}">
+						</span>
+							<input type="text" name="user_name" class="form-control inputLogin" placeholder="请输入用户名">
+						</div>
+						
+						<div class="input-group" style="margin-top: 3rem;">
+							<span class="input-group-addon">
+							<img src="{% static 'img/images/login/suo.png'%}">
+						</span>
+							<input type="password" name="pwd" class="form-control inputLogin" placeholder="请输入密码">
+						</div>
+						
+						<div class="checkbox password">
+							<label  class="col-xs-4 col-sm-4 col-md-4 text-left">
+								<input type="checkbox">记住密码
+							</label>
+							
+							<label  class="col-xs-8 col-sm-8 col-md-8 text-right">
+								<a style="color:#000000" href="/jzzbearing/templates/frontHtml/login/resetPassword.html">忘记密码</a><label></label><a style="color:#000000" href="/jzzbearing/templates/frontHtml/login/peRegister.html">免费注册</a>
+							</label>
+						</div>
+						 <button type="submit"  class="btn loginbutton col-xs-12 col-sm-12 col-md-12 text-center">
+						登录</button>
+					</form>
+					
+					
+					<div hidden>
+					<div class="col-xs-12 col-sm-12 col-md-12" style="padding-top: 4rem;">
+						<div class="col-xs-4 col-sm-4 col-md-3"><img class="xian"  src="{% static 'img/images/login/xian.jpg'%}"></div>
+						<div class="col-xs-4 col-sm-4 col-md-5 text-center">其它登录方式</div>
+						<div class="col-xs-4 col-sm-4 col-md-3 text-left"><img class="xian" src="{% static 'img/images/login/xian.jpg'%}">
+						</div>
+					</div>
+					
+					<div class="col-xs-4 col-sm-4 col-md-4 text-right" style="padding-top: 4rem;">
+						<a href="/jzzbearing/templates/frontHtml/login/login2.html"><img src="{% static 'img/images/login/wx.png'%}"></a>
+					</div>
+					<div hidden class="col-xs-4 col-sm-4 col-md-4 text-center" style="padding-top: 4rem;">
+						<a href="/jzzbearing/templates/frontHtml/login/login2.html"><img src="{% static 'img/images/login/qq.png'%}"></a>
+					</div>
+					<div hidden class="col-xs-4 col-sm-4 col-md-4 text-left" style="padding-top: 4rem;">					
+						<img src="{% static 'img/images/login/xinlang.png' %}">
+					</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4"></div>
+	
+		</div>
+
+{% endblock %}

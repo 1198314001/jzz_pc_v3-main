@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>展会信息详情</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/purchase.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplyInformation.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/querydel.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplier.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/buyingInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/trainInfo.css" rel="stylesheet" type="text/css" />
+
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+<div class="col-md-10 col-md-offset-1" style="background-color: #F2f2f2;">
+	<div class="purchase1_query col-xs-10 col-sm-10 col-md-12 text-center">
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_left">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+		<div class="container col-xs-8 col-sm-8 col-md-8 supplier" style="margin-top: 0px;">
+<!--
+			<div class="supplier_del_top col-md-12">
+				<div class="_top_title col-md-2 text_center">
+					筛选条件：
+				</div>
+				<div class="_top_title2 col-md-2 text_left">
+					开课状态<img class="drop_img" src="../../../static/img/images/public/xia.png">
+				</div>
+				<div class="_top_title2 col-md-2 text_left">课程分类<img class="drop_img" src="../../../static/img/images/public/xia.png"></div>
+				<div class="_top_title2 col-md-2 text_left">讲课地点<img class="drop_img" src="../../../static/img/images/public/xia.png"></div>
+				<div class="_top_title2 col-md-2 text_left">人气排行<img class="drop_img2" src="../../../static/img/images/public/shangxia.png"></div>
+				<div class="_top_title2 col-md-2 text_left">开课时间<img class="drop_img2" src="../../../static/img/images/public/shangxia.png"></div>
+			</div>
+-->
+			
+			<div class="trainInfo col-md-12">
+				<div class="trainInfo_contan col-md-12">
+					<div class="trainInfo_contan_img col-md-5 text-left">
+						<img src="../../../static/img/images/train/3.jpg">
+					</div>
+					<div class="trainInfo_contan_list col-md-7">
+						<a class="trainInfo_contan_title col-md-12 text-left" href="trainInfoDel.html">
+							课程主题：紧固件现代设计求真
+						</a>
+						<div class="trainInfo_contan_con col-md-12 text-left">
+							<span class="trainInfo_contan_name col-md-4">主讲人：龚先生</span>
+							<span class="trainInfo_contan_time col-md-8">开课时间：2020/09/08 - 2020/09/20</span>
+						</div>
+						<div class="trainInfo_contan_con col-md-12 text-left">
+							<span class="trainInfo_contan_name col-md-4">讲课地点：龚先生</span>
+							<span class="trainInfo_contan_time col-md-8">咨询电话：020-54778978</span>
+						</div>
+						<div class="trainInfo_contan_btn col-md-12 text-right">
+							<a href="/train_review/"><button type="button" class="btn btn-default trainInfo_btn active">回顾</button></a>
+							<a href="/train_detail/"><button type="button" class="btn btn-default trainInfo_btn">预告</button></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="trainInfo_contan col-md-12">
+					<div class="trainInfo_contan_img col-md-5 text-left">
+						<img src="../../../static/img/images/train/3.jpg">
+					</div>
+					<div class="trainInfo_contan_list col-md-7">
+						<div class="trainInfo_contan_title col-md-12 text-left">
+							课程主题：紧固件现代设计求真
+						</div>
+						<div class="trainInfo_contan_con col-md-12 text-left">
+							<span class="trainInfo_contan_name col-md-4">主讲人：龚先生</span>
+							<span class="trainInfo_contan_time col-md-8">开课时间：2020/09/08 - 2020/09/20</span>
+						</div>
+						<div class="trainInfo_contan_con col-md-12 text-left">
+							<span class="trainInfo_contan_name col-md-4">主讲人：龚先生</span>
+							<span class="trainInfo_contan_time col-md-8">开课时间：2020/09/08 - 2020/09/20</span>
+						</div>
+						<div class="trainInfo_contan_btn col-md-12 text-right">
+							<a href="/train_review/"><button type="button" class="btn btn-default trainInfo_btn active">回顾</button></a>
+							<a href="/train_detail/"><button type="button" class="btn btn-default trainInfo_btn">预告</button></a>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			<!--mmmm-->
+		</div>
+		
+		
+		
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_right">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+	</div>
+
+</div>
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+
+
+

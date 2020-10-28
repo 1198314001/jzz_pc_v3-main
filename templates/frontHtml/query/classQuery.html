@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>分类查询</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="../../../static/js/vue.min.js"></script>
+<script type="text/javascript" src="../../../static/js/Vue.jsv2.6.11.js"></script>
+<script type="text/javascript" src="../../../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../../static/js/api.js"></script>	
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/purchase.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplyInformation.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/brandYellowPages.css" rel="stylesheet" type="text/css" />
+
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+<div class="col-md-10 col-md-offset-1" style="background-color: #F2f2f2;">
+	<div class="purchase col-xs-10 col-sm-10 col-md-12 text-center">
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_left">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+		<div class="container col-xs-8 col-sm-8 col-md-8 container_purchase_center purchase_center_class">
+			<div class="su_nav">
+				<ul class="nav nav-pills">
+					<li class="navs active"><a href="/bearing_infosearch/">轴承型号查询</a></li>
+					<li class="navs"><a href="/bearing_typesearch/">轴承分类查询</a></li>
+					<li class="navs"><a href="/bearing_brandpage/">品牌黄页</a></li>
+					<li class="navs"><a href="/bearing_usepage/">用途黄页</a></li>
+					<li class="navs"><a href="/bearing_360type/">300常用型号</a></li>
+				 </ul>
+			</div>
+			
+			
+			
+			<div class="classQuery col-xs-12 col-sm-12 col-md-12">
+				<div class="classQuery_title col-xs-12 col-sm-12 col-md-12 shadow-sm p-3 mb-5 bg-white rounded">
+					<div class="class_title active col-xs-2 col-sm-2 col-md-2">类型</div>
+					<div class="class_title col-xs-2 col-sm-2 col-md-2">分类</div>
+				</div>
+				<div class="classQuery_left col-xs-3 col-sm-3 col-md-2">
+					<div class="classQuery_left1 col-xs-12 col-sm-12 col-md-12 text-center active">深沟球轴承</div>
+					<div class="classQuery_left1 col-xs-12 col-sm-12 col-md-12 text-center">调心球轴承</div>
+					<div class="classQuery_left1 col-xs-12 col-sm-12 col-md-12 text-center">圆柱滚子轴承</div>
+					<div class="classQuery_left1 col-xs-12 col-sm-12 col-md-12 text-center">调心滚子轴承</div>
+					<div class="classQuery_left1 col-xs-12 col-sm-12 col-md-12 text-center">滚针轴承(长圆柱滚子轴承)</div>
+				</div>
+				<div class="classQuery_right col-xs-9 col-sm-9 col-md-10"> 
+					<div class="classQuery_right1 col-xs-12 col-sm-12 col-md-12">
+						<div class="classQuery_right_title active col-xs-12 col-sm-12 col-md-12 text-left">开式深沟球轴承</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 classQuery_btn text-right">
+							<button type="button" class="btn btn-sm classQuery_btn1 active">查看供货商</button>
+							<button type="button" class="btn btn-sm classQuery_btn1">查看型号</button>
+							<button type="button" class="btn btn-sm classQuery_btn1">成为供货商</button>
+						</div>
+					</div>
+					
+				</div>
+				
+					<div class="classQuery_right col-xs-9 col-sm-9 col-md-10"> 
+					<div class="classQuery_right1 col-xs-12 col-sm-12 col-md-12">
+						<div class="classQuery_right_title col-xs-12 col-sm-12 col-md-12 text-left">开式深沟球轴承</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 classQuery_btn text-right">
+							<button type="button" class="btn btn-sm classQuery_btn1 active">查看供货商</button>
+							<button type="button" class="btn btn-sm classQuery_btn1">查看型号</button>
+							<button type="button" class="btn btn-sm classQuery_btn1">成为供货商</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		
+			
+			<!--mmmm-->
+		</div>
+		
+		
+		
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_right">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+	</div>
+	
+</div>
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+
+

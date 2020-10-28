@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>供货信息</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/myInfo.css" rel="stylesheet" type="text/css" />
+	
+<link href="../../../static/css/companyCenter/companyInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/com_manage_account.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/mySample.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/com_introduce.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/essentialInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/position.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/companyCenter/release.css" rel="stylesheet" type="text/css" />
+
+  
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 companyInfo">
+				<div class="myInfo_left col-xs-2">
+					<div class="myInfo_left_title text-center col-xs-12">
+						<img src="../../../static/img/images/company/企业.png">
+						<spqn>企业中心</spqn>
+					</div>
+					
+						<div class="company_left_nav col-xs-12 text-center">
+						<li class="myInfo_left_nav1 col-xs-12"><a href="companyInfo.html">我的信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="essentialInfo.html">基本信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_introduce.html">企业介绍</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_manage_account.html">子账号管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="../jzzVip/index.html">管理VIP网站</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="mySample.html">我的样品</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_yellowpage.html">黄页管理</a></li>
+						<li class="myInfo_left_nav1 active col-xs-12"><a href="com_offerInfo.html">供货信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="epurchaseInfo.html">采购信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="cooperationInfo.html">合作信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_Collection.html">商家收藏</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_recruit.html">招聘管理</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_myMomment.html">我的评论</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="com_stationNotice.html">站内通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="securityCenter.html">安全中心</a></li>
+					</div>
+				
+				</div>
+				<div class="company_page_right col-xs-10">
+					<div class="company_page col-xs-12 col-md-12">
+						<div calss="company_page1 col-xs-12 col-md-12 text-center">
+								<a class="company_page_a col-xs-1 col-md-1 text-center" href="/company_inviteinfo/">面试邀请</a>
+								<a class="company_page_a col-xs-1 col-md-1 text-center" href="/company_positioninfo/">职位申请</a>
+								<a class="company_page_a col-xs-1 col-md-1 text-center" href="/company_position_collect/">简历收藏</a>
+								<a class="company_page_a col-xs-1 col-md-1 text-center" href="/company_position_manage/">职位管理</a>
+							
+						</div>
+					</div>
+				</div>
+				<div class="release_offerInfo col-xs-10">			
+					<div class="release_offerInfo_title col-xs-12">
+						发布招聘信息
+					</div>
+					
+					<form class="release_offerInfo_add col-xs-12">
+						<div class="form-group offerInfo_input col-xs-12">
+							<label for="firstname" class="col-xs-2 col-md-2 control-label text-center">职位名称：</label>
+								<div class="col-xs-4">
+									<select class="form-control col-xs-4">
+										<option>全部</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+						</div>
+						
+						<div class="form-group offerInfo_input col-xs-12">
+							<label for="firstname" class="col-xs-2 col-md-2 control-label text-center">工作经验：</label>
+								<div class="col-xs-2">
+									<select class="form-control col-xs-2">
+										<option>1-3年</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+						</div>
+						
+						<div class="form-group offerInfo_input col-xs-12">
+							<label for="firstname" class="col-xs-2 col-md-2 control-label text-center">薪资范围：</label>
+								<div class="col-xs-2">
+									<select class="form-control col-xs-2">
+										<option>1-3年</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+						</div>
+						
+						<div class="form-group offerInfo_input col-xs-12">
+							<label for="firstname" class="col-xs-2 col-md-2 control-label text-center">工作地点：</label>
+								<div class="col-xs-2">
+									<select class="form-control col-xs-2">
+										<option>1-3年</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+							<div class="col-xs-2">
+									<select class="form-control col-xs-2">
+										<option>1-3年</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+						</div>
+						
+						<div class="form-group offerInfo_input col-xs-12">
+							<label for="firstname" class="col-xs-2 col-md-2 control-label text-center">招聘人数：</label>
+								<div class="col-xs-2">
+									<input type="text" class="form-control" id="firstname" 
+										   placeholder="招聘人数">
+								</div>
+						</div>
+						
+						
+						<div class="form-group offerInfo_input col-xs-12">
+							<label for="firstname" class="col-xs-2 col-md-2 control-label text-center">招聘状态：</label>
+								<div class="col-xs-2">
+									<select class="form-control col-xs-2">
+										<option>1-3年</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+						</div>
+						
+						<div class="form-group offerInfo_input col-xs-12">
+							<label for="firstname" class="col-xs-2 col-md-2 control-label text-center">信息自动刷新：</label>
+								<div class="col-xs-2">
+									<select class="form-control col-xs-2">
+										<option>1-3年</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+						</div>
+						
+						
+						<div class="form-group col-xs-12">
+							<label for="name" class="recruit_title col-xs-12">工作职责</label>
+							<textarea class="recruit_text col-xs-12"></textarea>
+						</div>
+						
+						<div class="form-group col-xs-12">
+							<label for="name" class="recruit_title col-xs-12">岗位需求</label>
+							<textarea class="recruit_text col-xs-12"></textarea>
+						</div>
+						
+					</form>
+					
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>		
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html> 
+
+
+

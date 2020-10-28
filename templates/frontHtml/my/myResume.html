@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人简历</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/myInfo.css" rel="stylesheet" type="text/css" />
+
+  
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 myInfo">
+				<div class="myInfo_left col-xs-2">
+					<div class="myInfo_left_title text-center col-xs-12">
+						<img src="../../../static/img/images/my/mycenter.png">
+						<spqn>个人中心</spqn>
+					</div>
+					
+					<div class="myInfo_left_nav col-xs-12 text-center">
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myInfo.html">我的信息</a></li>
+						<li class="myInfo_left_nav1 active col-xs-12"><a href="myResume.html">个人简历</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myRecord.html">应聘记录</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="interview.html">面试通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myCollection.html">我的收藏</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myQuestions.html">我要提问</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="questionsList.html">提问列表</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="answerList.html">回答列表</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="friendsList.html">好友列表</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="pushArticles.html">发布文章</a></li>		
+						<li class="myInfo_left_nav1 col-xs-12"><a href="notice.html">站内通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="securityCenter.html">安全中心</a></li>
+					</div>
+				
+				</div>
+				<div class="myResume_right col-xs-10">
+					<div class="myResume_top col-xs-12">
+						<div class="myInfo_right_myimg text-left col-xs-2 col-md-1">
+							<img src="../../../static/img/images/my/头像.jpg">
+						</div>
+						<div class="myInfo_name col-xs-10 col-md-11">
+							<span>李老四</span>
+							<span class="myResumeInfo">男 | 50岁 | 高中学历 | 现住广州</span>
+							
+							<button class="myModal" data-toggle="modal" data-target="#myModal">
+								<img src="../../../static/img/images/my/修改.png">
+							</button>
+							
+							
+							<div class="myInfo_position">
+								<span class="myInfo_position_det col-xs-2">意向职位：打工头</span>
+								<span class="myInfo_position_det col-xs-2">工作经验：10年</span>
+								<span class="myInfo_position_det col-xs-2">期望薪资：6-8k/月</span>
+							</div>
+							<div class="myInfo_position1 col-xs-12">
+								<span class="myInfo_position_det col-xs-2">到职时间：一周内</span>
+								<span class="myInfo_position_det col-xs-2">求职类型：全职</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xs-12 myInfo_name_nav text-left">
+						<div class="col-xs-12 myInfo_name_link">联系方式</div>
+						<div class="col-xs-12 myInfo_name_linkTel">
+							<span>联系电话：15987888897</span>
+							<span>电子邮件：15987888897@qq.com</span>
+						</div>
+						<div class="col-xs-12 myInfo_name_linkTel">
+							<span>微信：4587778</span>
+							<span>qq：4587778</span>
+							<span class="col-xs-12" style="height: 1rem;"></span>
+						</div>
+					</div>
+					
+					
+					<div class="col-xs-12 kong"></div>
+					<div class="myResume_work">
+						<div class="work_title col-xs-12">
+							<span class="work_title1 col-xs-11">工作经历</span> 
+						
+							<button class="work_puls col-xs-1 text-right" data-toggle="modal" data-target="#myModal1">
+								<img src="../../../static/img/images/exhibition/img/plus1.png">新增
+							</button>
+						
+						</div>
+						<div class="work_detail col-xs-12">
+							<div class="work_detail_title col-xs-4 text-left">广州金蜘蛛有限公司</div>
+							<div class="work_txt col-xs-4 text-left">2018/08/08-2020/01/11</div>
+							<div class="work_detail_title col-xs-4 text-right"><img src="../../../static/img/images/my/修改2.png"><img src="../../../static/img/images/my/删除.png"></div>	
+							
+							<div class="work_detail1 col-xs-12">
+								<div class="work_detail_title col-xs-2 text-left">担任职位：打工头</div>
+								<div class="work_detail_title col-xs-2 text-left">所在部门：技术部</div>
+								<div class="work_detail_title col-xs-3 text-left">公司规模：100-500人</div>
+
+								<div class="work_detail1 col-xs-12">
+									<div class="work_detail_title col-xs-12 text-left"><span class="work_detail_job col-xs-1">担任职位：</span><span class="work_txt">洛阳金元特大型轴承开发有限公司是专业生产、研制、开发大型特大型轴承企业。公司最具竞争力的产品有：</span></div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>2.技术部</div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>3.公司规模：100-500人</div>
+									<div class="work_txt col-xs-12 text-left" style="height: 1rem;"></div>
+								</div>
+							</div>
+						</div>	
+						<div class="work_detail col-xs-12">
+							<div class="work_detail_title col-xs-4 text-left">广州金蜘蛛有限公司</div>
+							<div class="work_txt col-xs-4 text-left">2018/08/08-2020/01/11</div>
+							<div class="work_detail_title col-xs-4 text-right"><img src="../../../static/img/images/my/修改2.png"><img src="../../../static/img/images/my/删除.png"></div>	
+							
+							<div class="work_detail1 col-xs-12">
+								<div class="work_detail_title col-xs-2 text-left">担任职位：打工头</div>
+								<div class="work_detail_title col-xs-2 text-left">所在部门：技术部</div>
+								<div class="work_detail_title col-xs-3 text-left">公司规模：100-500人</div>
+
+								<div class="work_detail1 col-xs-12">
+									<div class="work_detail_title col-xs-12 text-left"><span class="work_detail_job col-xs-1">担任职位：</span><span class="work_txt">洛阳金元特大型轴承开发有限公司是专业生产、研制、开发大型特大型轴承企业。公司最具竞争力的产品有：</span></div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>2.技术部</div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>3.公司规模：100-500人</div>
+									<div class="work_txt col-xs-12 text-left" style="height: 1rem;"></div>
+								</div>
+							</div>
+						</div>	
+						<div class="work_detail col-xs-12">
+							<div class="work_detail_title col-xs-4 text-left">广州金蜘蛛有限公司</div>
+							<div class="work_txt col-xs-4 text-left">2018/08/08-2020/01/11</div>
+							<div class="work_detail_title col-xs-4 text-right"><img src="../../../static/img/images/my/修改2.png"><img src="../../../static/img/images/my/删除.png"></div>	
+							
+							<div class="work_detail1 col-xs-12">
+								<div class="work_detail_title col-xs-2 text-left">担任职位：打工头</div>
+								<div class="work_detail_title col-xs-2 text-left">所在部门：技术部</div>
+								<div class="work_detail_title col-xs-3 text-left">公司规模：100-500人</div>
+
+								<div class="work_detail1 col-xs-12">
+									<div class="work_detail_title col-xs-12 text-left"><span class="work_detail_job col-xs-1">担任职位：</span><span class="work_txt">洛阳金元特大型轴承开发有限公司是专业生产、研制、开发大型特大型轴承企业。公司最具竞争力的产品有：</span></div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>2.技术部</div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>3.公司规模：100-500人</div>
+									<div class="work_txt col-xs-12 text-left" style="height: 1rem;"></div>
+								</div>
+							</div>
+						</div>	
+						<div class="work_detail col-xs-12">
+							<div class="work_detail_title col-xs-4 text-left">广州金蜘蛛有限公司</div>
+							<div class="work_txt col-xs-4 text-left">2018/08/08-2020/01/11</div>
+							<div class="work_detail_title col-xs-4 text-right"><img src="../../../static/img/images/my/修改2.png"><img src="../../../static/img/images/my/删除.png"></div>	
+							
+							<div class="work_detail1 col-xs-12">
+								<div class="work_detail_title col-xs-2 text-left">担任职位：打工头</div>
+								<div class="work_detail_title col-xs-2 text-left">所在部门：技术部</div>
+								<div class="work_detail_title col-xs-3 text-left">公司规模：100-500人</div>
+
+								<div class="work_detail1 col-xs-12">
+									<div class="work_detail_title col-xs-12 text-left"><span class="work_detail_job col-xs-1">担任职位：</span><span class="work_txt">洛阳金元特大型轴承开发有限公司是专业生产、研制、开发大型特大型轴承企业。公司最具竞争力的产品有：</span></div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>2.技术部</div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>3.公司规模：100-500人</div>
+									<div class="work_txt col-xs-12 text-left" style="height: 1rem;"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-xs-12 kong"></div>
+					<div class="myResume_work">
+						<div class="work_title col-xs-12">
+							<span class="work_title1 col-xs-11">教育经历</span> 
+							<button class="work_puls col-xs-1 text-right" data-toggle="modal" data-target="#myModal2">
+								<img src="../../../static/img/images/exhibition/img/plus1.png">新增
+							</button>
+						
+						</div>
+						<div class="work_detail col-xs-12">
+							<div class="work_detail_title col-xs-4 text-left">北京大学</div>
+							<div class="work_txt col-xs-4 text-left">2018/08/08-2020/01/11</div>
+							<div class="work_detail_title col-xs-4 text-right"><img src="../../../static/img/images/my/修改2.png"><img src="../../../static/img/images/my/删除.png"></div>	
+							
+							<div class="work_detail1 col-xs-12">
+								<div class="work_detail_title col-xs-2 text-left">学历：本科</div>
+								<div class="work_detail_title col-xs-2 text-left">专业：数控摸具</div>
+								
+
+								<div class="work_detail1 col-xs-12">
+									<div class="work_detail_title col-xs-12 text-left"><span class="work_detail_job col-xs-1">在校经历：</span><span class="work_txt">洛阳金元特大型轴承开发有限公司是专业生产、研制、开发大型特大型轴承企业。公司最具竞争力的产品有：</span></div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>2.技术部</div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>3.公司规模：100-500人</div>
+									<div class="work_txt col-xs-12 text-left" style="height: 1rem;"></div>
+								</div>
+							</div>
+						</div>	
+						
+						
+						<div class="work_detail col-xs-12">
+							<div class="work_detail_title col-xs-4 text-left">广州金蜘蛛有限公司</div>
+							<div class="work_txt col-xs-4 text-left">2018/08/08-2020/01/11</div>
+							<div class="work_detail_title col-xs-4 text-right"><img src="../../../static/img/images/my/修改2.png"><img src="../../../static/img/images/my/删除.png"></div>	
+							
+							<div class="work_detail1 col-xs-12">
+								<div class="work_detail_title col-xs-2 text-left">担任职位：打工头</div>
+								<div class="work_detail_title col-xs-2 text-left">所在部门：技术部</div>
+								<div class="work_detail_title col-xs-3 text-left">公司规模：100-500人</div>
+
+								<div class="work_detail1 col-xs-12">
+									<div class="work_detail_title col-xs-12 text-left"><span class="work_detail_job col-xs-1">担任职位：</span><span class="work_txt">洛阳金元特大型轴承开发有限公司是专业生产、研制、开发大型特大型轴承企业。公司最具竞争力的产品有：</span></div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>2.技术部</div>
+									<div class="work_txt col-xs-12 text-left"><span class="col-xs-1"></span>3.公司规模：100-500人</div>
+									<div class="work_txt col-xs-12 text-left" style="height: 1rem;"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-xs-12 kong"></div>
+					<div class="selfEvaluation col-xs-12">
+						<div class="col-xs-12 selfEvaluation_title">
+							<span class="col-xs-10 selfEvaluation_title1">自我评价</span>
+							<div class="col-xs-2 text-right">
+								<img src="../../../static/img/images/my/修改.png">
+							</div>
+							
+						</div>
+						<div class="selfEvaluation_detail col-xs-12">1.洛阳金元特大型轴承开发有限公司是专业生产、研制、开发大型特大型轴承企业。公司最具竞争力的产品有</div>
+						<div class="selfEvaluation_detail col-xs-12">2.洛阳金元特大型轴承开发有限公司是专业生产、研制、开发大型特大型轴承企业。公司最具竞争力的产品有</div>
+						<div class="selfEvaluation_detail col-xs-12">3.洛阳金元特大型轴承开发有限公司是专业生产、研制、开发大型特大型轴承企业。公司最具竞争力的产品有</div>
+					</div>
+					
+						
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="media">
+					<div class="media-left">
+					  <img src="https://static.runoob.com/images/mix/img_avatar.png" class="media-object" style="width:60px">
+					</div>
+					<div class="media-body">
+					  <h4 class="media-heading">李老四</h4>
+					  <div class="media_head">上传头像</div>
+					</div>
+				  </div>
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n col-xs-2">姓名</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="title" placeholder="请输入姓名">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n col-xs-2">性别</span>
+					<label class="checkbox-inline">
+						<input type="checkbox" id="inlineCheckbox1" value="option1">男
+					</label>
+					<label class="checkbox-inline">
+						<input type="checkbox" id="inlineCheckbox2" value="option2">女
+					</label>
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n col-xs-2">年龄</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="age" placeholder="请输入年龄">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n col-xs-2">民族</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="mingzu" placeholder="请输入汉族">
+				</div>					
+			</div>
+			
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">户口所在</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="hukong" placeholder="请输入户口所在地">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">目前所在</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="loca" placeholder="请输入目前所在地">
+				</div>					
+			</div>
+			
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">应聘职位</span>
+				<div class="col-xs-7 myq_sel1">
+					<select class="myq_sel col-md-9">
+						<option>一般</option>
+						<option>高级</option>
+						<option>黄金</option>
+						<option>铂金</option>
+						<option>钻石</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">工作年限</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="jingyan" placeholder="请输入工作年限">
+				</div>					
+			</div>
+			
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">到职时间</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="jobTime" placeholder="请输入到职时间">
+				</div>					
+			</div>
+			
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">期望薪资</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="money" placeholder="请输入期望薪资">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">联系电话</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="tel" placeholder="请输入联系电话">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">电子邮箱</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="mel" placeholder="请输入电子邮箱">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n col-xs-2">微信</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="weixin" placeholder="请输入微信号">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">自我评价</span>
+				<div class="col-xs-10 col-md-10 myq_group3">
+					<textarea name="mytextarea" placeholder="自我评价" class="myq_textarea col-xs-12"></textarea>
+				</div>					
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消修改
+				</button>
+				<button type="button" class="btn btn-primary">
+					保存提交
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">公司名称</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="comNme" placeholder="请输入公司名称">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">在岗时间</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="inTime" placeholder="请输入在岗时间">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">所在部门</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="dep" placeholder="请输入所在部门">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">公司规模</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="com1" placeholder="请输入公司规模">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">工作职责</span>
+				<div class="col-xs-10 col-md-10 myq_group3">
+					<textarea name="mytextarea" placeholder="工作职责" class="myq_textarea col-xs-12"></textarea>
+				</div>					
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消修改
+				</button>
+				<button type="button" class="btn btn-primary">
+					保存提交
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">学校名称</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="schoolName" placeholder="请输入学校名称">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">就学时间</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="schoolTime" placeholder="请输入在岗时间">
+				</div>					
+			</div>
+			
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n col-xs-2">学历</span>
+				<div class="myq_group3 col-xs-8">
+					<input type="text" class="myq_form_input col-md-8" id="xueli" placeholder="请输入公司规模">
+				</div>					
+			</div>
+			<div class="form-group myq_group1 col-xs-12">
+				<span for="firstname" class="sume_media_n1 col-xs-2">在校经历</span>
+				<div class="col-xs-10 col-md-10 myq_group3">
+					<textarea name="mytextarea" placeholder="工作职责" class="myq_textarea col-xs-12"></textarea>
+				</div>					
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消修改
+				</button>
+				<button type="button" class="btn btn-primary">
+					保存提交
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+
+

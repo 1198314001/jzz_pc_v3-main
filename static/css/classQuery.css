@@ -1,0 +1,82 @@
+/* CSS Document */
+.classQuery{
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #FFFFFF;
+	height: 120rem;
+	margin-top:0.5rem; 
+}
+.purchase_center_class{
+	margin-top: 1rem;
+}
+.classQuery_title{
+	height:4rem;
+	background-color: #FFFFFF;
+	padding-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 1rem;
+	padding-top: 1rem;
+	font-size: 1.3rem;
+	color: #737373;
+	border-bottom: 1px #ECECEC solid;
+}
+.class_title.active{
+	font-size: 1.4rem;
+	color: #000000;
+}
+.classQuery_left{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.classQuery_left1{
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+	padding-top: 1.3rem;
+	height: 4rem;
+	font-size: 1rem;
+	white-space: pre-wrap;
+	background-color: #FFFFFF;
+	border-bottom: 1px #ECECEC solid;
+}
+.classQuery_left1.active{
+	color: #FF5F00;
+}
+.classQuery_right{
+	width: 80%;
+	margin-left: 2%;
+	margin-top: 1rem;
+	height: 15rem;
+	box-shadow: 0px 0px 5px #F4F4F4;/* 边框阴影 */  
+    -moz-box-shadow: 0px 0px 5px #F4F4F4; /* 老的 Firefox */
+}
+.classQuery_right1{
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
+.classQuery_right_title{
+	background-color: #FFFFFF;
+	padding-top: 1rem;
+	font-size: 1.4rem;
+}
+
+.classQuery_right_title.active{
+	color: #FF6100;
+}
+.classQuery_btn{
+	padding-top: 8rem;
+}
+.classQuery_btn1{
+	margin-left: 2rem;
+}
+.classQuery_btn1.active{
+	background-color: #FF5F00;
+	color: #FFFFFF;
+}
+.classQuery_btn1{
+	background-color: #FFFFFF;
+	border: 1px #FF5F00 solid;
+	color: #FF5F00;
+	width: 8rem;
+}

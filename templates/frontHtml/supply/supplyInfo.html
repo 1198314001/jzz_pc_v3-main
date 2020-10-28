@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>供货信息</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="../../../static/js/vue.min.js"></script>
+<script type="text/javascript" src="../../../static/js/Vue.jsv2.6.11.js"></script>
+<script type="text/javascript" src="../../../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../../static/js/api.js"></script>	
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/purchase.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplyInformation.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/querydel.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/buyingInfo.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplyInfo.css" rel="stylesheet" type="text/css" />
+	
+
+	
+	
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+<div class="col-md-10 col-md-offset-1" style="background-color: #F2f2f2;">
+	
+	<div class="supplyInfo_query col-xs-10 col-sm-10 col-md-12 text-center">
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_left">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+		<div class="container col-xs-8 supplierInfo">
+			<div class="supplier_del_top col-md-12 text_center">			
+				<div class="_top_title2 col-xs-2 text_left active"><a href="supplyInfo.html">供货信息</a></div>
+				<div class="_top_title2 col-xs-2 text_left"><a href="sample.html">供货产品</a></div>
+				<div class="_top_title2 col-xs-2 text_left"><a href="supplyProduct.html">图文产品</a></div>
+				<div class="_top_title2 col-xs-2 text_left"><a href="cooperate_info.html">合作信息</a></div>
+				<div class="_top_title2 col-xs-2 text_left"><a href="/indexdata_company1/">人气供货商</a></div>
+				<div class="_top_title2 col-xs-2 text_left"><a href="new_supplier.html">新加盟供货商</a></div>
+			</div>
+			<div class="buyingInfo col-md-12" id="buyingInfo">
+				
+				<div class="buyingInfo2 col-md-12" v-for="site in buyingInfo">
+					<div class="buyingInfo_img col-md-4">
+						<img src="../../../static/img/images/supplier/timg.jpg">
+					</div>
+					<div class="buyingInfo_del col-md-8">
+						<div class="buyingInfo_title col-md-12">
+							<a class="buyingInfo_title1 col-xs-10 text_left" href="supplyInfo_details.html">供货商：{{ site.coname }}</a>
+							<div class="tingg col-xs-10 text_left">提供: {{site.text}}</div>
+							<span class="buyingInfo_title2 col-md-2">{{site.uptime}}</span>
+							
+							<div class="buyingInfo_title_del col-md-10 text_left">{{site.name}}</div>
+						
+							<div class="buyingInfo_btn col-md-12 text-right">
+								<a type="button" href="supplyInfo_details.html" class="btn btn-default buyingInfo_btn1">查询详情</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			<!--mmmm-->
+		</div>
+
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_right">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+	</div>
+	
+	
+</div>
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+</div>
+
+
+<script type = "text/javascript">
+var url1 = geturl();
+		
+new Vue({
+  el: '#buyingInfo',
+		url1:url1,
+  data :{
+   
+      buyingInfo: null
+    
+  },
+  mounted () {
+    axios
+      .get(url1+'api/v1/info/?platform=PC&access_token=jzz061582e228ba4b1c8f96a780674a555d')
+      .then(response => (
+		this.buyingInfo = response.data.data
+	
+	))
+      .catch(function (error) { // 请求失败处理
+        console.log(error);
+      });
+  }
+})
+</script>
+</body>
+</html>
+
+
+
+

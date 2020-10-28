@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>面试通知</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/myInfo.css" rel="stylesheet" type="text/css" />
+
+  
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 myInfo">
+				<div class="myInfo_left col-xs-2">
+					<div class="myInfo_left_title text-center col-xs-12">
+						<img src="../../../static/img/images/my/mycenter.png">
+						<spqn>个人中心</spqn>
+					</div>
+					
+					<div class="myInfo_left_nav col-xs-12 text-center">
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myInfo.html">我的信息</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myResume.html">个人简历</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myRecord.html">应聘记录</a></li>
+						<li class="myInfo_left_nav1 active col-xs-12"><a href="interview.html">面试通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myCollection.html">我的收藏</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="myQuestions.html">我要提问</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="questionsList.html">提问列表</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="answerList.html">回答列表</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="friendsList.html">好友列表</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="pushArticles.html">发布文章</a></li>		
+						<li class="myInfo_left_nav1 col-xs-12"><a href="notice.html">站内通知</a></li>
+						<li class="myInfo_left_nav1 col-xs-12"><a href="securityCenter.html">安全中心</a></li>
+					</div>
+				
+				</div>
+				<div class="myInfo_right col-xs-10">
+					<div class="interview_head col-xs-12">
+						<div class="interview_head1 col-xs-4 text-center">公司名称</div>
+						<div class="interview_head2 col-xs-5 text-center">主题</div>
+						<div class="interview_head3 col-xs-3  text-right">时间<img src="../../../static/img/images/my/上下移动箭头.png"></div>
+					</div>
+					
+					<div class="interview_list col-xs-12">
+							<form role="form" class="interview_form1">
+								<div class="form-group interview_form">
+									<div class="interview_list_del col-xs-12">
+										<label class="checkbox-inline col-xs-4 col-md-3">
+											<input type="checkbox"  value="option1"><img class="interview_list_del_img" src="../../../static/img/images/my/短信已读.png">
+											<span class="interview_list_name">广州市金蜘蛛轴承有限公司1</span>
+										</label>
+										<span class="interview_list_text col-xs-6 col-md-7">王先生你好，现在邀请您面试我司操作工一职，现在邀请您面试我司操作工一职现在邀请您面试我司操作工一职</span>
+										<span class="interview_list_time col-xs-2 col-md-2 text-right">2020/05/01</span>
+									</div>
+								</div>
+								
+								<div class="form-group interview_form">
+									<div class="interview_list_del col-xs-12">
+										<label class="checkbox-inline col-xs-4 col-md-3">
+											<input type="checkbox"  value="option1"><img class="interview_list_del_img" src="../../../static/img/images/my/短信已读.png">
+											<span class="interview_list_name">广州市金蜘蛛轴承有限公司</span>
+										</label>
+										<span class="interview_list_text col-xs-6 col-md-7">王先生你好，现在邀请您面试我司操作工一职，现在邀请您面试我司操作工一职现在邀请您面试我司操作工一职</span>
+										<span class="interview_list_time col-xs-2 col-md-2 text-right">2020/05/01</span>
+									</div>
+								</div>
+								
+								<div class="form-group interview_form">
+									<div class="interview_list_del col-xs-12">
+										<label class="checkbox-inline col-xs-4 col-md-3">
+											<input type="checkbox"  value="option1"><img class="interview_list_del_img" src="../../../static/img/images/my/短信已读.png">
+											<span class="interview_list_name">广州市金蜘蛛轴承有限公司</span>
+										</label>
+										<span class="interview_list_text col-xs-6 col-md-7">王先生你好，现在邀请您面试我司操作工一职，现在邀请您面试我司操作工一职现在邀请您面试我司操作工一职</span>
+										<span class="interview_list_time col-xs-2 col-md-2 text-right">2020/05/01</span>
+									</div>
+								</div>
+							
+								
+								<div class="form_btn">
+									<div class=" col-xs-12">
+										<label class="checkbox-inline col-xs-6 col-md-6">
+											<input type="checkbox"  value="option1">全选
+										</label>
+										<div class="btn_delete col-xs-6 col-md-6 text-right"><img src="../../../static/img/images/my/删除.png"></div>
+									</div>
+								</div>
+						</form>
+					</div>
+				
+					
+				
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>		
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+

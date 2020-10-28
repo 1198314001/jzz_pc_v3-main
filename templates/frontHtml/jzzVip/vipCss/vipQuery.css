@@ -1,0 +1,230 @@
+/* CSS Document */
+.query_title{
+	height: 6rem;
+	background-color: #FFFFFF;
+	
+}
+.hotName{
+	height: 6rem;
+	
+}
+.hotName a{
+	height: 6rem;
+	display: flex;
+	color: #000000;
+	align-items:Center;
+}
+
+a:hover{
+	color: #FF6100;
+	text-decoration: none;
+}
+.query_left{
+	height: 100rem;
+	background-color: #FFFFFF;
+	margin-top: 2rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.query_right{
+	margin-top: 2rem;
+	height: 40rem;
+	background-color: #FFFFFF;
+	
+}
+.query_right1{
+	margin-top: 2rem;
+	height: 35rem;
+	background-color: #FFFFFF;
+}
+
+.query_del{
+	padding-top: 2rem;
+	border-bottom: 1px #F2F2F2 solid;
+	height: 16rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.query_del:hover{
+	background-color: #FBFBFB;
+}
+.query_img{
+	height: 12rem;
+	width: 16rem;
+	border: 1px #F2F2F2 solid;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.query_img img{
+	height: 11rem;
+	width: 5.3rem;
+}
+a{
+	color: #000000;
+}
+.q_title{
+	font-size: 18px;
+}
+.q_title_btn1{
+	height: 3rem;
+	width: 8rem;
+	background-color: #FFFFFF;
+	border: 1px #0066FF solid;
+	color: #0066FF;
+}
+.q_numb{
+	padding-top: 1rem;
+}
+
+.q_table1{
+	height: 3rem;
+	border-bottom: 1px #F2F2F2 solid;
+}
+.q_table1_title{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1rem;
+	font-size: 12px;
+	font-weight: 600;
+}
+.q_table1_del{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1rem;
+	font-size: 12px;
+}
+.query_title{
+	height: 5rem;
+	font-size: 1.8rem;
+	font-weight: 600;
+	display: flex;
+	align-items:Center;
+	border-bottom: 1px #F2F2F2 solid;
+}
+.query_mes{
+	height: 2rem;
+	font-size: 13px;
+	align-items:Center;
+	margin-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;	
+	white-space: nowrap;/*内容超宽后禁止换行显示*/
+
+    overflow: hidden;/*超出部分隐藏*/
+	text-overflow:ellipsis;/*文字超出部分以省略号显示*/
+}
+.query_mess{
+	height: 2rem;
+	font-size: 13px;
+	align-items:Center;
+	margin-top: 1rem;
+	padding-left: 0px;
+	padding-right: 0px;	
+}
+.query_mes1{
+	height: 3rem;
+	font-size: 13px;
+	display: flex;
+	align-items:Center;
+	
+	padding-left: 0px;
+	padding-right: 0px;	
+	white-space: nowrap;/*内容超宽后禁止换行显示*/
+
+    overflow: hidden;/*超出部分隐藏*/
+	text-overflow:ellipsis;/*文字超出部分以省略号显示*/
+	border-bottom: 1px #f2f2f2 solid;
+}
+
+/*
+	查询详情页
+
+*/
+.queryDel_title{
+	padding-top: 1.5rem;
+	height: 5rem;
+}
+.queryDel_left{
+	height: 63rem;
+	background-color: #FFFFFF;
+}
+
+.query_right2{
+	height: 35rem;
+	background-color: #FFFFFF;
+}
+.queryDel_del{
+	padding-top: 2rem;
+}
+.queryDel_img{
+	height: 37rem;
+	width: 48rem;
+	border: 1px #F2F2F2 solid;
+}
+
+.queryDel_text{
+	
+}
+.queryDel_text_title{
+	font-size: 18px;
+	color: #FF6100;
+}
+.queryDel_class{
+	font-size: 13px;
+	padding-top: 2rem;
+}
+.queryDel_numb{
+	font-size: 13px;
+	padding-top: 2rem;
+}
+.table1{
+	margin-top: 2rem;
+}
+
+.td1{
+	font-weight: 600;
+	color: #FF6100;
+}
+
+.querydel_bottom{
+	padding-top: 2rem;
+	height:40rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.querydel_bottom_title{
+	font-size: 18px;
+	font-weight: 600;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.querydel_bottomImg{
+	margin-top: 2rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.querydel_bottomImg img{
+	height: 18rem;
+	width: 18rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

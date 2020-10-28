@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>金蜘蛛承轴网</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../static/css/bottom.css" rel="stylesheet" type="text/css" />
+	
+	
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+<div class="col-xs-12 col-sm-12 col-md-12">
+
+	<div class="col-md-12 bottom" style="height: 50rem;">
+		<div  class="col-md-1" style="height:60.2%;border-bottom:1px #FFFFFF solid;"></div>
+		<div class="col-md-6 bottomLeft" style="height: 30rem;padding-left: 0px;padding-right: 0px;">
+			<div class="col-md-1" style="height: 30rem;"></div>
+			<div class="col-md-2">
+				<div class="col-md-12 text-left bottom-l">关于我们</div>
+				<div class="col-md-12 bottom-l1 text-left">公司简介</div>
+				<div class="col-md-12 bottom-l1 text-left">联系我们</div>
+			</div>
+			<div class="col-md-2">
+				<div class="col-md-12 text-left bottom-l">服务介绍</div>
+				<div class="col-md-12 bottom-l1 text-left">公司简介</div>
+				<div class="col-md-12 bottom-l1 text-left">联系我们</div>
+			</div>
+			<div class="col-md-2">
+				<div class="col-md-12 text-left bottom-l">帮助中心</div>
+				<div class="col-md-12 bottom-l1 text-left">公司简介</div>
+				<div class="col-md-12 bottom-l1 text-left">联系我们</div>
+			</div>
+			<div class="col-md-2">
+				<div class="col-md-12 text-left bottom-l">友情链接</div>
+				<div class="col-md-12 bottom-l1 text-left">公司简介</div>
+				<div class="col-md-12 bottom-l1 text-left">联系我们</div>
+			</div>
+			<div class="col-md-2">
+				<div class="col-md-12 text-left bottom-l">杂志下载</div>
+				<div class="col-md-12 bottom-l1 text-left">公司简介</div>
+				<div class="col-md-12 bottom-l1 ">联系我们</div>
+			</div>
+			<div class="col-md-7" style="padding-top: 5rem;">
+				<div class="col-md-12 contact-title">业务联系/技术支持</div>
+				<div class="col-md-12 contact-list">联系人：广东金蜘蛛电脑网络有限公司</div>
+				<div class="col-md-7 contact-list">联系电话：020-38861363 38861363</div>
+				<div class="col-md-5 contact-list">传真：020-38861363</div>
+			</div>
+			<div class="col-md-11 contact-list">
+				<div class="col-md-7">电子邮箱：info@jzzbearing.com</div>
+				<div class="col-md-5 text-right img">
+					<img src="{% static 'img/images/index/weixin1.png' %}">
+					<img src="{% static 'img/images/index/kefu.png' %}">
+					<img  src="{% static 'img/images/index/fenxiang.png' %}">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-5 bottomRight">
+				<div class="col-md-12 text-left bottom-l">在线留言</div>
+				<form class="form-horizontal" role="form" style="padding-top:3rem;" action="/new_message/" method="past">
+					<div class="col-md-7">
+						<div class="form-group">
+							<input type="text" class="form-control buttonForm" name="name" id="name" placeholder="请输入名称">
+						</div>
+					<div class="form-group">
+						<input type="text" class="form-control buttonForm" name="tel" id="contact" placeholder="联系方式">
+					</div>
+
+						<div class="form-group">
+							<textarea class="form-control buttonForm" name="comtent" placeholder="留言内容" rows="3"></textarea>
+						</div>
+						<div class="col-md-12 text-center">
+							<div class="col-md-5 text-center"></div>
+							<button type="submit" class="btn btn-block btn-sm Leaving">发送</button>
+						</div>
+					</div>
+				</form>
+		</div>
+
+		<div  class="col-md-12 bottom-bottom">
+			<div  class="col-md-12 text-center bottom-bottom-text">
+				法律声明：本网站中的厂商资料,供货,需求,合作等信息由本网站的注册会员发布,其合法性和真实性由各个发布信息的注册会员负责。
+			</div>
+			<div class="col-md-12 text-center bottom-bottom-text">
+				经营许可证编号：粤ICP证B2-20050251 备案号：粤ICP备09029740号
+			</div>
+			<div  class="col-md-12 text-center bottom-bottom-text">
+				粤公安备案号：44011102001660号
+			</div>
+			<div  class="col-md-12 text-center bottom-bottom-text">
+				技术支持：广州超越文化科技有限公司
+			</div>
+			<div  class="col-md-12 text-center bottom-bottom-text">
+				Copyright © 2010 Golden Spider Network Co., Ltd.  All rights reserved.
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,115 @@
+/* CSS Document */
+
+.purchase{
+	height: auto;
+	background-color: #F2F2F2;
+}
+.purchase_left{
+	height: 40rem;
+	background-color: #FFFFFF;
+	margin-top: 1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.purchase_cxtitle{
+	padding-top: 1rem;
+	font-size: 1.5rem;
+	height: 4rem;
+	border-bottom: 2px #F8F8F8 solid;
+}
+.purchase_img{
+	padding-top: 1rem;
+	
+}
+.container_purchase_center{
+	
+	margin-top: 1rem;
+	height: 173rem;
+	background-color: #F8F8F8;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.purchase_right{
+	margin-top: 1rem;
+	height: 40rem;
+
+	background-color: #FFFFFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	padding-left: 0px;
+	padding-right: 0px;
+}	
+.purchase_center_top{
+	height: 30rem;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+.purchase_center_top2{
+	margin-top: 1.5rem;
+	height: 30rem;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+.purchase_center_top3{
+	margin-top: 1.5rem;
+	height: 18rem;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+.purchase_center_top4{
+	margin-top: 1.5rem;
+	height: 18rem;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+
+.purchase_center_top_t{
+	height: 4rem;
+	font-size: 1.5rem;
+	border-bottom: 2px #F8F8F8 solid;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.purchase_cente_t{
+	height: 4rem;
+	border-bottom: 2px #6A6A6A solid;
+	padding-top: 1rem;
+}
+.purchase_center_span{
+	padding-top: 1.5rem;
+}
+.purchase-cen-cen{
+	height:25rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	
+}
+.purchase-cen-cen2{
+	height:15rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	
+}
+.purchase_center_list{
+	padding-top: 1rem;
+	color: #6A6A6A;
+	font-size: 1.5rem;
+}
+

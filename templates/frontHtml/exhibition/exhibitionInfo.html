@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>展会信息</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/purchase.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplyInformation.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/querydel.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/supplier.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/industry.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/exhibition.css" rel="stylesheet" type="text/css" />
+
+<style>
+body {
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-family: "微软雅黑";
+	color: #010101;
+	height:auto;
+}
+</style>
+
+</head>
+<body>
+	<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/base1.html" width="100%" height="250px"></iframe>
+	</div>
+<div class="col-md-10 col-md-offset-1" style="background-color: #F2f2f2;">
+	<div class="purchase1_query col-xs-12 col-sm-12 col-md-12 text-center">
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_left">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+		<div class="container col-xs-8 col-sm-8 col-md-8 supplier">
+			<div class="exhibitionInfo_title col-md-12">
+				<div class="col-md-2 exhibitionInfo_title2">展会推荐</div>
+			</div>
+			<div class="exhibitionInfo_top col-md-12">
+					<div class="col-md-3 exhibitionInfo_top_img"><img src="../../../static/img/images/exhibition/exhibition1.jpg"></div>
+					<div class="col-md-3 exhibitionInfo_top_img"><img src="../../../static/img/images/exhibition/exhibition2.jpg"></div>
+					<div class="col-md-3 exhibitionInfo_top_img"><img src="../../../static/img/images/exhibition/exhibition1.jpg"></div>
+					<div class="col-md-3 exhibitionInfo_top_img"><img src="../../../static/img/images/exhibition/exhibition2.jpg"></div>
+				<div class="col-md-3 exhibitionInfo_top_img"><img src="../../../static/img/images/exhibition/exhibition1.jpg"></div>
+					<div class="col-md-3 exhibitionInfo_top_img"><img src="../../../static/img/images/exhibition/exhibition2.jpg"></div>
+					<div class="col-md-3 exhibitionInfo_top_img"><img src="../../../static/img/images/exhibition/exhibition1.jpg"></div>
+					<div class="col-md-3 exhibitionInfo_top_img"><img src="../../../static/img/images/exhibition/exhibition2.jpg"></div>
+			</div>
+			
+			<div class="exhibitionInfo_center col-md-12">
+				<div class="exhibitionInfo_center_title">
+					<span class="exhibitionInfo_condition col-md-2">筛选条件：</span>
+					<span class="exhibitionInfo_condition1 col-md-2 text-left" hidden>所在地区<img src="../../../static/img/images/public/xia.png"></span>
+					<span class="exhibitionInfo_condition1 col-md-2 text-left" hidden>会展状态<img src="../../../static/img/images/public/xia.png"></span>
+					
+					<span class="exhibitionInfo_condition1 col-md-4 text-left">会展时间：2020/8/81<img src="../../../static/img/images/public/xia.png"> - 2020/8/81<img src="../../../static/img/images/public/xia.png"></span>
+					
+					<span class="exhibitionInfo_condition2 col-md-2 text-center">时间排序<img src="../../../static/img/images/public/shangxia.png"></span>
+				</div>
+			</div>
+			
+			<div class="exhibitionInfo_bottom col-md-12">
+				<div class="exhibitionInfo_del col-md-12">
+					<div class="exhibitionInfo_del_img col-md-5 text-left"><img src="../../../static/img/images/exhibition/exhibition4.jpg"></div>
+					<div class="exhibitionInfo_del_list sidebar col-md-7 text-left"><a href="exhibitionDel.html" class="sidebar exhibitionInfo_del_txt col-md-12">上海紧固件与技术展（Shanghai fastener and Technology Exhibition </a>
+					</div>
+					<div class="exhibitionInfo_del_list2 col-md-7 text-left">
+						开展时间：2020/07/08 - 2020/08/08
+					</div>
+					<div class="exhibitionInfo_del_list2 col-md-7 text-left">
+						会展地点：上海市博览中心e4号馆（上海浦东新区2458号）
+					</div>
+					
+					<div class="col-md-7 text-right"><button type="button" class="btn btn-default exhibitionInfo_btn">在线咨询</button></div>
+				</div>
+			
+				
+				<div class="exhibitionInfo_del col-md-12">
+					<div class="exhibitionInfo_del_img col-md-5 text-left"><img src="../../../static/img/images/exhibition/exhibition4.jpg"></div>
+					<div class="exhibitionInfo_del_list col-md-7 text-left"><span class="exhibitionInfo_del_txt col-md-12">上海紧固件与技术展（Shanghai fastener and Technology Exhibition </span>
+					</div>
+					<div class="exhibitionInfo_del_list2 col-md-7 text-left">
+						开展时间：2020/07/08 - 2020/08/08
+					</div>
+					<div class="exhibitionInfo_del_list2 col-md-7 text-left">
+						会展地点：上海市博览中心e4号馆（上海浦东新区2458号）
+					</div>
+					
+					<div class="col-md-7 text-right"><button type="button" class="btn btn-default exhibitionInfo_btn">在线咨询</button></div>
+				</div>
+			</div>
+			
+			
+			<!--mmmm-->
+		</div>
+		
+		
+		
+		<div class="col-xs-2 col-sm-2 col-md-2 purchase_right">
+			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+		</div>
+		
+	</div>
+	
+</div>
+<div>
+	
+		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
+	</div>
+</body>
+</html>
+
+
+
+

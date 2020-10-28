@@ -1,0 +1,250 @@
+
+Django路由：/indexdata_supply/# 首页供货信息数据接口为0 供货信息列表页及更多页面为1
+
+采购导航 ： templates/frontHtml/purchase.html
+		/purchase_index/
+
+
+型号查询：/bearing_infosearchindex0/
+	轴承型号查询：frontHtml/query/suQuery.html
+			/bearing_infosearchindex0/
+
+	轴承分类查询：frontHtml/query/classQuery.html
+			/bearing_typesearch/
+
+	品牌黄页：frontHtml/query/commonModels.html
+			/bearing_brandpage/
+
+	用途黄页：frontHtml/query/userPage.html
+			/bearing_usepage/
+
+	300常用型号：frontHtml/query/brandYellowPages.html
+			/bearing_360type/
+
+找供应商：
+	
+	找供应商：frontHtml/supplier/supplier.html
+			/indexdata_company1/
+
+	供应商详情：frontHtml/supplier/supplier_del.html
+			/supply_detail/
+			
+-----------------------------------------------------------
+采购信息
+	采购信息列表页：frontHtml/buyingInformation/buyingInformation.html
+			/indexdata_require1/
+
+	采购信息详情：frontHtml/buyingInformation/buyingInformation_del.html
+			/require_detail1568/   # 测试用
+
+
+行业动态
+	
+	行业动态: frontHtml/industry/industry_News
+			/indexdata_industry1/
+
+	业界信息: frontHtml/industry/industry_information
+		/indexdata_industry1/
+
+	企业风采：frontHtml/industry/industry_enterprise
+			/industry_enterprise1/     数字为用户id      *
+
+	数据统计：frontHtml/industry/industry_statistics
+			/industry_static/
+
+	海外商情：frontHtml/industry/industry_business
+			/industry_business/
+
+	企业动态：frontHtml/industry/industry_CompanyNews
+			/industry_companynews/
+----------------------------------------------------------------------------------------
+展会信息
+	
+	展会信息：frontHtml/exhibition/exhibitionInfo.html
+			/indexdata_exhibition1/
+
+	展会信息详情：frontHtml/exhibition/exhibitionDel.html
+			/exhibition_detail（\d+）   （\d+）为数字，该信息id ***/
+---------------------------------------------------------------------------------------
+
+培训信息
+	
+	培训信息：frontHtml/train/trainInfo.html
+			/indexdata_train1/
+
+	培训信息详情：frontHtml/train/trainInfoDel.html
+			/train_detail（\d+） （\d+）为数字，该信息id ***
+	培训信息回顾：frontHtml/train/trainReview.html
+			/train_review/
+
+技术交流：frontHtml/technicalExchange/
+
+	技术交流：frontHtml/technicalExchange/technicalExchange.html
+			/post_info/
+
+
+	技术交流详情：frontHtml/technicalExchange/technical_Del.html
+			/post_detail/
+	作者个人页面：frontHtml/technicalExchange/technical_Personal_page.html
+			/post_person/
+	技术提问：frontHtml/technicalExchange/technical_questions.html
+			/post_question/
+	技术回答：frontHtml/technicalExchange/technical_answer.html
+			/post_answer/
+	技术积分：frontHtml/technicalExchange/technical_integral.html
+			/post_bonus/
+
+	专家顾问列表：expertList.html  *******
+	        /post/expertlist/
+***向专家提问
+	        /post/expert_q/
+
+
+
+杂志期刊
+	杂志期刊：frontHtml/integral/integral.html
+			/indexdata_magazine1/
+
+企业信用查询：
+	frontHtml/enterpriseCredit/enterpriseCredit.html
+
+	
+----------------------------------------------------------------------------------------------------
+
+个人中心 frontHtml/my/
+	
+	个人信息：myInfo.html
+		/user_info/
+	个人简历：myResume.html
+		/user_resume/
+	应聘记录：myRecord.html
+		/user_record/
+	面试通知：interview.html
+		/user_interview/
+	我的收藏：myCollection.html
+		/user_collection/
+------------------------------------------------------
+-	我要提问：myQuestions.html
+        /user/post_q/
+-	提问列表：questionsList.html
+        /user/postlist_q/
+-	回答列表：answerList.html
+        /user/postlist_a/
+-	好友列表：friendsList.html
+        /user/postlist_friend/
+-	发布文章：pushArticles.html
+        /user/post_composing/
+*** 给好友发消息 （好友列表页弹框）
+        /user/post_message/
+------------------------------------------------------
+	站内通知：notice.html
+		/user_notice/
+	安全中心：securityCenter.html
+		/user_security/
+	提问评论:questionsAndComments.html
+		/user_comment/                     
+	
+
+
+-------------------------------------------------------------------9.07
+企业中心 frontHtml/companyCenter/
+	 
+	1.我的信息：companyInfo.html
+		/company_info/
+	2.基本信息：essentialInfo.html
+		/company_essentialinfo/
+	3.企业介绍：com_introduce.html
+		/company_introduce/
+	4.子账号管理：com_manage_account.html
+		/company_account/
+	5.我的样品：mySample.html
+		/company_sample/
+	6.黄页管理：com_yellowpage.html
+		/company_page1/
+	7.黄页管理：com_yellowpage2.html
+		/company_page2/
+	8.供货信息：com_offerInfo.html
+		/company_supplyinfo/
+	9.供货信息留言：com_offerInfo_mess.html
+		/company_supplycomment/
+	10.发布合作信息：release_cooperationInfo.html(注：12-1发布采购信息.jpg)
+		/company_cooperate_post/
+	11.发布采购信息：release_purchaseInfo.html（注：12-2发布采购信息.jpg）
+		/company_require_post/
+	12.发布供货信息：release_offerInfo.html（注：12-3发布采购信息.jpg）
+		/company_supply_post/
+	13.发布循环信息：release_loopInfo.html（注：12-4发布供货信息）
+		/company_loop_post/
+	14.采购信息：purchaseInfo.html
+		/company_requireinfo/
+	15.合作信息：cooperationInfo.html
+		/company_cooperateinfo/
+	16.商家收藏：com_Collection.html
+		/company_collectinfo/
+	17.招聘管理：com_recruit.html
+		/company_inviteinfo/
+
+	*18.职位申请：com_positionApply.html
+		/company_positioninfo/
+	*19.职位收藏：com_positionCollect.html
+		/company_position_collect/
+	*20.职位管理：com_positionManage.html
+		/company_position_manage/
+
+	21.发布招聘：release_recruit.html
+		/company_invite_post/
+
+	22.我的评论：com_myMomment.html
+		/company_mycomment/
+	23.站内通知：com_stationNotice.html
+		/company_notice/
+	24.企业安全中心：com_securityCenter.html
+		/company_security/
+	25.循环信息：com_loopInfo.html
+		/company_loopinfo/
+
+
+---------------------------------------------------------------------------------------------
+	
+	1.供货信息：frontHtml/query/querydel.html（已有）
+
+供货信息：frontHtml/supply/
+	
+	2.供货信息：supplyInfo.html
+		/indexdata_supply1/
+	3.供货信息详情页：supplyInfo_details.html
+		/supplyinfo_detail(\d+)/      (\d+)为数字,8439为测试数据id 
+
+	4.图文产品：supplyProduct.html
+		/sample_catalog/
+	5.图文产品详情：supplyProduct_details.html
+		/sample_catalog/detail1084/         (\d+)为数字
+
+	7.合作信息：cooperate_info.html
+		/indexdata_cooperate1/
+	8.合作信息详情：cooperate_info_details.html
+		/corperate_detail(\d+)/    (\d+)为数字,1993为测试数据id 
+
+	9.人气供货商：pop_supplier.html
+		/indexdata_company1/
+	10.新加盟供应商：new_supplier.html
+		/indexdata_buyer_new1/
+	
+	11.样品库（供货产品）：sample.html
+		/sample_info(\d+)/    (\d+)为数字，代表页面，1为默认数字
+
+	12.样品库详情：sampleDetail.html
+		/sample_detail(\d+)/        (\d+)为数字，代表id
+ 
+
+-*-------------------------------------------------------------------------------------
+招聘信息：frontHtml/recruit/
+
+	1.找工作：seekJob.html
+		/indexdata_invite1/
+	2.找工作详情：seekJob_detail.html
+		/invite_detail(\d+)/        (\d+)为数字
+	3.找企业：seekEnterprise.html
+		/personal_search/company/
+
+	
