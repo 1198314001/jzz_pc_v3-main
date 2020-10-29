@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>采购导航</title>
 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<<<<<<< HEAD
 <script type="text/javascript" src="../../../static/js/vue.min.js"></script>
 <script type="text/javascript" src="../../../static/js/Vue.jsv2.6.11.js"></script>
 <script type="text/javascript" src="../../../static/js/jquery.min.js"></script>
@@ -12,6 +13,15 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>	
+=======
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<link href="{% static 'css/bottom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/head.css' %}" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 <link href="../../../static/css/index.css" rel="stylesheet" type="text/css" />
 <link href="../../../static/css/purchase.css" rel="stylesheet" type="text/css" />
 <link href="../../../static/css/supplyInformation.css" rel="stylesheet" type="text/css" />
@@ -36,8 +46,13 @@ body {
 	<div class="purchase1_suQuery col-xs-10 col-sm-10 col-md-12 text-center">
 		<div class="col-xs-2 col-sm-2 col-md-2 purchase_left">
 			<div class="purchase_cxtitle text-center"><span>轴承型号查询</span></div>
+<<<<<<< HEAD
 			<div class="purchase_img text-center"><img src="../../../static/img/images/index/201761417723.jpg"></div>
 			<div class="purchase_img text-center"><img src="../../../static/img/images/index/u=2268907206.jpg"></div>
+=======
+			<div class="purchase_img text-center"><img src="../images/index/view_l1.jpg"></div>
+			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
 			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
 			<div class="purchase_img text-center"><img src="../images/index/view3.jpg"></div>
@@ -68,15 +83,26 @@ body {
 					</div>
 				</div>
 			</div>
+<<<<<<< HEAD
 		<div id="myTabContent">
 		<div class="gonghuolist1 col-xs-12 text-left tab-content">
+=======
+			
+		<div class="gonghuolist1 col-xs-12 text-left tab-content" id="myTabContent">
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 			<div class="col-xs-12 col-sm-12 col-md-12 su_query_input tab-pane fade in active" id="xinghao">	
 				<div class="container col-xs-12 col-sm-12 col-md-12" style="padding-top:5rem">
 					<div class="col-xs-2 col-sm-2 col-md-2"></div>
 						<div class="input-group col-xs-2 col-sm-2 col-md-8"><!--保持内联，消除边框，类似于form-inline-->
+<<<<<<< HEAD
 							<input type="text" class="form-control" v-model="search" placeholder="请输入关键词" />
 							<span class="input-group-btn"><!--不换行，与相邻元素内联-->
 							<button class="btn btn-primary" style="border-Radius:0px;" @click="getData">搜索</button>
+=======
+							<input type="text" class="form-control" placeholder="请输入关键词" />
+							<span class="input-group-btn"><!--不换行，与相邻元素内联-->
+							<button class="btn btn-primary" style="border-Radius:0px;">搜索</button>
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 							</span>  
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2"></div>
@@ -91,24 +117,39 @@ body {
 							<div class="input-group-btn"><!--不换行，与相邻元素内联-->
 							<div class="btn1" style="border-Radius:0px;">内径：</div>
 							</div>
+<<<<<<< HEAD
 							<input type="text" v-model="d_small" class="form-control" style="border: 1px solid #CCCCCC;padding-left: 0.8rem;"  placeholder="内径:mm" />
+=======
+							<input type="text" class="form-control" style="border: 1px solid #CCCCCC;padding-left: 0.8rem;"  placeholder="内径:mm" />
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 						</div>
 					
 						<div class="input-group suQueryb col-xs-2 col-sm-2 col-md-3"><!--保持内联，消除边框，类似于form-inline-->
 							<div class="input-group-btn"><!--不换行，与相邻元素内联-->
 							<div class="btn1" style="border-Radius:0px;">外径：</div>
 							</div>
+<<<<<<< HEAD
 							<input type="text" v-model="d" style="border: 1px solid #CCCCCC;padding-left: 0.8rem;"  class="form-control" placeholder="外径:mm" />	
+=======
+							<input type="text" style="border: 1px solid #CCCCCC;padding-left: 0.8rem;"  class="form-control" placeholder="外径:mm" />	
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 						</div>
 						
 						<div class="input-group suQueryb col-xs-2 col-sm-2 col-md-3"><!--保持内联，消除边框，类似于form-inline-->
 							<div class="input-group-btn"><!--不换行，与相邻元素内联-->
 							<div class="btn1" >宽度：</div>
 							</div>
+<<<<<<< HEAD
 							<input type="text" v-model="b" class="form-control" style="border: 1px solid #CCCCCC;padding-left: 0.8rem;" placeholder="宽度:mm" />
 						</div>
 						
 						<div class="input-group suQueryb col-xs-2 col-sm-2 col-md-3" @click="getData()"><!--保持内联，消除边框，类似于form-inline-->
+=======
+							<input type="text" class="form-control" style="border: 1px solid #CCCCCC;padding-left: 0.8rem;" placeholder="宽度:mm" />
+						</div>
+						
+						<div class="input-group suQueryb col-xs-2 col-sm-2 col-md-3"><!--保持内联，消除边框，类似于form-inline-->
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 							<button type="button" class="btn btn-dangercx">查询</button>							
 						</div>
 					</form>
@@ -204,6 +245,7 @@ body {
 			</div>
 			
 			<div class="bearingList col-xs-12 col-sm-12 col-md-12">
+<<<<<<< HEAD
 				<div class="bearingList_ext col-xs-12 col-sm-12 col-md-12" v-for="item in myTabContent">
 					<div class="bearingList_img col-xs-2 col-sm-2 col-md-2">
 						<img :src="url1+item.img_page">
@@ -211,13 +253,28 @@ body {
 					<div class="bearingList_details col-xs-7 col-sm-7 col-md-8">
 						<div class="col-xs-12 col-sm-12 col-md-12 text-left">
 							<text class="details_text"></text>
+=======
+				<div class="bearingList_ext col-xs-12 col-sm-12 col-md-12">
+					<div class="bearingList_img col-xs-2 col-sm-2 col-md-2">
+						<img src="../images/model/view2.jpg">
+					</div>			
+					<div class="bearingList_details col-xs-7 col-sm-7 col-md-8">
+						<div class="col-xs-12 col-sm-12 col-md-12 text-left">
+							<text class="details_text">型号：UCP204</text>
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 							<text class="details_text2">(原用代号：D1060025X)</text>
 						</div>
 						<div class="bearingList_details_del">
 							
+<<<<<<< HEAD
 							<div class="col-xs-3 col-sm-3 col-md-3 detail_del1 text-left">内径：{{item.d_small}}</div>
 							<div class="col-xs-3 col-sm-3 col-md-3 detail_del text-left">外径：{{item.d}}</div>
 							<div class="col-xs-3 col-sm-3 col-md-3 detail_del text-left">宽度：{{item.b}}</div>
+=======
+							<div class="col-xs-3 col-sm-3 col-md-3 detail_del1 text-left">内径：15</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 detail_del text-left">外径：15</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 detail_del text-left">宽度：15</div>
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 							<div class="col-xs-3 col-sm-3 col-md-3 detail_del text-left">重量：0.0015kg</div>
 						</div>
 						
@@ -245,12 +302,106 @@ body {
 						</div>
 					</div>
 				</div>
+<<<<<<< HEAD
+=======
+				
+				<div class="bearingList_ext col-xs-12 col-sm-12 col-md-12">
+					<div class="bearingList_img col-xs-2 col-sm-2 col-md-2">
+						<img src="../images/model/view2.jpg">
+					</div>
+					
+				
+					<div class="bearingList_details col-xs-7 col-sm-7 col-md-8">
+						<div class="col-xs-12 col-sm-12 col-md-12 text-left">
+							<text class="details_text">型号：UCP204</text>
+							<text class="details_text2">(原用代号：D1060025X)</text>
+						</div>
+						<div class="bearingList_details_del">
+							
+							<div class="col-xs-3 col-sm-3 col-md-3 detail_del1 text-left">内径：15</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 detail_del text-left">外径：15</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 detail_del text-left">宽度：15</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 detail_del text-left">重量：0.0015kg</div>
+						</div>
+						
+						<div class="col-xs-12 col-sm-12 col-md-12 del_fu">
+							<div class="bearingList_details_del2">
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del2 text-left">国外品牌</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">NTN</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">SKF</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">NSK</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 del_fu">
+							<div class="bearingList_details_del2">
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del2 text-left">国外品牌</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">NTN</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">SKF</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">NSK</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="bearingList_btn col-xs-2 col-sm-2 col-md-2">
+						<div class="bearingList_btn_text">
+							<button type="button" class="btn btn-danger btn-sm cx">查询详情</button>
+						</div>
+					</div>
+				</div>
+				<div class="bearingList_ext col-xs-12 col-sm-12 col-md-12">
+					<div class="bearingList_img col-xs-2 col-sm-2 col-md-2">
+						<img src="../images/model/view2.jpg">
+					</div>
+					
+				
+					<div class="bearingList_details col-xs-7 col-sm-7 col-md-8">
+						<div class="col-xs-12 col-sm-12 col-md-12 text-left">
+							<text class="details_text">型号：UCP204</text>
+							<text class="details_text2">(原用代号：D1060025X)</text>
+						</div>
+						<div class="bearingList_details_del">							
+							<div class="col-xs-3 col-sm-3 col-md-3 detail_del1 text-left">内径：15</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 detail_del text-left">外径：15</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 detail_del text-left">宽度：15</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 detail_del text-left">重量：0.0015kg</div>
+						</div>
+						
+						<div class="col-xs-12 col-sm-12 col-md-12 del_fu">
+							<div class="bearingList_details_del2">
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del2 text-left">国外品牌</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">NTN</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">SKF</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">NSK</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 del_fu">
+							<div class="bearingList_details_del2">
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del2 text-left">国外品牌</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">NTN</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">SKF</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 detail_del3 text-left">NSK</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="bearingList_btn col-xs-2 col-sm-2 col-md-2">
+						<div class="bearingList_btn_text">
+							<button type="button" class="btn btn-danger btn-sm cx">查询详情</button>
+						</div>
+					</div>
+				</div>
+				
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 			</div>
 		
 			
 			<!--mmmm-->
 		</div>
+<<<<<<< HEAD
 	</div>
+=======
+		
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 		
 		
 		<div class="col-xs-2 col-sm-2 col-md-2 purchase_right">
@@ -271,6 +422,7 @@ body {
 	
 		<iframe marginwidth="0" marginheight="0" src="../../base/bottom.html" width="100%" height="500px"></iframe>
 	</div>
+<<<<<<< HEAD
 	<script type = "text/javascript">
 		var url1 = geturl();
 				
@@ -317,6 +469,8 @@ body {
 		  }
 		})
 		</script>
+=======
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 </body>
 </html>
 

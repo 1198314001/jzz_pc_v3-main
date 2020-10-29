@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 <!DOCTYPE html>
 <html lang="en">
 
@@ -108,7 +112,11 @@
         <span class="jump" v-for="num in indexs" :class="{bgprimary:current_page==num}"
           @click="jumpPage(num)">{{num}}</span>
         <span class="ellipsis" v-show="ebehind">...</span>
+<<<<<<< HEAD
         <span v-show="current_page<pages-4" v-bind:current_page="current_page" class="jump" @click="jumpPage(pages)">{{pages}}</span>
+=======
+        <span v-show="current_page<pages-4" class="jump" @click="jumpPage(pages)">{{pages}}</span>
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
         <span :class="{disabled:ends}" class="jump" @click="{current_page++}">下一页</span>
         <span class="jumppoint">前往：</span>
         <span class="jumpinp"><input type="text" v-model="changePage"></span>
@@ -119,9 +127,13 @@
   </div>
 
   <script src="https://www.jq22.com/jquery/vue.min.js"></script>
+<<<<<<< HEAD
 	
   <script>
 	  
+=======
+  <script>
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
     var newlist = new Vue({
       el: '#app',
       data: {

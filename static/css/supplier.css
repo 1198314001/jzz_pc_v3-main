@@ -81,7 +81,11 @@ a {
 }
 .supplierTitle3{
 	padding-top: 1rem;
+<<<<<<< HEAD
 	height: auto;
+=======
+	height: 4rem;
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 	padding-left: 0px;
 	padding-right: 0px;
 	background-color: #FFFFFF;

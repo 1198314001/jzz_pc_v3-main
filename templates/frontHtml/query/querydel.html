@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +33,21 @@ body {
 	</div>
 <div class="col-md-10 col-md-offset-1" style="background-color: #F2f2f2;">
 	<div class="purchase col-xs-10 col-sm-10 col-md-12 text-center">
+=======
+{% extends 'base/base2.html' %}
+{% load static %}
+{% block script %}
+    <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/purchase.css' %}" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/supplyInformation.css' %}" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/querydel.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+	{% block body %}
+
+<div style="width:88%;margin-left:9.5%;background-color: #F8F8F8;">
+	<div class="left-p col-xs-1 col-sm-1 col-md-1"></div>
+	<div class="purchase col-xs-10 col-sm-10 col-md-10 text-center">
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 		<div class="col-xs-3 col-sm-3 col-md-2 purchase_left">
 			<div class="purchase_cxtitle text-center"><span>优质轴承供应商</span></div>
 			<div class="purchase_img"><img src="../frontHtml/images/index/view_l1.jpg"></div>
@@ -239,6 +255,7 @@ body {
 		</div>
 		
 	</div>
+<<<<<<< HEAD
 	
 </div>
 <div>
@@ -247,6 +264,13 @@ body {
 	</div>
 </body>
 </html>
+=======
+	<div class="right-p col-xs-1 col-sm-1 col-md-1"></div>
+	
+</div>
+
+{% endblock %}
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 
 
 

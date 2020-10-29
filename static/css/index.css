@@ -281,6 +281,7 @@ a{
 	white-space:nowrap;
 }
 .gys_img{
+<<<<<<< HEAD
 	width: 80%;
 	height: 3.28rem;
 	padding-left: 15%;
@@ -291,6 +292,18 @@ a{
 	height: 3.28rem;
 	padding-left: 15%;
 	margin-top: 0.5rem;
+=======
+	width: 90%;
+	height: 3.28rem;
+	padding-left: 5%;
+	padding-top:0.5rem;
+}
+.gys_img2{
+	width: 90%;
+	height: 3.28rem;
+	padding-right: 5%;
+	padding-top:0.5rem;
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
 }
 iframe{
 	border:medium none;

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
 <head>
     <meta charset="utf-8" />
@@ -84,3 +85,57 @@
     </script>
 </body>
 </html>
+=======
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title></title>
+
+    <script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="app">
+        <li v-for="(item,index) in data">
+
+            <div @click="showIndex = index" :class="{'divborder':showIndex == index}"> show {{ item }}</div>
+
+        </li>
+</div>
+
+<script>
+
+    var app = new Vue({
+        el: '#app',
+        data(){
+            return {
+                data: ['aa', 'bb', 'cc'],
+                showIndex: 0
+            }
+
+        }
+
+
+
+    })
+
+</script>
+
+<style>
+
+    .divborder {
+
+        border: 1px solid #ddd;
+
+    }
+
+</style>
+
+</body>
+>>>>>>> 57500d181dfc8a2a735a242ff063f852cb2a23f8
